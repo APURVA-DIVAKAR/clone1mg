@@ -3,42 +3,54 @@ import { Link } from 'react-router-dom'
 import 'react-slideshow-image/dist/styles.css'
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-const fadeImages = [
-    {
-      url: 'https://www.1mg.com/images/login-signup/Know-Your-Medicines.png',
-      caption: 'Slide 1'
-    },
-    {
-      url: 'https://www.1mg.com/images/login-signup/Home-Delivery-of-Medicines.png',
-      caption: 'Slide 2'
-    },
-    {
-      url: 'https://www.1mg.com/images/login-signup/Health-Related-Queries.png',
-      caption: 'Slide 3'
-    },
-    {
-        url: 'https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png',
-        caption: 'Slide 3'
-      },
-  ];
+import {
+    Add_div} from "../Styleing/Advertisement_style";
   
+  import { Swiper, SwiperSlide } from "swiper/react";
+  // Import Swiper styles
+  import "swiper/css";
+  import "swiper/css/pagination";
+  import { Pagination, Autoplay } from "swiper";
+
 const Signup = () => {
     // console.log(fadeImages[0].url)
   return (
     <div style={{display: 'flex', }}>
-         <div className="slide-container">
-      <Fade>
-        <div className="each-fade">
-          <img src={fadeImages[0].url} />
-        </div>
-        <div className="each-fade">
-          <img src={fadeImages[1].url} />
-        </div>
-        <div className="each-fade">
-          <img src={fadeImages[2].url} />
-        </div>
-      </Fade>
-    </div>
+         <Add_div>
+        <div>
+          <Swiper
+            pagination={true}
+            modules={[Pagination, Autoplay]}
+            autoplay={{ delay: 5000 }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img
+                src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="https://www.1mg.com/images/login-signup/Home-Delivery-of-Medicines.png"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png"
+                alt=""
+              />
+            </SwiperSlide>
+            </Swiper>
+            </div>
+            </Add_div>
         <div>
             <h1>Sign Up</h1>
             <p>Please enter your Mobile number to receive One Time Password (OTP)</p>
