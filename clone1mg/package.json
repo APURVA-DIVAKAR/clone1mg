@@ -10,6 +10,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "^1.6.0",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -27,6 +29,7 @@
     "style-components": "^0.1.0",
     "styled-components": "^5.3.5",
     "swiper": "^8.1.4",
+    "typewriter-effect": "^2.18.2",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
