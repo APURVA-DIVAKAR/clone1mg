@@ -6,11 +6,6 @@ export const Slider1 = styled.div`
   // padding: 0 5%;
   // padding-bottom: 2%;
 
-  .navbar1,
-  .dropdown_div {
-    display: none !important;
-  }
-
   > * {
     max-width: 1920px;
   }

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Ask_Doctor />
-      {/* <LastsecFooter /> */}
+      <LastsecFooter />
       <LastFooter />
     </div>
   );
