@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from  './Covid.module.css'
+import { FaThumbsUp } from "react-icons/fa";
+import { Menu } from '@headlessui/react'
 const Covid = () => {
   return (
     <div>
@@ -99,6 +101,112 @@ const Covid = () => {
                </div>
            </div>
        </div>
+       <div  className={styles.tata}>
+           <button> <FaThumbsUp style={{color:"darkred"}}/> Tata 1mg's Choics</button>
+           <p>People with comorbidities such as diabetes and heart disease should opt for COVID Home Care Complete to cover more biomarkers which allows a nuanced view of their health status.</p>
+       </div>
+       <div className={styles.co}>
+           <h1>Prepare, don't panic</h1>
+           <p>Counter misinformation and keep yourself updated about all COVID-related developments with concise booklets and guides. These guides, compiled by the team of doctors at Tata 1mg, are based on analysis of data by trusted sources such as the WHO, Lancet, National Institute of Communicable Diseases, South Africa, MoHFW & discussions with medical experts.</p>
+           <Menu>
+                <Menu.Button className={styles.coral} >Select Language +</Menu.Button>
+                <Menu.Items className={styles.lan} >
+                    <Menu.Item>
+                    {({ active }) => (
+                           <h3 className={styles.lan1} >Hindi</h3>
+                    )}
+                    </Menu.Item>
+                    <Menu.Item>
+                    {({ active }) => (
+                           <h3 className={styles.lan2}> English</h3>
+                    )}
+                    </Menu.Item>
+                </Menu.Items>    
+            </Menu>  
+            <div className={styles.grid}>
+               <div>
+                   <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/Home_isolation_tips_by_Tata_1mg.png" />
+                   <button>Download E-Book</button>
+               </div>
+               <div>
+                    <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/COVID-Omicron-Tata1mg.png" />
+                   <button>Download E-Book</button>
+               </div>
+               <div>
+                    <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/Double-masking-tips-by-1mg.png" />
+                   <button>Download E-Book</button></div>    
+            </div>      
+       </div>
+       <div className={styles.art}>
+           <div>
+               <h1>
+               COVID-19 & latest treatment modalities  
+               </h1>
+               <p>To prepare for the imminent threats of this virus, scientists and researchers are constantly developing newer treatment strategies. One such new treatment option includes monoclonal antibodies. Want to know more about these available treatments and how they work against COVID variants, including Delta and Omicron?</p>
+               <button>READ THIS ARTICLE</button>
+           </div>
+           <div>
+               <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/hand.png" />
+           </div>
+       </div>
+       <div className={styles.art}>
+           <div>
+               <h1>
+               Has your doctor prescribed COVID treatment based on monoclonal antibodies?
+               </h1>
+               
+               <button>FIND IT HERE</button>
+           </div>
+           <div>
+               <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/monoclonal_dweb.png" />
+           </div>
+       </div>
+       <div className={styles.art1}>
+           <div>
+               <h1>
+               Think you may have COVID-19?
+               </h1>
+               <h2>Talk to a qualified doctor online for FREE & get expert guidance</h2>
+               <button>CALL NOW</button>
+           </div>
+           <div>
+               <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/talk-now.png" />
+           </div>
+       </div>
+       <div className={styles.video}>
+           <h1>Watch these detailed videos to get answers to commonly asked questions on coronavirus in India:</h1>
+           <div className={styles.vid}>
+               <div>
+                 <iframe width="515" height="300" src="https://www.youtube.com/embed/P4TKxfj3tu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div>
+               <iframe width="515" height="300" src="https://www.youtube.com/embed/UN7fbohf0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div>
+               <iframe width="515" height="300" src="https://www.youtube.com/embed/H3H0XCyQgXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div>
+               <iframe width="515" height="300" src="https://www.youtube.com/embed/pso2qbEj0Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+           </div>
+       </div>
+       <div className={styles.art}>
+           <div>
+               <h1>
+               Think you have fever, cold or cough?
+               </h1>
+               <h2>Talk to our experts online</h2>
+               <button>CONSULT NOW</button>
+           </div>
+           <div className={styles.dri}>
+               <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/consult-doc.png" />
+           </div>
+       </div>
+       <div style={{width:"90%",margin:"auto"}}>
+          <p>Reference: </p>
+          <p>www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf</p>
+       </div>
+
     </div>
   )
 }
