@@ -225,12 +225,12 @@ export default function LastFooter() {
                 </a>
               </li>
               <li>
-                <span class="style__s-head___367TK">
+                <span className="style__s-head___367TK">
                   Want daily dose of health?
                 </span>
               </li>
               <li>
-                <button class="style__signup-btn___2h_dH ">SIGN UP</button>
+                <button className="style__signup-btn___2h_dH ">SIGN UP</button>
               </li>
             </ul>
           </div>
