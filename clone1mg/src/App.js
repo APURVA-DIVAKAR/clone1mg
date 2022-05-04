@@ -1,6 +1,6 @@
 import './App.css';
-import LastsecFooter from './Components/LastsecFooter';
-import LastFooter from './Components/LastFooter';
+import LastsecFooter from './components/LastsecFooter';
+import LastFooter from './components/LastFooter';
 
 function App() {
   return (
