@@ -2,17 +2,22 @@
 import "./App.css";
 import { Navbar } from "./Navbar/Components/Navbar";
 // import Signup from "./LoginSignup/Signup";
+import './App.css';
+import LastsecFooter from './components/LastsecFooter';
+import LastFooter from './components/LastFooter';
 
 import Covid from "./COVID19/Covid";
 function App() {
   return (
     
-     <div>
-       <Navbar />
+    <div className="App">
+        <Navbar />
      
-      <Covid/>
-     </div>
-    
+        <Covid/>
+      <LastsecFooter/>
+      <LastFooter/>
+
+    </div>
   );
 }
 
