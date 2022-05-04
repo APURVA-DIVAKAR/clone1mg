@@ -7,13 +7,14 @@ import LastsecFooter from './components/LastsecFooter';
 import LastFooter from './components/LastFooter';
 
 import Covid from "./COVID19/Covid";
+import Upload from "./components/UPLOAD/Upload";
 function App() {
   return (
     
     <div className="App">
         <Navbar />
-     
-        <Covid/>
+        <Upload/>
+        {/* <Covid/> */}
       <LastsecFooter/>
       <LastFooter/>
 
