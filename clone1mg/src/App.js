@@ -1,10 +1,13 @@
-// import logo from "./logo.svg";
-import "./App.css";
-import { Navbar } from "./Navbar/Components/Navbar";
+import './App.css';
+import LastsecFooter from './components/LastsecFooter';
+import LastFooter from './components/LastFooter';
 
 function App() {
   return (
-      <Navbar />
+    <div className="App">
+      <LastsecFooter/>
+      <LastFooter/>
+    </div>
   );
 }
 
