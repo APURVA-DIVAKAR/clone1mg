@@ -1,12 +1,16 @@
-import './App.css';
-import LastsecFooter from './components/LastsecFooter';
-import LastFooter from './components/LastFooter';
+import "./App.css";
+import LastsecFooter from "./Components/LastsecFooter";
+import LastFooter from "./Components/LastFooter";
+import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
+import { Navbar } from "./Navbar/Components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <LastsecFooter/>
-      <LastFooter/>
+      <Navbar />
+      <Ask_Doctor />
+      {/* <LastsecFooter /> */}
+      <LastFooter />
     </div>
   );
 }
