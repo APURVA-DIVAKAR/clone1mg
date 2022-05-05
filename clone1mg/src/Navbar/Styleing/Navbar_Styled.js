@@ -101,8 +101,8 @@ export const Nav = styled.div`
     content: "";
     position: absolute;
     background-color: #ff6f61;
-    left: 335px;
-    width: 29px;
+    left: 332px;
+    width: 35px;
     height: 16px;
     text-align: center;
     margin-left: 4px;
