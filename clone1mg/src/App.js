@@ -9,6 +9,7 @@ import LastFooter from './components/LastFooter';
 
 import Covid from "./COVID19/Covid";
 import Upload from "./components/UPLOAD/Upload";
+import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
 function App() {
   return (
     
@@ -18,6 +19,7 @@ function App() {
         {/* <Covid/> */}
       <LastsecFooter/>
       <LastFooter/>
+      <Ayurveda/>
     </div>
   );
 }
