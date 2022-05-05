@@ -1,5 +1,5 @@
 import React from "react";
-import popularBrand  from "../database/popular";
+import popularBrand  from "../../database/popular";
 import Avatar from "./Avatar";
 
 import "./style.css";

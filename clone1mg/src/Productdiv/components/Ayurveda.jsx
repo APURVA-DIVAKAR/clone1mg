@@ -1,5 +1,5 @@
 import React from "react";
-import aayurved  from "../database/ayurved";
+import aayurved  from "../../database/ayurved";
 import Avatar from "./Avatar";
 
 import "./style.css";
