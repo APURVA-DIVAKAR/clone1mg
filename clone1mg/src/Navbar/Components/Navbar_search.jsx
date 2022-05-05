@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Nav_Search } from "../Styleing/Navbar_search";
 
 export const Navbar_search = () => {
@@ -68,13 +69,13 @@ export const Navbar_search = () => {
             QUICK BUY! Flat 25% off on medicines*
           </div>
           <div className="upload_btn">
-            <a
+            <Link
               className="upload_anc"
-              href="google.com"
+              to="/Upload"
               data-auto-upload-prescription="true"
             >
               <span>Upload</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
