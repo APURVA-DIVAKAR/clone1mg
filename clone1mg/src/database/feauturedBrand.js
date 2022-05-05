@@ -37,6 +37,6 @@ var featureBrand = [
     }
 ]
   
-localStorage.setItem("featurebrands",JSON.stringify(featureBrand))
+// localStorage.setItem("featurebrands",JSON.stringify(featureBrand))
    
-
+export default featureBrand

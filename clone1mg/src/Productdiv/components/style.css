@@ -1,0 +1,106 @@
+*{
+    font-family:Bold;
+}
+body{
+    background-color: rgb(238,237,237);
+}
+
+
+  .bigcontainer {
+    /* box-shadow: 0 3px 6px rgb(0 0 0 / 16%); */
+    border-radius: 5px;
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 18px rgba(33, 33, 33, .2);
+    /* border: 1px solid black;    */
+    display: grid;
+    grid-template-columns:repeat(7,1fr);  
+}
+
+.bigcontainer h1 {
+    width: 98%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-left: 20px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.smallcontainer {
+    width:fit-content;
+    /* border: 1px solid red; */
+    margin: 10px 7px;
+    background-color: white;
+    /* display: flex; */
+    /* grid-template-columns:repeat(7,1fr); */
+    grid-gap: 2%;
+    margin: auto;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.smallcontainer>div:hover {
+    box-shadow: 0px 0px 18px rgba(33, 33, 33, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.smallcontainer img {
+    max-width: 100%;
+    margin: 6px 0;
+}
+
+.bigcontainer .smallcontainer a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    margin-bottom: 34px;
+}
+
+.featuredbrand {
+    width: 85%;
+    border: 1px solid yellow;
+    display: flex;
+    margin: auto;
+    margin-left: 9%;
+}
+
+.featuredbrand .brand-1 {
+    margin: 2%;
+}
+.cat-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.style__heading___pc8n7{
+    font-size: 20px;
+    color: #212121;
+    font-weight:900;
+}
+button{
+    background-color:rgb(255,127,97) ;
+    color: white;
+    border:0px;
+    -ms-text-size-adjust: auto;
+    border-radius: 5px;
+    width: 80px;
+    height:39px;
+}
+
+.smallcontainer:hover {
+    box-shadow: 0px 0px 18px rgba(33, 33, 33, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.smallcontainer {
+    max-width: 100%;
+    margin: 6px 0;
+}

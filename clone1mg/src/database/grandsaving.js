@@ -35,3 +35,5 @@ var grandSavings=[
         link:"https://www.1mg.com/categories/featured/top-brands/hansaplast-509"
     }
 ]
+
+export default grandSavings

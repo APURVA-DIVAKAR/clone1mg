@@ -35,3 +35,4 @@ var popularBrand=[
         link:"https://www.1mg.com/categories/homeopathy-57"
     }
 ]
+export default popularBrand
