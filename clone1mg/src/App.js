@@ -27,7 +27,7 @@ function App() {
 
       <Individual_Product_Page />
 
-      <LastsecFooter />
+      {/* <LastsecFooter /> */}
       <LastFooter />
     </div>
   );

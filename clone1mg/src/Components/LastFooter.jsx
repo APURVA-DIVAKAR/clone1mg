@@ -3,7 +3,7 @@ import React from "react";
 export default function LastFooter() {
   return (
     <>
-      <div>
+      <div style={{ boxShadow: "2px 0 4px 0 rgb(0 0 0 / 12%)" }}>
         <div className="style__f14___1FE-V">
           <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
         </div>
