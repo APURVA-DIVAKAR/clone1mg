@@ -1,9 +1,9 @@
-*{
+/* *{
     font-family:JioBold;
 }
 body{
     background-color: rgb(238, 237, 237);
-}
+} */
 .maincontainer{
     /* border: 2px solid red; */
     height:255px;
@@ -104,7 +104,6 @@ p1{
 
 
 h1{
-    
     border: 1px solid rgb(211, 208, 208);
     height: 100%;
     border-radius: 10px;
