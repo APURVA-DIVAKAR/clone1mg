@@ -76,6 +76,56 @@ export const Nav = styled.div`
     border-radius: 2px;
   }
 
+  .Safe_div {
+    > div {
+      position: relative;
+      transform: translateX(-31px);
+      width: 0px;
+    }
+  }
+
+  .Safe_div::before {
+    content: "";
+    position: relative;
+    background-color: #ff6f61;
+    left: -3px;
+    width: 28px;
+    height: 100%;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 2px;
+    animation: styles__pulse___1AYvD 1.6s infinite;
+  }
+
+  // .Safe_div::after {
+  //   content: "";
+  //   position: relative;
+  //   background-color: #ff6f61;
+  //   left: -3px;
+  //   width: 28px;
+  //   height: 100%;
+  //   text-align: center;
+  //   margin-left: 4px;
+  //   border-radius: 2px;
+  //   animation: styles__pulse___1AYvD 1.6s infinite;
+  //   animation-delay: 0.2s;
+  // }
+
+  @keyframes styles__pulse___1AYvD {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    70% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
   #loginSignup {
     display: flex;
     justify-content: flex-end;

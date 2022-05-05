@@ -26,7 +26,7 @@ export const Navbar = () => {
               </div>
               <div>
                 <Link to="/">LAB TESTS</Link>
-                <div className="reddiv">SAFE</div>
+                <div className="reddiv Safe_div"><div>SAFE</div></div>
               </div>
               <div>
                 <Link to="/AskDoctor">ASK DOCTOR</Link>
@@ -63,9 +63,11 @@ export const Navbar = () => {
         </div>
         {/* <Navbar_search /> */}
         {/* <Navbar_dropdown /> */}
-      {/* <Advertisement /> */}
+        {/* <Advertisement /> */}
       </Nav>
     </>
   );
 };
-{/* <ul class="CartCounterPopUp__list-cart-summary___a1fvN"><li><span class="CartCounterPopUp__summary___1Ff-x">Order Summary</span><span class="CartCounterPopUp__count___3cYl6">1 Item</span></li><li><span class="CartCounterPopUp__product-info___168Yk"><span>Organic India LKC (Liver Kidney Care) Capsule</span></span><div class="CartCounterPopUp__qty___3i8Mz"><span>Qty:</span><span>1</span></div></li><li><a href="/cart" data-auto-proceed-cart="true" data-attribute="cart-counter-popup"><span class="CartCounterPopUp__proceed___vJFRh">PROCEED TO CART</span></a></li></ul> */}
+{
+  /* <ul class="CartCounterPopUp__list-cart-summary___a1fvN"><li><span class="CartCounterPopUp__summary___1Ff-x">Order Summary</span><span class="CartCounterPopUp__count___3cYl6">1 Item</span></li><li><span class="CartCounterPopUp__product-info___168Yk"><span>Organic India LKC (Liver Kidney Care) Capsule</span></span><div class="CartCounterPopUp__qty___3i8Mz"><span>Qty:</span><span>1</span></div></li><li><a href="/cart" data-auto-proceed-cart="true" data-attribute="cart-counter-popup"><span class="CartCounterPopUp__proceed___vJFRh">PROCEED TO CART</span></a></li></ul> */
+}
