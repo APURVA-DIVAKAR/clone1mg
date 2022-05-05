@@ -148,8 +148,29 @@ export const Individual_Product_Page = () => {
               <div className="Frequently_bought_together">
                 <div>Frequently bought together</div>
                 <Small_product />
-                <div className="separator"></div>
+                <div className="style__plus">
+                  <img src="https://www.1mg.com/images/add.png" alt="" />
+                </div>
                 <Small_product />
+                <hr />
+                <div className="total_div">
+                  <div>
+                    <span className="style__total-price_title">
+                      TOTAL PRICE
+                    </span>
+                    <br />
+                    <span className="style__total-price_price">₹668</span>
+                  </div>
+                  <div className="add_both_to_cart">
+                    <a
+                      className="add_both_to_cart_anc"
+                      data-auto-upload-prescription="true"
+                      href=""
+                    >
+                      <span>ADD BOTH TO CART</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
