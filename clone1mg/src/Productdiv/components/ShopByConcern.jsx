@@ -1,5 +1,5 @@
 import React from "react";
-import grandSavings from "../database/grandsaving";
+import grandSavings from "../../database/grandsaving";
 import Avatar from "./Avatar";
 
 const ShopByConcern = () => {
@@ -17,7 +17,7 @@ const ShopByConcern = () => {
           {grandSavings.map((elem) => {
             return (
               <div className="smallcontainer">
-                <Avatar fecture={elem} />;
+                <Avatar fecture={elem} />
               </div>
             );
           })}

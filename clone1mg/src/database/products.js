@@ -151,4 +151,6 @@ var Muscleblaze = [
     price: 799,
   },
 ];
-localStorage.setItem("productdata", JSON.stringify(Muscleblaze));
+// localStorage.setItem("productdata", JSON.stringify(Muscleblaze));
+
+export default Muscleblaze;

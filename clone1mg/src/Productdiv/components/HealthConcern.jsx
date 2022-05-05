@@ -1,5 +1,5 @@
 import React from "react";
-import shopByHealthConcerns  from "../database/healthconcern";
+import shopByHealthConcerns  from "../../database/healthconcern";
 import Avatar from "./Avatar";
 
 import "./style.css";

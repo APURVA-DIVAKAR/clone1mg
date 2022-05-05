@@ -1,12 +1,4 @@
-*{
-    font-family:Bold;
-}
-body{
-    background-color: rgb(238,237,237);
-}
-
-
-  .bigcontainer {
+.bigcontainer {
     /* box-shadow: 0 3px 6px rgb(0 0 0 / 16%); */
     border-radius: 5px;
     width: 100%;

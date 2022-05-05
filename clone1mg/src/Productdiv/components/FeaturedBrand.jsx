@@ -1,5 +1,5 @@
 import React from "react";
-import featureBrand from "../database/feauturedBrand";
+import featureBrand from "../../database/feauturedBrand";
 import Avatar from "./Avatar";
 
 import "./style.css";
