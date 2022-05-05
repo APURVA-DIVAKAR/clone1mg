@@ -97,19 +97,19 @@ export const Nav = styled.div`
     animation: styles__pulse___1AYvD 1.6s infinite;
   }
 
-  // .Safe_div::after {
-  //   content: "";
-  //   position: relative;
-  //   background-color: #ff6f61;
-  //   left: -3px;
-  //   width: 28px;
-  //   height: 100%;
-  //   text-align: center;
-  //   margin-left: 4px;
-  //   border-radius: 2px;
-  //   animation: styles__pulse___1AYvD 1.6s infinite;
-  //   animation-delay: 0.2s;
-  // }
+  .Safe_div::after {
+    content: "";
+    position: absolute;
+    background-color: #ff6f61;
+    left: 335px;
+    width: 29px;
+    height: 16px;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 2px;
+    animation: styles__pulse___1AYvD 1.6s infinite;
+    animation-delay: 0.2s;
+  }
 
   @keyframes styles__pulse___1AYvD {
     0% {
@@ -151,6 +151,62 @@ export const Nav = styled.div`
     width: 23px;
     height: 23px;
     background-position: 50%;
+
+    :hover > ul {
+      display: block;
+    }
+
+    > ul {
+      display: none;
+      padding: 0;
+      position: relative;
+      width: 250px;
+      z-index: 22;
+      text-align: left;
+      top: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+      right: 200px;
+      cursor: pointer;
+      margin: 0;
+      color: rgba(0, 0, 0, 0.87);
+
+      > li:first-child {
+        border-bottom: 1px solid #dbdbdb;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.87);
+      }
+
+      > li:last-child {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+
+        > a {
+          text-decoration: none;
+          color: #ff6f61;
+        }
+        > a > span {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          font-weight: 700;
+          color: #ff6f61;
+        }
+      }
+
+      > li {
+        padding: 5px 15px;
+        line-height: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .Cart_Counter_PopUp {
   }
 
   .count {
