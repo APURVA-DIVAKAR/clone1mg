@@ -11,6 +11,8 @@ import Upload from "./components/UPLOAD/Upload";
 import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home_page/Home";
+import Signup from "./LoginSignup/Signup";
+import Login from "./LoginSignup/Login";
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
       </Routes>
-
+       <Signup/>
+       <Login/>
       <LastsecFooter />
       <LastFooter />
     </div>
