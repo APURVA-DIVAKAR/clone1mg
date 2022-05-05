@@ -55,7 +55,12 @@ export const Nav = styled.div`
     cursor: pointer;
   }
 
-  #tabs > div:hover {
+  #tabs > div > a {
+    text-decoration: none;
+    color: #212121;
+  }
+
+  #tabs > div > a:hover {
     color: #ff6f61;
   }
 
