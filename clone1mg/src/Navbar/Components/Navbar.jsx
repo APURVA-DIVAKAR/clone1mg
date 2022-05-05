@@ -26,7 +26,9 @@ export const Navbar = () => {
               </div>
               <div>
                 <Link to="/">LAB TESTS</Link>
-                <div className="reddiv">SAFE</div>
+                <div className="reddiv Safe_div">
+                  <div>SAFE</div>
+                </div>
               </div>
               <div>
                 <Link to="/AskDoctor">ASK DOCTOR</Link>
@@ -55,7 +57,27 @@ export const Navbar = () => {
             </div>
             <div>Offers</div>
             <div className="cart_icon">
-              <div className="cart_svg"></div>
+              <div className="cart_svg">
+                <ul class="Cart_Counter_PopUp">
+                  <li>
+                    <span class="CartCounterPopUp__summary___1Ff-x">
+                      Order Summary
+                    </span>
+                    <span class="CartCounterPopUp__count___3cYl6">0 Item</span>
+                  </li>
+                  <li>
+                    <a
+                      href="/cart"
+                      data-auto-proceed-cart="true"
+                      data-attribute="cart-counter-popup"
+                    >
+                      <span class="CartCounterPopUp__proceed___vJFRh">
+                        PROCEED TO CART
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <div className="count">0</div>
             </div>
             <div style={{ fontSize: "14px" }}>Need Help ?</div>
@@ -63,8 +85,10 @@ export const Navbar = () => {
         </div>
         {/* <Navbar_search /> */}
         {/* <Navbar_dropdown /> */}
-      {/* <Advertisement /> */}
+        {/* <Advertisement /> */}
       </Nav>
     </>
   );
 };
+{
+}

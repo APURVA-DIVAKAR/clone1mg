@@ -24,6 +24,7 @@ function App() {
         <Route path="/Upload" element={<Upload />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
+        <Route path="/Ayurveda" element={<Ayurveda />}></Route>
       </Routes>
        <Signup/>
        <Login/>
