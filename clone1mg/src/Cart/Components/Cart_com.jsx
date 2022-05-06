@@ -32,7 +32,7 @@ export const Cart_com = () => {
         </div>
         <div id="body">
           <div id="bodyLeft">
-            <p>Items NOT Requiring Prescription ({cartData.lenght})</p>
+            <p>Items NOT Requiring Prescription ({cartData.length})</p>
             {cartData.map((el) => (
               <Cart_product Key={el.id} />
             ))}

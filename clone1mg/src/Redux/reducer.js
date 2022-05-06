@@ -5,6 +5,7 @@ let initState = {
   isError: false,
   cartData: [
     {
+      id: 1,
       name: "Flamingo Orthopaedic Heating Belt XL",
       bottels: "packet of 1 Belt",
     },
