@@ -6,17 +6,21 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { SignupProvider } from "./LoginSignup/SignupProvider";
 import { LoginProvider } from "./LoginSignup/LoginProvider";
+import { Provider } from "react-redux";
+import { store } from "./Redux/Store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <SignupProvider>
-      <LoginProvider>
-      <App />
-      </LoginProvider>
-      </SignupProvider>  
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <SignupProvider>
+          <LoginProvider>
+            <App />
+          </LoginProvider>
+        </SignupProvider>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
