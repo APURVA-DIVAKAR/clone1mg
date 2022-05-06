@@ -5,16 +5,16 @@ const Cards = ({value}) => {
     console.log(value)
     const {name,desc,image_url,mrp,off,price,review,star} =  value
   return (
-    <div>
-        <div className="imge">
+    <div className={styles.box} >
+        <div className={styles.imge}>
           <img src={image_url} alt={name} />
         </div>
-        <div>
+        <div className={styles.box2} >
             <h5>{name}</h5>
             <p>{desc}</p>
             <div className={styles.flexGrenn}>
-              <button>{star}<AiOutlineStar/></button>
-              <p>{review}</p>
+              <button>{star}<AiOutlineStar style={{color: 'white'}}/> </button>
+              <p>{review} ratings</p>
             </div>
             <div className={styles.flexPrice}>
                 <p>MRP</p>

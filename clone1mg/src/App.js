@@ -35,11 +35,12 @@ function App() {
         <Route path="/Covid" element={<Covid />}></Route>
 
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
-        <Route path="/Products" element={<Products />}></Route>
-      </Routes> */}
+       
+      </Routes>
       
-      {/* <LastsecFooter /> */}
-      {/* <LastFooter /> */}
+      <LastsecFooter />
+      <LastFooter />
+      <Products/>
     </div>
   );
 }

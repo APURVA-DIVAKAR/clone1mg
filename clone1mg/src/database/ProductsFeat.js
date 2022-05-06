@@ -13,7 +13,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638444070/nwhioxrxmwjkaxitryag.jpg",
-        name: "Tata 1mg BIS Approved FFP2 N95 Mask for Kids 5 Masks",
+        name: "Tata 1mg BIS Approved FFP2 Masks",
         desc: "box of 5 masks",
         mrp: 400,
         off: 45,
@@ -46,7 +46,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg",
-        name: "Tata 1mg Calcium + Vitamin D3,Zinc,Magnisum and Am",
+        name: "Tata 1mg Calcium + Vitamin and Am",
         desc: "bottle of 50 Tablet",
         mrp: 595,
         off: 60,
@@ -68,7 +68,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600202758/cropped/n4ucau55t2b6uh7vxcbz.png",
-        name: "MuscleBlaze Whey Gold Whey Protein Isolate Only Powder Rich Milk Chocolate",
+        name: "MuscleBlaze Whey Gold Whey Powder Chocolate",
         desc: "box of 4.4 lb Powder",
         mrp: 8669,
         off: 9,
@@ -90,7 +90,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612767898/sebt72otrs6a2gnqfpcb.jpg",
-        name: "Protinex Health and Nutritional Drink Tasty Chocolate Powder ",
+        name: "Protinex Health Tasty Chocolate Powder ",
         desc: "Tin of 250gm Powder",
         mrp: 380,
         off: 4,
@@ -112,7 +112,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600770640/cropped/yv3ybkbq0crpmervjudj.jpg",
-        name: "The Man Compney Argan & Geranium Beard Oil",
+        name: "The Man Compney Argan Beard Oil",
         desc: "bottle of 30ml oil",
         mrp: 350,
         off: 7,
@@ -123,7 +123,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600261612/cropped/epdft2hdjosihgy3onxj.jpg",
-        name: "AS-IT-IS Nutrition Whey Protien Concentrate",
+        name: "AS-IT-IS Whey Protien Concentrate",
         desc: "packet of 1000gm powder",
         mrp: 2249,
         off: 18,
@@ -179,7 +179,7 @@ var productsFeatured = [
       {
         image_url:
          "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612853374/myadq5zcwsrzepyibkc5.jpg",
-        name: "Protinex Original Health and Nutritional Drink",
+        name: "Protinex Original Nutritional Drink",
         desc: "Tin of 400gm Powder",
         mrp: 615,
         off: 9,
@@ -221,3 +221,5 @@ var productsFeatured = [
         star:4.4
       },
 ];
+
+export default productsFeatured;

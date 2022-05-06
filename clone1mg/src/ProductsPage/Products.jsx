@@ -1,10 +1,11 @@
 import productsFeatured from "../database/ProductsFeat"
 import React from 'react'
 import Cards from "./Cards"
+import styles from "./Products.module.css"
 
 
 const Products = () => {
-    
+    console.log(productsFeatured);
     
   return (
     <div>
@@ -15,13 +16,16 @@ const Products = () => {
                <option>by rating</option>
                <option>by review</option>
            </select>
-        {productsFeatured.map((el,index)=>{
-           return(
-            <div className="cards">
-            <Cards key={index} value={el} />
-            </div> 
-           )
-        })}   
+         <div className={styles.container}>
+            {productsFeatured.map((el,index)=>{
+            return(
+                <div className="cards">
+                <Cards key={index} value={el} />
+                </div> 
+            )
+            })}   
+         </div>
+
        
         </div> 
     </div>
