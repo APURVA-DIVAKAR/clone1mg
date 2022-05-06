@@ -10,26 +10,24 @@ import "../Styles/Product_swiper.css";
 
 // import required modules
 import { Navigation } from "swiper";
+import { Single_slider_product } from "./Single_slider_product";
+import { Products_data } from "../Slider_products/Slider_product";
 
 export const Product_slider = () => {
   return (
-    <Swiper
-      slidesPerView={4}
-      spaceBetween={10}
-      slidesPerGroup={4}
-      navigation={true}
-      modules={[Navigation]}
-      className="mySwiper"
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide>
-    </Swiper>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={10}
+        slidesPerGroup={4}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
+        {Products_data.map((el) => (
+          <SwiperSlide key={el.id}>
+            <Single_slider_product {...el} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
   );
 };
