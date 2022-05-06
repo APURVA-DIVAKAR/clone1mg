@@ -69,7 +69,6 @@ export const Cart_div = styled.div`
     font-size: 16px;
     font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
- 
 
   #bodyRight {
     /* border: 1px solid orange; */
@@ -344,5 +343,28 @@ export const Cart_div = styled.div`
   .smallbox1 {
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  }
+
+  #Empty_cart {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      height: 300px;
+      text-align: center;
+      line-height: 30px;
+
+      > a {
+        background-color: #ff6f61;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        font-weight: 400;
+      }
+    }
   }
 `;

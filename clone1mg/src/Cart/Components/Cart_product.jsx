@@ -5,7 +5,16 @@ import { get_data } from "../../Redux/actions";
 import { Cart_product_style } from "../Style/Cart_Product_style";
 // import { Cart_products } from "./Medora.styled";
 
-const Cart_product = ({ name, MRP, price, bottle, id, qty }) => {
+const Cart_product = ({
+  name,
+  MRP,
+  price,
+  bottle,
+  id,
+  qty,
+  varChange,
+  funcChange,
+}) => {
   const [count, setCount] = React.useState(qty);
   const dispatch = useDispatch();
 
@@ -24,6 +33,25 @@ const Cart_product = ({ name, MRP, price, bottle, id, qty }) => {
             get_data(dispatch);
           })
           .catch((err) => console.error(err));
+      })
+      .catch((err) => console.error(err));
+  };
+
+  const handleQty = () => {
+    fetch(`http://localhost:8080/Cart/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        qty: count,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        funcChange(!varChange);
+        console.log("data:", data);
+        get_data(dispatch);
       })
       .catch((err) => console.error(err));
   };
@@ -62,6 +90,7 @@ const Cart_product = ({ name, MRP, price, bottle, id, qty }) => {
                   onClick={() => {
                     if (count > 1) {
                       setCount(count - 1);
+                      handleQty();
                     } else {
                       handleDelete();
                     }
@@ -73,7 +102,10 @@ const Cart_product = ({ name, MRP, price, bottle, id, qty }) => {
                 <img
                   src="https://www.1mg.com/images/plus-cart.svg"
                   alt="increase"
-                  onClick={() => setCount(count + 1)}
+                  onClick={() => {
+                    handleQty();
+                    setCount(count + 1);
+                  }}
                 />
               </div>
             </div>
