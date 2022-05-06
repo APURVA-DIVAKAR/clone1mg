@@ -3,15 +3,23 @@ import React from "react";
 import { Product_slider } from "../../individual_product_page/Components/Product_slider";
 import { Cart_div } from "../Style/Cart_style";
 import Cart_product from "./Cart_product";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { get_data } from "../../Redux/actions";
 
 export const Cart_com = () => {
   const [isSelected, setIsSelected] = React.useState(false);
+  const dispatch = useDispatch();
+  let Mtotal = 0;
+  let Dtotal = 0;
+  let Ptotal = 0;
+
   const { cartData } = useSelector((state) => {
-    console.log(state);
     return state;
   });
-  console.log("data:", cartData);
+
+  React.useEffect(() => {
+    get_data(dispatch);
+  }, []);
 
   return (
     <Cart_div>
@@ -33,9 +41,12 @@ export const Cart_com = () => {
         <div id="body">
           <div id="bodyLeft">
             <p>Items NOT Requiring Prescription ({cartData.length})</p>
-            {cartData.map((el) => (
-              <Cart_product Key={el.id} {...el} />
-            ))}
+            {cartData.map((el) => {
+              Mtotal += el.MRP;
+              Ptotal += el.price;
+              Dtotal += el.MRP - el.price;
+              return <Cart_product key={el.id} {...el} />;
+            })}
             <div className="smallbox0">
               <p>Last Minute Buys</p>
               <div className="smallbox1">
@@ -128,11 +139,11 @@ export const Cart_com = () => {
             <div>
               <div className="cartSummary">
                 <span>Item Total(MRP)</span>
-                <span id="cartSummarymrp">₹1990</span>
+                <span id="cartSummarymrp">₹{Mtotal}</span>
               </div>
               <div className="cartSummary">
                 <span>Price Discount</span>
-                <span id="cartSummaryDiscount">-₹995</span>
+                <span id="cartSummaryDiscount">-₹{Dtotal.toFixed(2)}</span>
               </div>
               <hr />
               <div className="cartSummary">
@@ -142,11 +153,11 @@ export const Cart_com = () => {
               <hr />
               <div className="cartSummary" id="fontbold">
                 <span>To be paid</span>
-                <span id="cartSummaryToBePaid">₹995</span>
+                <span id="cartSummaryToBePaid">₹{Ptotal}</span>
               </div>
               <div id="cartTotalSavings">
                 <span id="totalSavingFont">Total Savings</span>
-                <span id="totalSavingGreen">₹995</span>
+                <span id="totalSavingGreen">₹{Dtotal.toFixed(2)}</span>
               </div>
             </div>
             <div id="checkoutBox">
