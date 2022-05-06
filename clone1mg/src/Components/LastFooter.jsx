@@ -3,7 +3,7 @@ import React from "react";
 export default function LastFooter() {
   return (
     <>
-      <div>
+      <div style={{ boxShadow: "2px 0 4px 0 rgb(0 0 0 / 12%)" }}>
         <div className="style__f14___1FE-V">
           <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
         </div>
@@ -270,7 +270,7 @@ export default function LastFooter() {
             </div>
           </div>
           <div className="style__auth-cont___2vf7G">
-            <div class="affordable "></div>
+            <div className="affordable "></div>
             <div>
               <h5>Affordable</h5>
               <p>
@@ -282,26 +282,34 @@ export default function LastFooter() {
           </div>
         </div>
         <div>
-            <div className="style__trust-stamps____4BQl">
-                <img src="https://static.legitscript.com/seals/729605.png" />
-                <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" />
-            </div>
-            <div className="style__free-text3___3upNE">
-            India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform
-            </div>
+          <div className="style__trust-stamps____4BQl">
+            <img src="https://static.legitscript.com/seals/729605.png" />
+            <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" />
+          </div>
+          <div className="style__free-text3___3upNE">
+            India's only LegitScript and ISO/ IEC 27001 certified online
+            healthcare platform
+          </div>
         </div>
-        <hr style={{color:"grey"}} />
-        <div className="style__collapse___1sCdv" >
-            <h2 style={{fontSize:"14px"}} >Know more about Tata 1mg</h2>
+        <hr style={{ color: "grey" }} />
+        <div className="style__collapse___1sCdv">
+          <h2 style={{ fontSize: "14px" }}>Know more about Tata 1mg</h2>
         </div>
-        <hr style={{color:"grey"}}  />
+        <hr style={{ color: "grey" }} />
         <div className="style__b-text___uV-wn">
-            <div>
-                <p className="style__copyright___qclAW" >© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
-            </div>
-            <div className="payment">
-                <img  style={{width:"70px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKbg7AtKrub1HrftwJsuCH3eXD2qDZ-3kcA&usqp=CAU" />
-            </div>
+          <div>
+            <p className="style__copyright___qclAW">
+              © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and
+              Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't
+              process requests for Schedule X and other habit forming drugs.
+            </p>
+          </div>
+          <div className="payment">
+            <img
+              style={{ width: "70px" }}
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKbg7AtKrub1HrftwJsuCH3eXD2qDZ-3kcA&usqp=CAU"
+            />
+          </div>
         </div>
       </div>
     </>
