@@ -16,13 +16,18 @@ import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 import Products from "./ProductsPage/Products";
+import { Cart_com } from "./Cart/Components/Cart_com";
+import { Navbar_search } from "./Navbar/Components/Navbar_search";
+import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
+      {/* <Navbar /> */}
+      {/* <Individual_Product_Page /> */}
+      <Cart_com />
+{/* 
        <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Upload" element={<Upload />}></Route>
@@ -31,10 +36,10 @@ function App() {
 
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
         <Route path="/Products" element={<Products />}></Route>
-      </Routes>
+      </Routes> */}
       
-      <LastsecFooter />
-      <LastFooter />
+      {/* <LastsecFooter /> */}
+      {/* <LastFooter /> */}
     </div>
   );
 }
