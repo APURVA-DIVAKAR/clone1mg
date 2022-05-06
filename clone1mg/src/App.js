@@ -27,8 +27,8 @@ function App() {
       {/* <Navbar /> */}
       {/* <Individual_Product_Page /> */}
       <Cart_com />
-{/* 
-       <Routes>
+
+       {/* <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Upload" element={<Upload />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
@@ -36,11 +36,11 @@ function App() {
 
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
        
-      </Routes>
+      </Routes> */}
       
-      <LastsecFooter />
+      {/* <LastsecFooter />
       <LastFooter />
-      <Products/>
+      <Products/> */}
     </div>
   );
 }
