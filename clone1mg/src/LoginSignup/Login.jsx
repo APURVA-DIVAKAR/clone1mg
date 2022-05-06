@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import {Box,Blok} from "./Login.styled"
 import { LoginContext } from './LoginProvider';
+import { AiFillCloseCircle } from 'react-icons/ai'
 
 
 const Login = () => {
@@ -20,6 +21,7 @@ const Login = () => {
      onClick={toggle}
    >Login</button>
    <Box block={Clicked}>
+           <AiFillCloseCircle style={{width: '5%', height: '5%',marginLeft:'95%' }} onClick={toggle} />
        <Blok>
        <div style={{display: 'flex', }} >
      
@@ -53,7 +55,7 @@ const Login = () => {
                src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png"
                alt=""
              />
-             </SwiperSlide>g
+             </SwiperSlide>
            <p style={{textAlign: 'justifiy'}}>Make Healthcare Simpler</p>
             <p  style={{textAlign: 'justifiy',paddingBottom:"10px"}}>Get medicine information, order medicines, book lab tests and consult doctors online from the comfort of your home.</p>
            </Swiper>

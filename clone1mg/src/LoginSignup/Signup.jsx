@@ -10,6 +10,8 @@ import { Pagination, Autoplay } from "swiper";
 import {Box,Blok} from "./Signup.styled"
 import { SignupContext } from './SignupProvider';
 import {useContext} from 'react'
+import { AiFillCloseCircle } from 'react-icons/ai'
+import styles from './signup.module.css'
 
 const Signup = () => {
     const {Clicked,setClicked,toggle} = useContext(SignupContext)
@@ -20,10 +22,11 @@ const Signup = () => {
     onClick={toggle}
    >SignUp</button> 
  <Box  block={Clicked}>
+    <AiFillCloseCircle style={{width: '5%', height: '5%',marginLeft:'95%' }} onClick={toggle} />
     <Blok>
     <div style={{display: 'flex', justifyContent:'space-around', width:"75%" ,height:"70%", margin:"auto"}} >
      
-     <div style={{width: '30%',margin:"auto"}}>
+     <div style={{width: '40%',margin:"auto"}}>
          <Swiper
            pagination={true}
            modules={[Pagination, Autoplay]}
@@ -58,7 +61,7 @@ const Signup = () => {
             <p style={{textAlign: 'justifiy',paddingBottom:"10px"}} >Get medicine information, order medicines, book lab tests and consult doctors online from the comfort of your home.</p>
            </Swiper>
    </div>        
-    <div style={{textAlign: 'center'}}>
+    <div style={{textAlign: 'center'}} className={styles.form}>
            <h1>Sign Up</h1>
            <p>Please enter your Mobile number to receive One Time Password (OTP)</p>
            <br/>

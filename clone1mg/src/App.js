@@ -13,6 +13,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Home_page/Home";
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
+import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 
 function App() {
   return (

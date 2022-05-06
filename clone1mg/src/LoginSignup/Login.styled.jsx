@@ -16,7 +16,7 @@ export const Box =styled.div `
 
 export const Blok =styled.div `
 background-color: #fefefe;
-margin: 15% auto; /* 15% from the top and centered */
+margin: 5% auto; /* 5% from the top and centered */
 padding: 20px;
 border: 1px solid #888;
 width: 60%; /* Could be more or less, depending on screen size */
