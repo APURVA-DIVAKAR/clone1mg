@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import { Cart_product_style } from "../Style/Cart_Product_style";
 // import { Cart_products } from "./Medora.styled";
 
-const Cart_product = ({ product, setCart }) => {
+const Cart_product = ({ name, MRP, Price, bottels }) => {
   const handleDelete = () => {
-    fetch(`http://localhost:8080/Cart/${product.id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        fetch("http://localhost:8080/Cart")
-          .then((response) => response.json())
-          .then((data) => {
-            setCart(data);
-          })
-          .catch((err) => console.error(err));
-      })
-      .catch((err) => console.error(err));
+    // fetch(`http://localhost:8080/Cart/${product.id}`, {
+    //   method: "DELETE",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     fetch("http://localhost:8080/Cart")
+    //       .then((response) => response.json())
+    //       .then((data) => {
+    //         setCart(data);
+    //       })
+    //       .catch((err) => console.error(err));
+    //   })
+    //   .catch((err) => console.error(err));
   };
 
   return (
@@ -28,17 +28,19 @@ const Cart_product = ({ product, setCart }) => {
       <Link to="">
         <div id="leftPurchaseDetail">
           <div>
-            <div id="leftPurchaseName">Show the Product detail here</div>
+            <div id="leftPurchaseName">{name}</div>
             <div id="leftPurchasePrice">
               <div>
-                ₹<b id="leftPurchasePriceFirst">995</b>
-              </div>
-              <div id="leftPruchaseMrp">
-                MRP &nbsp; ₹<span id="mrpdash">1990</span>
+                ₹<b id="leftPurchasePriceFirst">{Price}</b>
               </div>
             </div>
           </div>
-          <div id="quant">bottles of 60 tablets</div>
+          <div>
+            <div id="quant">{bottels}</div>
+            <div id="leftPruchaseMrp">
+              MRP &nbsp; ₹<span id="mrpdash">{MRP}</span>
+            </div>
+          </div>
           <div id="removeItem">
             <div>
               <div className="remove">

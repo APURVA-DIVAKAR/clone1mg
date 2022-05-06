@@ -34,7 +34,7 @@ export const Cart_com = () => {
           <div id="bodyLeft">
             <p>Items NOT Requiring Prescription ({cartData.length})</p>
             {cartData.map((el) => (
-              <Cart_product Key={el.id} />
+              <Cart_product Key={el.id} {...el} />
             ))}
             <div className="smallbox0">
               <p>Last Minute Buys</p>

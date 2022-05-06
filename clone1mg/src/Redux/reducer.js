@@ -8,6 +8,8 @@ let initState = {
       id: 1,
       name: "Flamingo Orthopaedic Heating Belt XL",
       bottels: "packet of 1 Belt",
+      MRP: 990,
+      Price: 830,
     },
   ],
   isAuth: false,

@@ -25,8 +25,8 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
-      {/* <Individual_Product_Page /> */}
-      <Cart_com />
+       {/* <Individual_Product_Page /> */}
+       <Cart_com /> 
 
        {/* <Routes>
         <Route path="/" element={<Home />}></Route>
