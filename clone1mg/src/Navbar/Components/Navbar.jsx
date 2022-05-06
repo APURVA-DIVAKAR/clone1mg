@@ -58,12 +58,14 @@ export const Navbar = () => {
             <div>Offers</div>
             <div className="cart_icon">
               <div className="cart_svg">
-                <ul class="Cart_Counter_PopUp">
+                <ul className="Cart_Counter_PopUp">
                   <li>
-                    <span class="CartCounterPopUp__summary___1Ff-x">
+                    <span className="CartCounterPopUp__summary___1Ff-x">
                       Order Summary
                     </span>
-                    <span class="CartCounterPopUp__count___3cYl6">0 Item</span>
+                    <span className="CartCounterPopUp__count___3cYl6">
+                      0 Item
+                    </span>
                   </li>
                   <li>
                     <a
@@ -71,7 +73,7 @@ export const Navbar = () => {
                       data-auto-proceed-cart="true"
                       data-attribute="cart-counter-popup"
                     >
-                      <span class="CartCounterPopUp__proceed___vJFRh">
+                      <span className="CartCounterPopUp__proceed___vJFRh">
                         PROCEED TO CART
                       </span>
                     </a>

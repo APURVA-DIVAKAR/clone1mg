@@ -47,16 +47,7 @@ export const Doc = styled.div`
     animation: apear 0.3s ease-in-out;
   }
 
-  @keyframes apear {
-    0% {
-      opacity: 0;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+
 
   .addcontainer {
     width: 100%;

@@ -1,0 +1,40 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 677px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide {
+  width: fit-content;
+  margin-right: 0px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 55px;
+  top: 172px;
+}
+
+.swiper-button-next::after {
+  width: 58px;
+  height: 58px;
+  content: "" !important;
+  background-image: url("https://www.1mg.com/images/next-round.svg");
+}
+
+.swiper-button-prev::after {
+  width: 58px;
+  height: 58px;
+  content: "" !important;
+  background-image: url("https://www.1mg.com/images/prev-round.svg");
+}
+
+.swiper-button-disabled::after {
+  background-image: none;
+}
