@@ -16,6 +16,7 @@ import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 import Products from "./ProductsPage/Products";
+import Address from "./Address/Address";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
       
       <LastsecFooter />
       <LastFooter />
-      <Products/>
+      <Address/>
     </div>
   );
 }

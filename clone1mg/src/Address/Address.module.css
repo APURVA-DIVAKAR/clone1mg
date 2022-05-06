@@ -1,0 +1,31 @@
+.address{
+    width:90%;
+    margin: auto;
+}
+h2{
+    color:black
+}
+.form{
+   width: 40%;
+   gap: 10px;
+}
+.form>input{
+    width: 100%;
+    margin-top: 10px;
+    font-size:18px;
+    padding:5px;
+}
+.form>input:nth-child(1){
+    height:60px;
+    padding:0px;
+}
+.flexip{
+    display:flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.flexbtn{
+    display:flex;
+    margin-left: 70%;
+    gap:10px;
+}
