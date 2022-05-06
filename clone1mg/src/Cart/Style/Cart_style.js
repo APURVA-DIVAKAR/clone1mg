@@ -423,5 +423,6 @@ export const Cart_div = styled.div`
 
   .smallbox1 {
     background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   }
 `;

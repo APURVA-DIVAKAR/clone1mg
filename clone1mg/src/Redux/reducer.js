@@ -3,7 +3,12 @@ import { ADD_TO_CART, LOADING } from "./aciton_type";
 let initState = {
   isloading: false,
   isError: false,
-  cartData: [],
+  cartData: [
+    {
+      name: "Flamingo Orthopaedic Heating Belt XL",
+      bottels: "packet of 1 Belt",
+    },
+  ],
   isAuth: false,
   Addresses: [],
 };
