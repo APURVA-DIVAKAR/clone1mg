@@ -8,7 +8,12 @@ export const Product_div = () => {
     <>
       <Upper_div>
         <div>
-          <div className="Swiper_image"></div>
+          <div className="Swiper_image">
+              <img
+                src="https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1649145896/dk8ubvz6wizprqmfsfav.jpg"
+                alt=""
+              />
+          </div>
           <div className="Image_div">
             <img
               src="https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1649145896/dk8ubvz6wizprqmfsfav.jpg"

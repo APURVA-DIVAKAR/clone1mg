@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Product = styled.div``;
 
 export const Upper_div = styled.div`
-  margin: 0 0 20px;
+  margin: 40px 0 20px;
   padding: 12px 100px 10px;
   min-height: 450px;
   display: flex;
@@ -13,6 +13,19 @@ export const Upper_div = styled.div`
   > div {
     width: 33.33333333%;
     // border: red solid;
+  }
+
+  > div:first-child {
+    display: flex;
+
+    .Swiper_image {
+      height: 58px;
+      width: 53px;
+      border: 1px solid #ff6f61;
+      > img {
+        max-height: 58px;
+      }
+    }
   }
 
   .title {
