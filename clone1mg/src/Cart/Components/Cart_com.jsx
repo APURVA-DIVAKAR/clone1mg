@@ -2,9 +2,16 @@ import { Link } from "@mui/material";
 import React from "react";
 import { Product_slider } from "../../individual_product_page/Components/Product_slider";
 import { Cart_div } from "../Style/Cart_style";
+import Cart_product from "./Cart_product";
+import { useSelector } from "react-redux";
 
 export const Cart_com = () => {
   const [isSelected, setIsSelected] = React.useState(false);
+  const { cartData } = useSelector((state) => {
+    console.log(state);
+    return state;
+  });
+  console.log("data:", cartData);
 
   return (
     <Cart_div>
@@ -25,48 +32,10 @@ export const Cart_com = () => {
         </div>
         <div id="body">
           <div id="bodyLeft">
-            <p>Items NOT Requiring Prescription (0)</p>
-            <div id="leftPurchaseDetail">
-              <div>
-                <div id="leftPurchaseName">Show the Product detail here</div>
-                <div id="leftPurchasePrice">
-                  <div>
-                    ₹<b id="leftPurchasePriceFirst">995</b>
-                  </div>
-                  <div id="leftPruchaseMrp">
-                    MRP &nbsp; ₹<span id="mrpdash">1990</span>
-                  </div>
-                </div>
-              </div>
-              <div id="quant">bottles of 60 tablets</div>
-              <div id="removeItem">
-                <div>
-                  <div className="remove">
-                    <img
-                      src="https://img.1mg.com/images/delete_icon.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="remove">Remove</div>
-                </div>
-                <div>
-                  <div id="dec">
-                    <img
-                      src="https://www.1mg.com/images/minus-cart.svg"
-                      alt="decrease"
-                      className=""
-                    />
-                  </div>
-                  <div id="betweenIncDec">1 </div>
-                  <div id="inc">
-                    <img
-                      src="https://www.1mg.com/images/plus-cart.svg"
-                      alt="increase"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p>Items NOT Requiring Prescription ({cartData.lenght})</p>
+            {cartData.map((el) => (
+              <Cart_product Key={el.id} />
+            ))}
             <div className="smallbox0">
               <p>Last Minute Buys</p>
               <div className="smallbox1">

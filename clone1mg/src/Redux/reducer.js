@@ -1,4 +1,4 @@
-import { ADD_TO_CART, LOADING } from "./aciton_type";
+import { ADD_TO_CART, ERROR, LOADING } from "./aciton_type";
 
 let initState = {
   isloading: false,
@@ -25,7 +25,7 @@ export const reducer = (state = initState, { type, payload }) => {
     case ADD_TO_CART: {
       return {
         ...state,
-        cartData: [...cartData, payload],
+        cartData: [...state.cartData, payload],
       };
     }
     case ERROR: {
