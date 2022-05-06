@@ -14,6 +14,7 @@ import Home from "./Home_page/Home";
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
+import Products from "./ProductsPage/Products";
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
+        <Route path="/Products" element={<Products />}></Route>
       </Routes>
-       <Signup/>
-       <Login/>
+      
       <LastsecFooter />
       <LastFooter />
     </div>
