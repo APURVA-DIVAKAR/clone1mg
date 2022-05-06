@@ -1,218 +1,214 @@
+.covid {
+  display: flex;
+  background-color: linen;
+  width: 100%;
+  padding: 8%;
+  justify-content: space-around;
+  max-width: fit-content;
+}
+.covid > div {
+  width: 40%;
+}
+.covid > div > img {
+  width: 100%;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.covid > p,
+h2,
+h4,
+h5,
+h6,
+h3 {
+  color: slategrey;
+}
+.sec {
+  display: flex;
+  width: 90%;
+  background-color: linen;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 30px;
+  /* justify-content:space-around; */
+}
+.first {
+  padding: 5%;
+}
+.im {
+  padding-left: 16%;
+}
+.im > img {
+  width: 400px;
+}
+.first > button {
+  width: 35%;
+  height: 40px;
+  font-size: 25px;
+  background-color: lightcoral;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.ess {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+.flex {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.flex > div {
+  cursor: pointer;
+}
 
-.covid{
-    display: flex;
-    background-color : linen ;
-    width: 100%;
-    padding:8%;
-    justify-content:space-around;
-    max-width: fit-content;
+.flex > div > img {
+  width: 100%;
 }
-.covid>div{
-    width:40%;
+.manag {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 85%;
+  margin: auto;
 }
-.covid>div>img{
-    width:100%;
+.manag > div {
+  padding: 15px;
 }
-*{
-    font-family: 'Poppins', sans-serif;
+.one {
+  padding: -0px;
+  margin-bottom: -90px;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  background-color: brown;
+  border-radius: 0px 0px 10px 10px;
 }
-p,h2,h4,h5,h6,h3{
-    color:slategrey
+.two {
+  padding: -0px;
+  margin-top: 20px;
+  margin-bottom: -100px;
+  padding-top: 10px;
+  font-size: 20px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: darkslategray;
 }
-.sec{ 
-    display:flex;
-    width:90%;
-    background-color:linen;
-    margin: auto;
-    margin-top:5%;
-    border-radius: 30px;
-    /* justify-content:space-around; */
-
+.last {
+  padding: -0px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: darkolivegreen;
 }
-.first{
-   padding:5%;
+.tata {
+  background-color: bisque;
+  color: darkolivegreen;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
 }
-.im{
-    padding-left:16%;
+.tata > button {
+  background-color: beige;
+  border: 1px solid darkred;
+  border-radius: 15px;
+  padding: 10px;
 }
-.im>img{
-    width:400px;
+.tata > p {
+  color: olivedrab;
 }
-.first>button{
-    width: 35%;
-    height:40px;
-    font-size :25px;
-    background-color : lightcoral ;
-    color:whitesmoke;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-
+.co {
+  padding: 5%;
+  margin-top: 5%;
+  background-color: linen;
 }
-.ess{
-    width:80%;
-    margin:auto;
-    margin-top:5%;
+.coral {
+  background-color: coral;
+  color: whitesmoke;
+  font-size: 20px;
+  width: 280px;
+  /* border-radius:20px; */
+  border: none;
 }
-.flex{
-    display: grid;
-    width:100%;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-
+.lan {
+  background-color: bisque;
+  width: 280px;
+  margin-top: -20px;
 }
-.flex>div{
-    cursor: pointer;
+.lan1 {
+  background-color: darkgoldenrod;
+  padding: 5px;
 }
-
-.flex>div>img{
-    width:100%
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
 }
-.manag{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-    width: 85%;
-    margin: auto;
+.grid > div > button {
+  background-color: coral;
+  color: whitesmoke;
+  width: 100%;
+  font-size: 20px;
 }
-.manag>div{
-    padding:15px;
+.grid > div > img {
+  width: 100%;
 }
-.one{ 
-    padding:-0px;
-    margin-bottom:-90px;
-    margin-top: 20px;
-    padding-top:10px;
-    font-size: 20px;
-    background-color:brown;
-    border-radius: 0px 0px 10px 10px;
+.art > div > button {
+  background-color: coral;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
 }
-.two{ 
-    padding:-0px;
-    margin-top: 20px;
-    margin-bottom:-100px;
-    padding-top:10px;
-    font-size: 20px;
-    border-radius: 0px 0px 10px 10px;
-    background-color:darkslategray
+.art1 > div > button {
+  background-color: coral;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
 }
-.last{ 
-    padding:-0px;
-    margin-bottom:-20px;
-    margin-top: 20px;
-    padding-top:10px;
-    font-size: 20px;
-    border-radius: 0px 0px 10px 10px;
-    background-color:darkolivegreen
+.art {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: linen;
+  padding: 20px 0px 20px 20px;
 }
-.tata{
-    background-color:bisque;
-    color: darkolivegreen;
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-    border-radius:10px;
-    margin-top:5%;
+.art > div > img {
+  width: 280px;
 }
-.tata>button{
-    background-color:beige;
-    border:1px solid darkred;
-    border-radius:15px;
-    padding:10px;
-    
+.art1 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: linen;
+  padding: 20px 0px 20px 20px;
 }
-.tata>p{
-    color:olivedrab
+.art1 > div > img {
+  width: 280px;
+  padding-left: 180px;
 }
-.co{
-   
-    padding:5%;
-    margin-top:5%;
-    background-color:linen
+.video {
+  width: 90%;
+  background-color: linen;
+  margin: auto;
+  margin-top: 5%;
+  padding: 30px;
 }
-.coral{
-    background-color:coral;
-    color:whitesmoke;
-    font-size:20px;
-    width:280px;
-    /* border-radius:20px; */
-    border:none;
-
+.vid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.lan{
-    background-color:bisque;
-    width:280px;
-    margin-top: -20px;
-}
-.lan1{
-    background-color:darkgoldenrod;
-    padding:5px;
-
-}
-.grid{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:19px;
-
-}
-.grid>div>button{
-    background-color:coral;
-    color:whitesmoke;
-    width:100%;
-    font-size: 20px;
-}
-.grid>div>img{
-    width:100%;
-}
-.art>div>button{
-    background-color:coral;
-    color:whitesmoke;
-    font-size: 18px;
-    padding:5px;
-    border:none;
-}
-.art1>div>button{
-    background-color:coral;
-    color:whitesmoke;
-    font-size: 18px;
-    padding:5px;
-    border:none;
-}
-.art{
-    display:flex;
-    width: 90%;
-    margin: auto;
-    margin-top:5%;
-    background-color:linen;
-    padding: 20px 0px 20px 20px
-}
-.art>div>img{
-    width:280px;
-}
-.art1{
-    display:flex;
-    width: 90%;
-    margin: auto;
-    margin-top:5%;
-    background-color:linen;
-    padding: 20px 0px 20px 20px
-}
-.art1>div>img{
-    width:280px;
-    padding-left: 180px;
-}
-.video{
-    width: 90%;
-    background-color:linen;
-    margin:auto;
-    margin-top:5%;
-    padding: 30px;
-}
-.vid{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:20px;
-}
-.dri{
-    padding-left: 290px;
+.dri {
+  padding-left: 290px;
 }
