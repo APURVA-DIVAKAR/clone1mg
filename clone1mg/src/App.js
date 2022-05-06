@@ -27,11 +27,12 @@ function App() {
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
-        <Route path="/Products" element={<Products />}></Route>
+       
       </Routes>
       
       <LastsecFooter />
       <LastFooter />
+      <Products/>
     </div>
   );
 }
