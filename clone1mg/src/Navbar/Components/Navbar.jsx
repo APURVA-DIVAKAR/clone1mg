@@ -37,7 +37,7 @@ export const Navbar = () => {
                 <Link to="/Covid">COVID-19</Link>
               </div>
               <div>
-                <Link to="/">AYURVEDA</Link>
+                <Link to="/Ayurveda">AYURVEDA</Link>
               </div>
               <div>
                 <Link to="/">CARE PLAN</Link>

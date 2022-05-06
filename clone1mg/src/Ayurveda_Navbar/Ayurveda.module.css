@@ -12,44 +12,44 @@
 .flex>div>img{
     width:100%
 } */
-.istcontainer{
-    display: grid;
-    width:100%;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-    background-color: rgb(255,255,255);
+.istcontainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
 }
-.featuredhbs{
-    color: red;
+.featuredhbs {
+  color: red;
 }
-.featuredhbs{
-    padding: 20px;
-    font-size: 20px;
-    color:#212121;
-    font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+.featuredhbs {
+  padding: 20px;
+  font-size: 20px;
+  color: #212121;
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.Ashwagandha{
+.Ashwagandha {
   margin: auto;
-    height:200px;
-    width:100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-body{
-    font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.istcontainer{
-    display:flex;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    justify-content:space-evenly;
+.istcontainer {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: space-evenly;
 }
 
 .istcontainer > div {
   width: fit-content;
-  height: fit-content;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,11 +60,10 @@ body{
 
 .istcontainer > div > p {
   font-size: 12px;
-  opacity: .87;
-  margin: 5px 10px; 
+  opacity: 0.87;
+  margin: 5px 10px;
 }
 
-
-.istcontainer>div:hover{
+.istcontainer > div:hover {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
 }

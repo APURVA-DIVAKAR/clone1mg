@@ -3,11 +3,11 @@ import "./App.css";
 import { Navbar } from "./Navbar/Components/Navbar";
 // import Signup from "./LoginSignup/Signup";
 import "./App.css";
-import LastsecFooter from "./components/LastsecFooter";
-import LastFooter from "./components/LastFooter";
+import LastsecFooter from "./Components/LastsecFooter";
+import LastFooter from "./Components/LastFooter";
 
 import Covid from "./COVID19/Covid";
-import Upload from "./components/UPLOAD/Upload";
+import Upload from "./Components/UPLOAD/Upload";
 import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home_page/Home";
@@ -22,8 +22,10 @@ import Address from "./Address/Address";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
+      {/* <Navbar /> */}
+      {/* <Individual_Product_Page /> */}
+      <Cart_com />
+ 
        <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Upload" element={<Upload />}></Route>
