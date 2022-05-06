@@ -8,6 +8,7 @@ h2{
 .form{
    width: 40%;
    gap: 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .form>input{
     width: 100%;
