@@ -47,7 +47,7 @@ p9 {
   /* height: 100%; */
   width:auto;
   transition: transform(15px);
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .card:hover {
   transform: translate(-2%, -2%);

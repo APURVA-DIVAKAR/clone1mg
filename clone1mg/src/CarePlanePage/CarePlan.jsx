@@ -1,5 +1,5 @@
 import React from "react";
-import LastFooter from "../Components/LastFooter";
+// import LastFooter from "../Components/LastFooter";
 
 export default function CarePlan() {
   return (
