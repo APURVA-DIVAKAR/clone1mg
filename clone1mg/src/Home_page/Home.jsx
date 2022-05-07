@@ -16,7 +16,7 @@ import Trending from "./Home_products/Trending.jsx";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f1f4f6" }}>
       <Navbar_search />
       <Navbar_dropdown />
       <Advertisement />
