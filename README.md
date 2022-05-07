@@ -57,12 +57,12 @@
 
 # Team
 
-- @Aditya Yadav 
+- [Aditya Yadav](https://github.com/Ajayraoyadav) 
 - [Apurva Divakar](https://github.com/APURVA-DIVAKAR)
-- @Devesh Goyal
-- @K Bushra Jabeen
-- @Nikhil Hirulkar
-- @Swati Sharma
+- [Devesh Goyal](https://github.com/DeveshGoyal26)
+- [K Bushra Jabeen](https://github.com/bushrajabeenk)
+- [Nikhil Hirulkar](https://github.com/nikhilhir)
+- [Swati Sharma](https://github.com/Swatisharma78)
 
 
 
