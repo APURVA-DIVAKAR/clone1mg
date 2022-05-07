@@ -16,6 +16,7 @@ import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 import Products from "./ProductsPage/Products";
+import Address from "./Address/Address";
 
 
 
@@ -27,22 +28,22 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/Cart" element={<Cart_com />}></Route>
+        {/* <Route path="/Cart" element={<Cart_com />}></Route> */}
         <Route path="/Upload" element={<Upload />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
 
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
 
-        <Route
+        {/* <Route
           path="/Products/:id"
           element={<Individual_Product_Page />}
-        ></Route>
+        ></Route> */}
       </Routes>
 
       <LastsecFooter />
       <LastFooter />
-     
+      <Address/>
     </div>
   );
 }
