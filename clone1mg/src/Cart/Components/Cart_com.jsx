@@ -8,7 +8,6 @@ import { get_data } from "../../Redux/actions";
 
 export const Cart_com = () => {
   const [isSelected, setIsSelected] = React.useState(false);
-  const dispatch = useDispatch();
   const [Mtotal, setMtotal] = React.useState(0);
   const [Dtotal, setDtotal] = React.useState(0);
   const [Ptotal, setPtotal] = React.useState(0);
@@ -20,10 +19,6 @@ export const Cart_com = () => {
   const { cartData } = useSelector((state) => {
     return state;
   });
-
-  React.useEffect(() => {
-    get_data(dispatch);
-  }, []);
 
   React.useEffect(() => {
     m = 0;

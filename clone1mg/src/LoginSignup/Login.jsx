@@ -1,4 +1,4 @@
-import React,{ useContext } from 'react'
+import React,{ useContext , useState} from 'react'
 // import { Link } from 'react-router-dom'
 // import 'react-slideshow-image/dist/styles.css'
 // import { Fade } from "react-slideshow-image";
@@ -10,10 +10,15 @@ import { Pagination, Autoplay } from "swiper";
 import {Box,Blok} from "./Login.styled"
 import { LoginContext } from './LoginProvider';
 import { AiFillCloseCircle } from 'react-icons/ai'
+import styles from './login.module.css'
 
 
 const Login = () => {
     const {Clicked,setClicked,toggle} = useContext(LoginContext)
+    const[log,setLog] = useState(false)
+    const handle =()=>{
+      setLog(true)
+    }
   return (
    
    <>
@@ -60,15 +65,15 @@ const Login = () => {
             <p  style={{textAlign: 'justifiy',paddingBottom:"10px"}}>Get medicine information, order medicines, book lab tests and consult doctors online from the comfort of your home.</p>
            </Swiper>
    </div>        
-    <div style={{textAlign: 'center'}}>
+    <div  style={{textAlign: 'center'}}>
            <h1>Login</h1>
            <p>Get access to your orders, lab tests & doctor consultations</p>
            <br/>
-           <input type="text" placeholder="Enter Mobile Number/email" />
+           {log ? <input className={styles.ip} type="number" placeholder="Enter OTP"/> : <input className={styles.ip} type="text" placeholder="Enter Mobile Number/email" /> }
            <br/>
            <input type="checkbox"/><span>Are you a healthcare professional?</span>
            <br/>
-           <button type="submit" onClick={toggle}>Continue</button>
+           <button type="submit" onClick={handle} >Continue</button>
            <p>Have an account?<b style={{"color":"pink"}}>Login</b></p>
            <p>For corporate Sign up,<b style={{"color":"pink"}}>Click Here</b></p>
            <p>By signing up, you agree to our</p>
