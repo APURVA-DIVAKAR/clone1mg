@@ -24,14 +24,35 @@ const ProductDetails = () => {
               <div className="card-image">
                 <img src={item.imgURL} alt={item.name} />
               </div>
-              <p>{item.title}</p>
-              <p1>{item.info}</p1>
-              <br />
-              <p2>{item.rating}</p2>
+              <div className="card-title">{item.title}</div>
+              <div className="card-info">{item.info}</div>
+              <div className="card-rating">
+                <span>
+                  4.2
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="15"
+                    viewBox="0 0 51 48"
+                  >
+                    <path
+                      fill="#ffffff"
+                      stroke="none"
+                      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>{item.rating}</span>
+              </div>
               <div className="price">
-                <h4>{item.sellingPrice}</h4>
-                <p3>{item.mrp}</p3>
-                <p4>{item.discount}</p4>
+                <div className="card-mrp">
+                  <span>MRP</span>
+                  <span>{item.mrp}</span>
+                  <span className="card-discount">{item.discount}</span>
+                </div>
+                <div className="card-price">
+                  <span>{item.sellingPrice}</span>
+                </div>
               </div>
             </div>
           ))}

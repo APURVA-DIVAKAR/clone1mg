@@ -6,7 +6,7 @@ const ShopByConcern = () => {
   return (
     // <div>ShopByConcern</div>
     <>
-      <div>
+      <div className="product_container">
         <div class="cat-title">
           <span className="style__heading___pc8n7">Deals of the day</span>
           <span>
