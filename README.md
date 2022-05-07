@@ -55,14 +55,14 @@
 # Blog
 
 
-#Team
+# Team
 
-- Aditya Yadav 
-- Apurva Divakar
-- Devesh Goyal
-- K Bushra Jabeen
-- Nikhil Hirulkar
-- Swati Sharma
+- @Aditya Yadav 
+- @Apurva Divakar
+- @Devesh Goyal
+- @K Bushra Jabeen
+- @Nikhil Hirulkar
+- @Swati Sharma
 
 
 
