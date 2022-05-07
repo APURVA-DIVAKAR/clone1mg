@@ -1,0 +1,55 @@
+.imge>img{
+    width:200px;
+    height: 200px;
+}
+.imge{
+    padding:20px;
+}
+
+.box{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.box2{
+    padding:20px;
+}
+.box2>h5{
+    margin-bottom:-10px;
+}
+.flexGrenn{
+    display:flex;
+}
+.flexGrenn>button{
+    width:50px;
+    padding:-3px;
+    background-color:green;
+    height:20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.flexPrice{
+    display:flex;
+    gap:6px;
+    margin-bottom: -30px;
+}
+.flexPrice>s{
+   font-size:15px;
+   margin-top:10px;
+   color:grey;
+}
+.flexLast{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+.flexLast>button{
+    background-color:white;
+
+}
+.flexLast>h4{
+    margin-left: -5px;
+}
+
+.flexLast>button>h4{
+    color:lightcoral;
+    
+}
