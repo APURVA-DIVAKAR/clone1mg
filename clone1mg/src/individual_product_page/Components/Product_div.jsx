@@ -1,7 +1,7 @@
 import React from "react";
 import { Upper_div } from "../Styles/Product";
 
-export const Product_div = () => {
+export const Product_div = ({ image_url, name }) => {
   const [show, setShow] = React.useState(false);
 
   return (
@@ -9,21 +9,15 @@ export const Product_div = () => {
       <Upper_div>
         <div>
           <div className="Swiper_image">
-              <img
-                src="https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1649145896/dk8ubvz6wizprqmfsfav.jpg"
-                alt=""
-              />
+            <img src={image_url} alt="product_img" />
           </div>
           <div className="Image_div">
-            <img
-              src="https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1649145896/dk8ubvz6wizprqmfsfav.jpg"
-              alt=""
-            />
+            <img src={image_url} alt="product_img" />
           </div>
         </div>
         <div>
           <div className="title">
-            <h1>Zingavita Vitamin C Amla Extract 1000mg Tablet</h1>
+            <h1>{name}</h1>
             <p>Adthera Consumer Brands Pvt Ltd</p>
           </div>
           <div className="highlights">

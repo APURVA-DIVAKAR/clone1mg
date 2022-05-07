@@ -8,51 +8,53 @@ const Sidebar = () => {
 
       <div className={styles.sidebar}>
         <div>
-          <div style={{ marginTop: "10px" }}>CATEGORIES</div>
+          <div className={styles.CatHeading} style={{ marginTop: "10px" }}>
+            CATEGORIES
+          </div>
           <div className={styles.Featured_div}>FEATURED</div>
           <div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Flash Deals
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Tata 1mg Health Products
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Summer Essential
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Trending Now
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 New Arrivals On Tata 1MG
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Buy More, Save More
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Minimum 33% off
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Combos
               </a>
             </div>
             <div>
-              <a class="active" href="#home">
+              <a className="active" href="#home">
                 Deals Of The Day
               </a>
             </div>
@@ -64,7 +66,7 @@ const Sidebar = () => {
         <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Brands"
           />
@@ -125,7 +127,7 @@ const Sidebar = () => {
 
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Product Tags"
           />
@@ -203,7 +205,7 @@ const Sidebar = () => {
         <div className={styles.filter_heading}>PRODUCT FORM</div>
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Product Form"
           />
@@ -263,7 +265,7 @@ const Sidebar = () => {
         <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Brands"
           />
@@ -323,7 +325,7 @@ const Sidebar = () => {
         <div className={styles.filter_heading}>USES</div>
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Uses"
           />
@@ -383,7 +385,7 @@ const Sidebar = () => {
         <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
-            style={{ width: "90%", height: "30px" }}
+            className={styles.filter_input}
             type="text"
             placeholder="Search Brands"
           />

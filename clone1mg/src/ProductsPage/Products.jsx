@@ -7,9 +7,9 @@ import styles from "./Products.module.css";
 const Products = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
-    let res = await fetch(`http://localhost:8080/productsFeatured`);
+    let res = await fetch(`http://localhost:8080/Featured`);
     let productsFeatured = await res.json();
-    console.log(productsFeatured);
+    // console.log(productsFeatured);
     setData(...data, productsFeatured);
   };
   useEffect(() => {
@@ -33,10 +33,10 @@ const Products = () => {
           </div>
         </div>
         <div className={styles.container}>
-          {data.map((el, index) => {
+          {data.map((el) => {
             return (
-              <div className="cards">
-                <Cards key={index} value={el} />
+              <div key={el.id} className="cards">
+                <Cards value={el} />
               </div>
             );
           })}

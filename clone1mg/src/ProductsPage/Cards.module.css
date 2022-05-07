@@ -40,6 +40,7 @@
   padding: 12px;
   background: #fff;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 7%);
+  cursor: pointer;
 }
 
 .box2 > div:nth-of-type(1) {
@@ -141,4 +142,12 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+}
+
+.link_tag {
+  min-width: 220px;
+  max-width: 200px;
+  height : 300px;
+  position: absolute;
+  z-index: 3;
 }

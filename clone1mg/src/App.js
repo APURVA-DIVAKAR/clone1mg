@@ -41,7 +41,7 @@ function App() {
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
         <Route path="/Products" element={<Main_product_page />}></Route>
         <Route
-          path="/Products/:id"
+          path="/Products/:type/:id"
           element={<Individual_Product_Page />}
         ></Route>
       </Routes>
@@ -50,7 +50,7 @@ function App() {
       <LastFooter />
       <Delivery />
 
-      <Address />
+      {/* <Address /> */}
       {/* <Delivery/> */}
     </div>
   );

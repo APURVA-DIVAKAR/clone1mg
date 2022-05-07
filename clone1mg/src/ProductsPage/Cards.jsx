@@ -1,16 +1,27 @@
 import axios from "axios";
 import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import { get_data } from "../Redux/actions";
 import styles from "./Cards.module.css";
 const Cards = ({ value }) => {
-  console.log(value);
-  const { name, desc, image_url, mrp, off, price, review, star } = value;
+  // console.log(value);
+  const { name, desc, image_url, mrp, off, price, review, star, id } = value;
 
+  const { isAuth } = useSelector((state) => {
+    // console.log(state);
+    return state;
+  });
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleADD = () => {
+    if (!isAuth) {
+      navigate("/Login");
+      return;
+    }
+
     axios
       .post(`http://localhost:8080/Cart`, {
         qty: 1,
@@ -29,6 +40,10 @@ const Cards = ({ value }) => {
 
   return (
     <div className={styles.box}>
+      <Link
+        className={styles.link_tag}
+        to={`/Products/${"Featured"}/${id}`}
+      ></Link>
       <div className={styles.imge}>
         <img src={image_url} alt={name} />
       </div>

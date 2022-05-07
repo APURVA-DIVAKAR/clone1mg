@@ -1,7 +1,9 @@
 import axios from "axios";
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { get_data } from "../../Redux/actions";
+import { AuthContext } from "../../Redux/Login_Auth";
 import { Single_product } from "../Styles/Product";
 
 export const Single_slider_product = ({
@@ -12,9 +14,19 @@ export const Single_slider_product = ({
   price,
   discount,
 }) => {
+  const { isAuth } = useSelector((state) => {
+    // console.log(state);
+    return state;
+  });
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleADD = () => {
+    if (!isAuth) {
+      navigate("/Login");
+      return;
+    }
+
     axios
       .post(`http://localhost:8080/Cart`, {
         qty: 1,
