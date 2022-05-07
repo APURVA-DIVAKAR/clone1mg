@@ -9,7 +9,7 @@ import { get_data } from "../../Redux/actions";
 
 export const Navbar = () => {
   const nevigate = useNavigate();
-  const { cartData } = useSelector((state) => {
+  const { cartData, isAuth, toggleAuth } = useSelector((state) => {
     return state;
   });
   const dispatch = useDispatch();
@@ -59,13 +59,110 @@ export const Navbar = () => {
           </div>
           <div id="loginSignup">
             <div>
-              <a href="login.html" className="logandsign">
-                Login
-              </a>
-              |
-              <a href="signUp.html" className="logandsign">
-                Sign Up
-              </a>
+              {isAuth ? (
+                <div className="userProfile">
+                  <div className="styles__profile-menu___1m4r-">
+                    <ul className="styles__profile-links___3za_6">
+                      <li className="styles__link___xWDD5">Hi Welcome User</li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          href=""
+                          rel="nofollow"
+                          data-auto-profile-view-profile="true"
+                        >
+                          <span>View Profile</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          href=""
+                          rel="nofollow"
+                          data-auto-profile-order-history="true"
+                        >
+                          <span>My Orders</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          href=""
+                          rel="nofollow"
+                          data-auto-profile-reorder="true"
+                        >
+                          <span>Previously Ordered Items</span>
+                          <span className="styles__tag-new___10AJC">NEW</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a href="" data-auto-profile-labs="true">
+                          <span>My Lab Tests</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          href=""
+                          rel="nofollow"
+                          data-auto-profile-consultation="true"
+                        >
+                          <span>My Consultations</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          href=""
+                          rel="nofollow"
+                          data-auto-profile-order-history="true"
+                        >
+                          <span>My Health Records</span>
+                          <span className="styles__tag-new___10AJC">NEW</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a href="">
+                          <span>Manage Payments</span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a href="">
+                          <span className="styles__text-tagged___t9Qbh">
+                            Care Plan
+                          </span>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a href="" rel="nofollow" data-auto-profile-cash="true">
+                          <div className="styles__cash___2FAkp">
+                            <div>
+                              <div>NeuCoins</div>
+                            </div>
+                            <div className="styles__cash-number___3abO2">0</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li className="styles__link___xWDD5">
+                        <a
+                          onClick={() => {
+                            toggleAuth(false);
+                          }}
+                          href=""
+                          data-auto-profile-logout="true"
+                        >
+                          <span>Logout</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <a href="login.html" className="logandsign">
+                    Login
+                  </a>
+                  |
+                  <a href="signUp.html" className="logandsign">
+                    Sign Up
+                  </a>
+                </>
+              )}
             </div>
             <div>Offers</div>
             <div className="cart_icon">
