@@ -28,7 +28,7 @@ export const Add_div = styled.div`
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    width: 100% !important;
+    // width: 100% !important;
     background: #fff;
 
     /* Center slide text vertically */
