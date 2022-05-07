@@ -3,7 +3,7 @@ import React from "react";
 export default function LastFooter() {
   return (
     <>
-      <div>
+      <div style={{ background: "#fffcf8" }}>
         <div className="style__f14___1FE-V">
           <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
         </div>
@@ -21,10 +21,13 @@ export default function LastFooter() {
             <div>Cities</div>
           </div>
         </div>
-        <div className="style__border-btm___1wdot"></div>
+        <hr />
         <div className="style__down-bar___3FV6g">
           <div className="style__f20___2opYM">Get the link to download App</div>
-          <div className="style__input-box___7akGm">
+          <div
+            className="style__input-box___7akGm"
+            style={{ marginTop: "20px" }}
+          >
             <form>
               <input
                 type="tel"
@@ -225,12 +228,12 @@ export default function LastFooter() {
                 </a>
               </li>
               <li>
-                <span class="style__s-head___367TK">
+                <span className="style__s-head___367TK">
                   Want daily dose of health?
                 </span>
               </li>
               <li>
-                <button class="style__signup-btn___2h_dH ">SIGN UP</button>
+                <button className="style__signup-btn___2h_dH ">SIGN UP</button>
               </li>
             </ul>
           </div>
@@ -270,7 +273,7 @@ export default function LastFooter() {
             </div>
           </div>
           <div className="style__auth-cont___2vf7G">
-            <div class="affordable "></div>
+            <div className="affordable "></div>
             <div>
               <h5>Affordable</h5>
               <p>
@@ -282,26 +285,34 @@ export default function LastFooter() {
           </div>
         </div>
         <div>
-            <div className="style__trust-stamps____4BQl">
-                <img src="https://static.legitscript.com/seals/729605.png" />
-                <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" />
-            </div>
-            <div className="style__free-text3___3upNE">
-            India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform
-            </div>
+          <div className="style__trust-stamps____4BQl">
+            <img src="https://static.legitscript.com/seals/729605.png" />
+            <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" />
+          </div>
+          <div className="style__free-text3___3upNE">
+            India's only LegitScript and ISO/ IEC 27001 certified online
+            healthcare platform
+          </div>
         </div>
-        <hr style={{color:"grey"}} />
-        <div className="style__collapse___1sCdv" >
-            <h2 style={{fontSize:"14px"}} >Know more about Tata 1mg</h2>
+        <hr style={{ color: "grey" }} />
+        <div className="style__collapse___1sCdv">
+          <h2 style={{ fontSize: "14px" }}>Know more about Tata 1mg</h2>
         </div>
-        <hr style={{color:"grey"}}  />
+        <hr style={{ color: "grey" }} />
         <div className="style__b-text___uV-wn">
-            <div>
-                <p className="style__copyright___qclAW" >© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
-            </div>
-            <div className="payment">
-                <img  style={{width:"70px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKbg7AtKrub1HrftwJsuCH3eXD2qDZ-3kcA&usqp=CAU" />
-            </div>
+          <div>
+            <p className="style__copyright___qclAW">
+              © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and
+              Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't
+              process requests for Schedule X and other habit forming drugs.
+            </p>
+          </div>
+          <div className="payment">
+            <img
+              style={{ width: "70px" }}
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKbg7AtKrub1HrftwJsuCH3eXD2qDZ-3kcA&usqp=CAU"
+            />
+          </div>
         </div>
       </div>
     </>
