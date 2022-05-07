@@ -58,7 +58,7 @@
 # Team
 
 - @Aditya Yadav 
-- https://github.com/APURVA-DIVAKAR
+- [Apurva Divakar](https://github.com/APURVA-DIVAKAR)
 - @Devesh Goyal
 - @K Bushra Jabeen
 - @Nikhil Hirulkar
