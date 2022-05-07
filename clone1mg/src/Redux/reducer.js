@@ -2,9 +2,14 @@ import {
   ADD_TO_CART,
   ERROR,
   GET_PRODUCTS,
+  HIGH_TO_LOW,
   LOADING,
   LOGED_IN,
   LOGED_OUT,
+  LOW_TO_HIGH,
+  RATING,
+  RELEVANCE,
+  REVIEW,
 } from "./aciton_type";
 
 let initState = {
@@ -14,11 +19,11 @@ let initState = {
   isAuth: false,
   Addresses: [],
   Product_data: [],
+  Fitered_data: [],
   token: localStorage.getItem("token") || "",
 };
 
 export const reducer = (state = initState, { type, payload }) => {
-  console.log('payload:', payload)
   switch (type) {
     case LOADING: {
       return {
@@ -52,7 +57,55 @@ export const reducer = (state = initState, { type, payload }) => {
       };
     }
     case GET_PRODUCTS: {
-      return { ...state, isLoading: false, Product_data: payload };
+      return {
+        ...state,
+        isLoading: false,
+        Product_data: payload,
+        Fitered_data: payload,
+      };
+    }
+    case HIGH_TO_LOW: {
+      return {
+        ...state,
+        isLoading: false,
+        Fitered_data: state.Product_data.filter((el) => el).sort(
+          (a, b) => a.price - b.price
+        ),
+      };
+    }
+    case LOW_TO_HIGH: {
+      return {
+        ...state,
+        isLoading: false,
+        Fitered_data: state.Product_data.filter((el) => el).sort(
+          (a, b) => b.price - a.price
+        ),
+      };
+    }
+    case RELEVANCE: {
+      return {
+        ...state,
+        isLoading: false,
+        Fitered_data: [...state.Product_data],
+      };
+    }
+    case RATING: {
+      return {
+        ...state,
+        isLoading: false,
+        Fitered_data: state.Product_data.filter((el) => el).sort(
+          (a, b) => b.star - a.star
+        ),
+      };
+    }
+    case REVIEW: {
+      return {
+        ...state,
+        isLoading: false,
+        Fitered_data: state.Product_data.filter((el) => el).sort(
+          (a, b) => b.review - a.review
+        ),
+      };
     }
     default: {
       return state;
