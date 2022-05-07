@@ -3,9 +3,14 @@ import {
   ADD_TO_CART,
   ERROR,
   GET_PRODUCTS,
+  HIGH_TO_LOW,
   LOADING,
   LOGED_IN,
   LOGED_OUT,
+  LOW_TO_HIGH,
+  RATING,
+  RELEVANCE,
+  REVIEW,
 } from "./aciton_type";
 import axios from "axios";
 
@@ -26,7 +31,6 @@ export const Products_data_func = (dispatch) => {
   axios
     .get(`http://localhost:8080/Featured`)
     .then((response) => {
-      console.log("response:", response);
       dispatch({ type: GET_PRODUCTS, payload: response.data });
     })
     .catch((error) => {
@@ -54,4 +58,26 @@ export const loading = () => {
 
 export const error = () => {
   return { type: ERROR };
+};
+
+export const filter_data = (dispatch, filter) => {
+  dispatch({ type: LOADING });
+  if (filter === "lth") {
+    dispatch({ type: HIGH_TO_LOW });
+  }
+  if (filter === "htl") {
+    dispatch({ type: LOW_TO_HIGH });
+  }
+
+  if (filter === "relevance") {
+    dispatch({ type: RELEVANCE });
+  }
+
+  if (filter === "rating") {
+    dispatch({ type: RATING });
+  }
+
+  if (filter === "review") {
+    dispatch({ type: REVIEW });
+  }
 };
