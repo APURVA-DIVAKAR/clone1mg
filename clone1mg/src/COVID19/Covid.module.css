@@ -1,3 +1,12 @@
+.Covid_Container > p,
+.Covid_Container > h2,
+.Covid_Container > h4,
+.Covid_Container > h5,
+.Covid_Container > h6,
+.Covid_Container > h3 {
+  color: slategrey;
+}
+
 .covid {
   display: flex;
   background-color: linen;
@@ -12,17 +21,10 @@
 .covid > div > img {
   width: 100%;
 }
-* {
+.Covid_Container > * {
   font-family: "Poppins", sans-serif;
 }
-.covid > p,
-h2,
-h4,
-h5,
-h6,
-h3 {
-  color: slategrey;
-}
+
 .sec {
   display: flex;
   width: 90%;
