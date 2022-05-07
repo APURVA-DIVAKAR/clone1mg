@@ -11,8 +11,20 @@
   margin: auto;
   opacity: 1;
   transform: scale(1);
-  transition: all 0.3s ease-in-out;
+  animation: apear 0.3s ease-in-out;
 }
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .imge {
   height: 165px;
   width: 100%;
