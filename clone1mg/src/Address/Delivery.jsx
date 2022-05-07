@@ -17,7 +17,9 @@ const Delivery = () => {
     getAddress();
   }, []);
  let data ;
- let data1 = address.filter(element => element.id == id);
+ let data1 = address.filter(element => {if(element.id == id){
+return element}
+});
 data = data1[0];
 console.log(data);
 
