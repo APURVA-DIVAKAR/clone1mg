@@ -7,7 +7,7 @@ const Covid = () => {
   return (
     <>
       <Navbar_search />
-      <div>
+      <div className={styles.Covid_Container}>
         <div className={styles.covid}>
           <div>
             <h1>Combating Coronavirus in India</h1>
