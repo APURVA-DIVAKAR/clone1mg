@@ -26,9 +26,9 @@ export const Cart_com = () => {
     d = 0;
     cartData.map((el) => {
       console.log(el.qty);
-      m += el.qty * el.MRP;
+      m += el.qty * el.mrp;
       p += el.qty * el.price;
-      d += el.qty * Math.abs(el.MRP - el.price);
+      d += el.qty * Math.abs(el.mrp - el.price);
       setMtotal(m);
       setPtotal(p);
       setDtotal(d);

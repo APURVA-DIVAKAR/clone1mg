@@ -55,7 +55,7 @@ p9 {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-h4 {
+.maincontainer > h4 {
   /* border:2px solid red; */
   /* font-size: 10px; */
   margin-left: 20px;
@@ -78,7 +78,7 @@ p4 {
   height: 12px;
   color: rgb(38, 205, 5);
 }
-p {
+.maincontainer > p {
   font-size: 12px;
   text-overflow: wrap;
   overflow: wrap;

@@ -15,7 +15,7 @@ import Home from "./Home_page/Home";
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
-import Products from "./ProductsPage/Products";
+import { Main_product_page } from "./ProductsPage/Main_product_page";
 import Address from "./Address/Address";
 import Delivery from "./Address/Delivery";
 import { Cart_com } from "./Cart/Components/Cart_com";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/Covid" element={<Covid />}></Route>
         <Route path="/CarePlan" element={<CarePlan />}></Route>
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
-
+        <Route path="/Products" element={<Main_product_page />}></Route>
         <Route
           path="/Products/:id"
           element={<Individual_Product_Page />}
