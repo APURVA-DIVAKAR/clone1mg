@@ -4,9 +4,19 @@ import Advertisement from "./Advertisement";
 import { Navbar_search } from "./Navbar_search";
 import { Navbar_dropdown } from "./Navbar_dropdown";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { get_data } from "../../Redux/actions";
 
 export const Navbar = () => {
   const nevigate = useNavigate();
+  const { cartData } = useSelector((state) => {
+    return state;
+  });
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    get_data(dispatch);
+  }, []);
 
   return (
     <>
@@ -71,7 +81,7 @@ export const Navbar = () => {
                       Order Summary
                     </span>
                     <span className="CartCounterPopUp__count___3cYl6">
-                      0 Item
+                      {cartData.length} Item
                     </span>
                   </li>
                   <li>
@@ -87,7 +97,7 @@ export const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <div className="count">0</div>
+              <div className="count">{cartData.length}</div>
             </div>
             <div style={{ fontSize: "14px" }}>Need Help ?</div>
           </div>
