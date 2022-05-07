@@ -15,7 +15,7 @@ import Home from "./Home_page/Home";
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
-import Products from "./ProductsPage/Products";
+import { Main_product_page } from "./ProductsPage/Main_product_page";
 import Address from "./Address/Address";
 import Delivery from "./Address/Delivery";
 
@@ -33,16 +33,25 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/Cart" element={<Cart_com />}></Route>
         <Route path="/Upload" element={<Upload />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
         <Route path="/CarePlan" element={<CarePlan />}></Route>
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
+        <Route path="/Products" element={<Main_product_page />}></Route>
+        <Route
+          path="/Products/:id"
+          element={<Individual_Product_Page />}
+        ></Route>
       </Routes>
 
       <LastsecFooter />
       <LastFooter />
       <Delivery />
+
+      <Address />
+      {/* <Delivery/> */}
     </div>
   );
   //  1e43b11d541f9bd2d6674dcf7ee4bb986007622f

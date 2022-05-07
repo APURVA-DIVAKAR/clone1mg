@@ -8,9 +8,9 @@ import { Cart_product_style } from "../Style/Cart_Product_style";
 
 const Cart_product = ({
   name,
-  MRP,
+  mrp,
   price,
-  bottle,
+  desc,
   id,
   qty,
   varChange,
@@ -75,9 +75,9 @@ const Cart_product = ({
             </div>
           </div>
           <div>
-            <div id="quant">{bottle}</div>
+            <div id="quant">{desc}</div>
             <div id="leftPruchaseMrp">
-              MRP &nbsp; ₹<span id="mrpdash">{MRP}</span>
+              MRP &nbsp; ₹<span id="mrpdash">{mrp}</span>
             </div>
           </div>
           <div id="removeItem">

@@ -8,76 +8,60 @@ const Sidebar = () => {
 
       <div className={styles.sidebar}>
         <div>
-          <h4 style={{ padding: "5px", marginTop: "10px" }}>CATEGORIES</h4>
-          <dt>
-            {" "}
-            <h3 style={{ color: "rgb(255,131,97)" }}>FEATURED</h3>
-          </dt>
-
-          <dd>
-            {" "}
+          <div style={{ marginTop: "10px" }}>CATEGORIES</div>
+          <div className={styles.Featured_div}>FEATURED</div>
+          <div>
             <div>
-              {" "}
               <a class="active" href="#home">
                 Flash Deals
               </a>
             </div>
-          </dd>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Tata 1mg Health Products
-            </a>
+            <div>
+              <a class="active" href="#home">
+                Tata 1mg Health Products
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Summer Essential
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Trending Now
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                New Arrivals On Tata 1MG
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Buy More, Save More
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Minimum 33% off
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Combos
+              </a>
+            </div>
+            <div>
+              <a class="active" href="#home">
+                Deals Of The Day
+              </a>
+            </div>
           </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Summer Essential
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Trending Now
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              New Arrivals On Tata 1MG
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Buy More, Save More
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Minimum 33% off
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Combos
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a class="active" href="#home">
-              Deals Of The Day
-            </a>
-          </div>
-          <h4 style={{ color: "rgb(255,131,97)", marginTop: "5px" }}>
-            SHOW ALL
-          </h4>
+          <div className={styles.Featured_div}>SHOW ALL</div>
         </div>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>FILTERS</h4>
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>BRANDS</h4>
+        <div className={styles.filter_name}>FILTERS</div>
+        <hr></hr>
+        <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
@@ -87,7 +71,7 @@ const Sidebar = () => {
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Dabur</p>
@@ -136,18 +120,20 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>PRODUCT TAGS</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>PRODUCT TAGS</div>
+
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
             type="text"
             placeholder="Search Product Tags"
           />
+
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Xhebula</p>
@@ -186,10 +172,10 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>DISCOUNT</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>DISCOUNT</div>
         <div className="brands">
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Less Than !0%</p>
@@ -213,8 +199,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>PRODUCT FORM</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>PRODUCT FORM</div>
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
@@ -224,7 +210,7 @@ const Sidebar = () => {
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Liquid</p>
@@ -273,8 +259,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>BRANDS</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
@@ -284,7 +270,7 @@ const Sidebar = () => {
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Dabur</p>
@@ -333,8 +319,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>USES</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>USES</div>
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
@@ -344,7 +330,7 @@ const Sidebar = () => {
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Men Care</p>
@@ -393,8 +379,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>BRANDS</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>BRANDS</div>
         <div className="brands">
           <input
             style={{ width: "90%", height: "30px" }}
@@ -404,7 +390,7 @@ const Sidebar = () => {
           <br></br>
           <br></br>
 
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Dabur</p>
@@ -453,12 +439,10 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>Age</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>Age</div>
         <div className="brands">
-         
-
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>All</p>
@@ -472,11 +456,10 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <hr style={{ color: "gray" }}></hr>
-        <h4 style={{ padding: "10px", marginTop: "10px" }}>GENDER</h4>
+        <hr></hr>
+        <div className={styles.filter_heading}>GENDER</div>
         <div className="brands">
-       
-          <div className="slider">
+          <div className={styles.slider}>
             <div className={styles.filter}>
               <input type="checkbox"></input>
               <p>Unisex</p>
