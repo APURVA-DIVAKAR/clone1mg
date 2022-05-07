@@ -1,33 +1,57 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './Address.module.css'
 
 const Address = () => {
+    const[data,setData] = useState({});
+    const handleChange = (e) => {
+        const inputName = e.target.name;
+        setData({
+            ...data,
+            [inputName]:e.target.value,
+          });
+    }
+    const add = async (data) => {
+        let response = await fetch(`http://localhost:8080/address`,
+       {
+        method:"POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify(data)});
+       let data1 = await response.json();
+       setData(data1);
+    }
+    const handleSubmit = (e) => {       
+        e.preventDefault();
+        setData(data);
+        add(data);                      
+      };
+   
+
   return (
     <div className={styles.address}>
 
-        <form>
+        <form onSubmit={handleSubmit}>
             <h2>Add New Address</h2>
             <div className={styles.form}>
-                <input type="text" name="buliding" placeholder="Flat Number,Building Name,Street/Locality" />
-                <input type="text" name="landmark" placeholder="Landmark(optional)"/>
-                <input type="number" name="pincode" placeholder="Pincode"/>
-                <input type="text" name="locality" placeholder="Locality"/>
-                <input type="text" name="city" placeholder="City"/>
-                <input type="text" name="state" placeholder="State"/>
-                <input type="text" name="name" placeholder="Customer Name"/>
-                <input type="number" name="mobile" placeholder="10 Digit Mobile Number"/>
+                <input type="text" name="buliding" placeholder="Flat Number,Building Name,Street/Locality" onChange={handleChange} />
+                <input type="text" name="landmark" placeholder="Landmark(optional)" onChange={handleChange}/>
+                <input type="number" name="pincode" placeholder="Pincode" onChange={handleChange}/>
+                <input type="text" name="locality" placeholder="Locality" onChange={handleChange}/>
+                <input type="text" name="city" placeholder="City" onChange={handleChange}/>
+                <input type="text" name="state" placeholder="State" onChange={handleChange}/>
+                <input type="text" name="name" placeholder="Customer Name" onChange={handleChange}/>
+                <input type="number" name="mobile" placeholder="10 Digit Mobile Number" onChange={handleChange}/>
                <div className={styles.flexip}>
                   
-                    <input type="radio" name="address_place" value="Home" />
-                    <label for="Home">Home</label>
-                    <input type="radio" name="address_place" value="Office" />
-                    <label for="Office">Office</label>
-                    <input type="radio" name="address_place" value="Other" />
-                    <label for="Other">Other</label>
+                    <input type="radio" name="address_place" value="Home" onChange={handleChange}/>
+                    <label htmlFor="Home">Home</label>
+                    <input type="radio" name="address_place" value="Office" onChange={handleChange} />
+                    <label htmlFor="Office">Office</label>
+                    <input type="radio" name="address_place" value="Other" onChange={handleChange}/>
+                    <label htmlFor="Other">Other</label>
                </div>
                <div className={styles.flexbtn}>
                    <button type="submit">CANCEL</button>
-                   <button type="submit">SAVE</button>
+                   <button type="submit" value="Submit" onSubmit={handleSubmit}>SAVE</button>
                </div>
 
             </div>

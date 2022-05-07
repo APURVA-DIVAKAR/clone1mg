@@ -19,7 +19,7 @@ const PopularCategories = () => {
           {popularBrand.map((elem) => {
             return (
               <div className="smallcontainer">
-              <Avatar fecture={elem} />
+              <Avatar key={elem.id}  fecture={elem} />
               </div>
             )
           })}

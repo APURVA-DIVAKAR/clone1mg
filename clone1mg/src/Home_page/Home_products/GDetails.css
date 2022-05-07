@@ -67,7 +67,7 @@ p9 {
   
 }
 
-h4 {
+.maincontainer > h4 {
   /* border:2px solid red; */
   /* font-size: 10px; */
   margin-left: 20px;
@@ -94,9 +94,8 @@ p4 {
   color: rgb(38, 205, 5);
   margin-left: 20px;
 }
-p {
-  margin-top: 0%;
-  font-size: 15px;
+.maincontainer > p {
+  font-size: 12px;
   text-overflow: wrap;
   overflow: wrap;
   width: 100%;

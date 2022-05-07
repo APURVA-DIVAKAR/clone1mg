@@ -17,14 +17,52 @@ export const Upper_div = styled.div`
 
   > div:first-child {
     display: flex;
+    justify-content: space-evenly;
 
     .Swiper_image {
+      display: flex;
+      justify-content: center;
       height: 58px;
       width: 53px;
       border: 1px solid #ff6f61;
+
       > img {
-        max-height: 58px;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 1;
+        transform: scale(1);
+        animation: Cards_apear__SREkU 0.3s ease-in-out;
       }
+    }
+  }
+
+  .Image_div {
+    width: auto;
+    height: auto;
+    font-size: 0px;
+    position: relative;
+
+    > img {
+      max-width: max-content;
+      max-height: 350px;
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+      vertical-align: middle;
+      border: 0;
+      opacity: 1;
+      transform: scale(1);
+      animation: Cards_apear__SREkU 0.3s ease-in-out;
     }
   }
 
