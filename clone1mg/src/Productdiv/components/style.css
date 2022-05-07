@@ -7,6 +7,7 @@
     /* border: 1px solid black;    */
     display: grid;
     grid-template-columns:repeat(7,1fr);  
+   
 }
 
 .bigcontainer h1 {
@@ -35,6 +36,7 @@
     padding-top: 10px;
     cursor: pointer;
     justify-content: space-around;
+    margin-left: 50px;
 }
 
 .smallcontainer>div:hover {
@@ -46,6 +48,7 @@
 .smallcontainer img {
     max-width: 100%;
     margin: 6px 0;
+   
 }
 
 .bigcontainer .smallcontainer a {
@@ -95,4 +98,5 @@ button{
 .smallcontainer {
     max-width: 100%;
     margin: 6px 0;
+    margin-left: 50px;
 }

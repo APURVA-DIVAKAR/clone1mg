@@ -14,7 +14,7 @@ const Trending = () => {
     <div>
       {/* <h1 className="mini">Groceries</h1> */}
       <div className="sunny">
-        <p className="topdeal">Trending now</p>
+        <h1 className="topdeal">Trending now</h1>
       </div>
       <div className="maincontainer">
         <div className="container">
