@@ -8,18 +8,21 @@ import { SignupProvider } from "./LoginSignup/SignupProvider";
 import { LoginProvider } from "./LoginSignup/LoginProvider";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store";
+import Login_Auth from "./Redux/Login_Auth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
-        <SignupProvider>
-          <LoginProvider>
-            <App />
-          </LoginProvider>
-        </SignupProvider>
-      </BrowserRouter>
+      <Login_Auth>
+        <BrowserRouter>
+          <SignupProvider>
+            <LoginProvider>
+              <App />
+            </LoginProvider>
+          </SignupProvider>
+        </BrowserRouter>
+      </Login_Auth>
     </Provider>
   </React.StrictMode>
 );

@@ -1,27 +1,39 @@
 import axios from "axios";
-import React from "react";
-import { useDispatch } from "react-redux";
-import { add_to_cart, get_data } from "../../Redux/actions";
+import React, { useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { get_data } from "../../Redux/actions";
+import { AuthContext } from "../../Redux/Login_Auth";
 import { Single_product } from "../Styles/Product";
 
 export const Single_slider_product = ({
-  image,
+  image_url,
   name,
-  bottle,
-  MRP,
+  desc,
+  mrp,
   price,
   discount,
 }) => {
+  const { isAuth } = useSelector((state) => {
+    // console.log(state);
+    return state;
+  });
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleADD = () => {
+    if (!isAuth) {
+      navigate("/Login");
+      return;
+    }
+
     axios
       .post(`http://localhost:8080/Cart`, {
         qty: 1,
-        image,
+        image_url,
         name,
-        bottle,
-        MRP,
+        desc,
+        mrp,
         price,
         discount,
       })
@@ -34,14 +46,14 @@ export const Single_slider_product = ({
   return (
     <Single_product>
       <div>
-        <img src={image} alt="Product Image" />
+        <img src={image_url} alt="Product Image" />
       </div>
       <div>{name}</div>
-      <div>{bottle}</div>
+      <div>{desc}</div>
       <div>
         <div>
           <span>MRP</span>
-          <span>₹{MRP}</span>
+          <span>₹{mrp}</span>
           <span>{discount}</span>
         </div>
         <div>

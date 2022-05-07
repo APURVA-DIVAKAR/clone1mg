@@ -8,7 +8,6 @@ import { get_data } from "../../Redux/actions";
 
 export const Cart_com = () => {
   const [isSelected, setIsSelected] = React.useState(false);
-  const dispatch = useDispatch();
   const [Mtotal, setMtotal] = React.useState(0);
   const [Dtotal, setDtotal] = React.useState(0);
   const [Ptotal, setPtotal] = React.useState(0);
@@ -22,18 +21,14 @@ export const Cart_com = () => {
   });
 
   React.useEffect(() => {
-    get_data(dispatch);
-  }, []);
-
-  React.useEffect(() => {
     m = 0;
     p = 0;
     d = 0;
     cartData.map((el) => {
       console.log(el.qty);
-      m += el.qty * el.MRP;
+      m += el.qty * el.mrp;
       p += el.qty * el.price;
-      d += el.qty * Math.abs(el.MRP - el.price);
+      d += el.qty * Math.abs(el.mrp - el.price);
       setMtotal(m);
       setPtotal(p);
       setDtotal(d);
