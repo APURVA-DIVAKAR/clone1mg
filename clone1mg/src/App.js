@@ -18,6 +18,7 @@ import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 import Products from "./ProductsPage/Products";
 import Address from "./Address/Address";
 import Delivery from "./Address/Delivery";
+import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
       
       <LastsecFooter />
       <LastFooter />
-      <Delivery/>
+      {/* <Delivery/> */}
     </div>
   );
 //  1e43b11d541f9bd2d6674dcf7ee4bb986007622f
