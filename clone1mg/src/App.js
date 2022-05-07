@@ -20,12 +20,9 @@ import Address from "./Address/Address";
 import ProductsDelivery from "./Address/ProductsDelivery";
 import AddAddress from "./Address/AddAddress";
 import Delivery from "./Address/Delivery";
-import {Cart_com} from "./Cart/Components/Cart_com";
-// import Careplan from "./CarePlanePage/CarePlan"
-import CarePlan from "./CarePlanePage/CarePlan";
-import {Individual_Product_Page} from "./individual_product_page/Components/Individual_Product_Page";
-
-
+import { Cart_com } from './Cart/Components/Cart_com'
+import { Individual_Product_Page} from './individual_product_page/Components/Individual_Product_Page'
+import  CarePlan   from './CarePlanePage/CarePlan'
 
 
 
@@ -61,5 +58,6 @@ function App() {
   );
 
 }
+
 
 export default App;
