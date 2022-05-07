@@ -4,6 +4,7 @@ import styles from './Delivery.module.css'
 
 const Delivery = () => {
   const[address,setAddress] = useState([])
+  const[data,setData] = useState({})
   const {id} = useContext(AddressContext)
   const getAddress = async() =>{
     let res = await fetch(`http://localhost:8080/address`)
@@ -11,16 +12,19 @@ const Delivery = () => {
     //  console.log(data1)
     setAddress(...address,data1)
   }
+  const data1 = address.filter(element => {if(element.id == id){
+    return element}
+    });
+    
   // console.log(address)
   // console.log(id)
   useEffect(() => {            
     getAddress();
+    setData(data1[0]);
   }, []);
- let data ;
- let data1 = address.filter(element => {if(element.id == id){
-return element}
-});
-data = data1[0];
+
+ 
+
 console.log(data);
 
   return (
@@ -41,10 +45,10 @@ console.log(data);
              </div>
              <div className={styles.address}>
                 <div>
-                    <h6>{data.address_place}</h6>
+                    {/* <h6>{data.address_place}</h6>
                     <p>{data.name}</p>
                     <p>{data.mobile},{data.buliding},{data.locality}</p>
-                    <p>{data.city},{data.state}-{data.pincode}</p>
+                    <p>{data.city},{data.state}-{data.pincode}</p> */}
                  </div>
              </div>
              <button>CONTINUE</button>
