@@ -14,19 +14,11 @@ import Home from "./Home_page/Home";
 
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
-<<<<<<< HEAD
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
-
-
-
-=======
-import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
 import Products from "./ProductsPage/Products";
-import Address from "./Address/Address";
-import Delivery from "./Address/Delivery";
-import { Cart_com } from "./Cart/Components/Cart_com";
-import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
->>>>>>> 3a3fd0764789c939a415fef5964af18f112b2d1d
+
+
+
 
 function App() {
   return (
@@ -48,13 +40,9 @@ function App() {
         ></Route>
       </Routes>
 
-      {/* <LastsecFooter /> */}
+      <LastsecFooter />
       <LastFooter />
-<<<<<<< HEAD
-      <Login/>
-=======
-      {/* <Delivery/> */}
->>>>>>> 3a3fd0764789c939a415fef5964af18f112b2d1d
+     
     </div>
   );
 }
