@@ -522,7 +522,7 @@ export default function CarePlan() {
             </span>
           </a>
         </div>
-        <LastFooter />
+        {/* <LastFooter /> */}
       </div>
     </>
   );

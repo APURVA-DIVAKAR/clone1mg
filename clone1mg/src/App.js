@@ -3,11 +3,11 @@ import "./App.css";
 import { Navbar } from "./Navbar/Components/Navbar";
 // import Signup from "./LoginSignup/Signup";
 import "./App.css";
-import LastsecFooter from "./components/LastsecFooter";
-import LastFooter from "./components/LastFooter";
+import LastsecFooter from "./Components/LastsecFooter";
+import LastFooter from "./Components/LastFooter";
 
 import Covid from "./COVID19/Covid";
-import Upload from "./components/UPLOAD/Upload";
+import Upload from "./Components/UPLOAD/Upload";
 import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home_page/Home";
@@ -25,7 +25,11 @@ import Address from "./Address/Address";
 import Delivery from "./Address/Delivery";
 import { Cart_com } from "./Cart/Components/Cart_com";
 import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
+<<<<<<< Updated upstream
 >>>>>>> 839e2501d1ea351920b09ef5fc6963b6267d654e
+=======
+import CarePlan from "./CarePlanePage/CarePlan";
+>>>>>>> Stashed changes
 
 function App() {
   return (
@@ -38,7 +42,7 @@ function App() {
         <Route path="/Upload" element={<Upload />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
-
+        <Route path="/CarePlan" element={<CarePlan />}></Route>
         <Route path="/Ayurveda" element={<Ayurveda />}></Route>
 
         {/* <Route
