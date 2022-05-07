@@ -1,4 +1,7 @@
+import axios from "axios";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { add_to_cart, get_data } from "../../Redux/actions";
 import { Single_product } from "../Styles/Product";
 
 export const Single_slider_product = ({
@@ -9,6 +12,25 @@ export const Single_slider_product = ({
   price,
   discount,
 }) => {
+  const dispatch = useDispatch();
+
+  const handleADD = () => {
+    axios
+      .post(`http://localhost:8080/Cart`, {
+        qty: 1,
+        image,
+        name,
+        bottle,
+        MRP,
+        price,
+        discount,
+      })
+      .then((data) => {
+        get_data(dispatch);
+      })
+      .catch((err) => console.error(err));
+  };
+
   return (
     <Single_product>
       <div>
@@ -24,7 +46,7 @@ export const Single_slider_product = ({
         </div>
         <div>
           <span>₹{price}</span>
-          <span>ADD</span>
+          <span onClick={handleADD}>ADD</span>
         </div>
       </div>
     </Single_product>

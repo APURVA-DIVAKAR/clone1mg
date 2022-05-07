@@ -3,9 +3,11 @@ import { Nav } from "../Styleing/Navbar_Styled";
 import Advertisement from "./Advertisement";
 import { Navbar_search } from "./Navbar_search";
 import { Navbar_dropdown } from "./Navbar_dropdown";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const nevigate = useNavigate();
+
   return (
     <>
       <Nav>
@@ -57,7 +59,12 @@ export const Navbar = () => {
             </div>
             <div>Offers</div>
             <div className="cart_icon">
-              <div className="cart_svg">
+              <div
+                className="cart_svg"
+                onClick={() => {
+                  nevigate("/Cart");
+                }}
+              >
                 <ul className="Cart_Counter_PopUp">
                   <li>
                     <span className="CartCounterPopUp__summary___1Ff-x">
@@ -68,15 +75,15 @@ export const Navbar = () => {
                     </span>
                   </li>
                   <li>
-                    <a
-                      href="/cart"
+                    <Link
+                      to="/Cart"
                       data-auto-proceed-cart="true"
                       data-attribute="cart-counter-popup"
                     >
                       <span className="CartCounterPopUp__proceed___vJFRh">
                         PROCEED TO CART
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
