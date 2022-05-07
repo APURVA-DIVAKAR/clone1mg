@@ -16,9 +16,8 @@ import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
 import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
 import Products from "./ProductsPage/Products";
-import { Cart_com } from "./Cart/Components/Cart_com";
-import { Navbar_search } from "./Navbar/Components/Navbar_search";
-import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
+import Address from "./Address/Address";
+import Delivery from "./Address/Delivery";
 
 function App() {
   return (
