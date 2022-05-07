@@ -8,7 +8,7 @@ const Ayurved = () => {
   return (
     <>
       <div className="product_container">
-        <div class="cat-title">
+        <div className="cat-title">
           <span className="style__heading___pc8n7">Ayurveda</span>
           <span>
             <button>SEE ALL</button>
@@ -17,8 +17,8 @@ const Ayurved = () => {
         <div className="bigcontainer">
           {aayurved.map((elem) => {
             return (
-              <div className="smallcontainer">
-                <Avatar key={elem.id} fecture={elem} />
+              <div key={elem.id} className="smallcontainer">
+                <Avatar fecture={elem} />
               </div>
             );
           })}

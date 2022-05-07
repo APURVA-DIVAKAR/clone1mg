@@ -1,15 +1,7 @@
 import React, { useState } from "react";
-// import data from '../data.json'
 import combodeals from "./combodeals.json";
-// import CartButton from './CartButton'
 import "./GDetails.css";
 const ComboDeals = () => {
-  // console.log(data)
-  const [count, setCount] = useState(0);
-
-  // const counter =()=>{
-  //     setCount(count+1);
-  // }
   return (
     <div>
       {/* <h1 className="mini">Groceries</h1> */}
@@ -28,7 +20,7 @@ const ComboDeals = () => {
               <div className="card-info">{item.info}</div>
               <div className="card-rating">
                 <span>
-                  4.2
+                  {item.star}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

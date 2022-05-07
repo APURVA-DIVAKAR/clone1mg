@@ -8,7 +8,7 @@ const Healthconcern = () => {
   return (
     <>
       <div className="product_container">
-        <div class="cat-title">
+        <div className="cat-title">
           <span className="style__heading___pc8n7">
             Shop by Health Concerns
           </span>
@@ -19,8 +19,8 @@ const Healthconcern = () => {
         <div className="bigcontainer">
           {shopByHealthConcerns.map((elem) => {
             return (
-              <div className="smallcontainer">
-                <Avatar key={elem.id} fecture={elem} />
+              <div key={elem.id} className="smallcontainer">
+                <Avatar fecture={elem} />
               </div>
             );
           })}

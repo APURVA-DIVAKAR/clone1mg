@@ -3,7 +3,6 @@ import React from "react";
 import "./style.css";
 
 function Avatar({ fecture }) {
-  console.log(fecture);
   return (
     <>
       <a className="allin" href={fecture.link}>

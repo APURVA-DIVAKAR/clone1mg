@@ -19,8 +19,8 @@ const FeaturedBrand = () => {
         <div className="bigcontainer">
           {featureBrand.map((elem) => {
             return (
-              <div className="smallcontainer">
-                <Avatar key={elem.id} fecture={elem} />
+              <div key={elem.id} className="smallcontainer">
+                <Avatar fecture={elem} />
               </div>
             );
           })}

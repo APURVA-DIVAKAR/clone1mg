@@ -1,18 +1,9 @@
 import React, { useState } from "react";
-import data from './data.json'
 import dealsday from "./dealsday.json";
-// import CartButton from './CartButton'
 import "./GDetails.css";
 const DealsDay = () => {
-  // console.log(data)
-  const [count, setCount] = useState(0);
-
-  // const counter =()=>{
-  //     setCount(count+1);
-  // }
   return (
     <div>
-      {/* <h1 className="mini">Groceries</h1> */}
       <div className="sunny">
         <p className="topdeal">Deals of the day</p>
       </div>
@@ -28,7 +19,7 @@ const DealsDay = () => {
               <div className="card-info">{item.info}</div>
               <div className="card-rating">
                 <span>
-                  4.2
+                  {item.star}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

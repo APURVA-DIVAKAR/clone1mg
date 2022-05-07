@@ -56,8 +56,8 @@ function App() {
         </>
       )}
 
-      {/* <AddAddress/>
-     <Delivery/> */}
+      <AddAddress />
+      {/* <Delivery/>  */}
     </div>
   );
 }

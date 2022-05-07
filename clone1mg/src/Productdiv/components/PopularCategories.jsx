@@ -8,7 +8,7 @@ const PopularCategories = () => {
   return (
     <>
       <div className="product_container">
-        <div class="cat-title">
+        <div className="cat-title">
           <span className="style__heading___pc8n7">Popular Categories</span>
           <span>
             <button>SEE ALL</button>
@@ -17,8 +17,8 @@ const PopularCategories = () => {
         <div className="bigcontainer">
           {popularBrand.map((elem) => {
             return (
-              <div className="smallcontainer">
-                <Avatar key={elem.id} fecture={elem} />
+              <div key={elem.id} className="smallcontainer">
+                <Avatar fecture={elem} />
               </div>
             );
           })}
