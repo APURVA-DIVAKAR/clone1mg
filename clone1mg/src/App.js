@@ -46,8 +46,8 @@ function App() {
 
       <LastsecFooter />
       <LastFooter />
-    <AddAddress/>
-     <Delivery/>
+    {/* <AddAddress/>
+     <Delivery/> */}
     </div>
   );
 }
