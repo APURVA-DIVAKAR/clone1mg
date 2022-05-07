@@ -2,6 +2,7 @@ import {
   ADD_ADDRESS,
   ADD_TO_CART,
   ERROR,
+  GET_PRODUCTS,
   LOADING,
   LOGED_IN,
   LOGED_OUT,
@@ -20,12 +21,12 @@ export const get_data = (dispatch) => {
     });
 };
 
-export const Products_data_func = (dispatch, type, id) => {
+export const Products_data_func = (dispatch) => {
   dispatch({ type: LOADING });
   axios
-    .get(`http://localhost:8080/${type}/${id}`)
+    .get(`http://localhost:8080/Featured`)
     .then((response) => {
-      dispatch({ type: ADD_TO_CART, payload: response.data });
+      dispatch({ type: GET_PRODUCTS, payload: response.data });
     })
     .catch((error) => {
       dispatch({ type: ERROR });
