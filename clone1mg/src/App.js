@@ -56,7 +56,7 @@ function App() {
         </>
       )}
 
-      <AddAddress />
+      {/* <AddAddress /> */}
       {/* <Delivery/>  */}
     </div>
   );

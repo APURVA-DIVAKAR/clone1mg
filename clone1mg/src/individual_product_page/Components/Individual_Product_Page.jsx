@@ -31,7 +31,7 @@ export const Individual_Product_Page = () => {
       <Navbar_dropdown />
       <Product>
         <Product_div {...product} />
-        <Product_info_component />
+        <Product_info_component {...product} />
       </Product>
     </>
   );

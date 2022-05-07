@@ -49,6 +49,9 @@
   left: 0;
   right: 0;
   margin: auto;
+  opacity: 1;
+  transform: scale(1);
+  animation: Cards_apear__SREkU 0.3s ease-in-out;
 }
 
 .card-title {

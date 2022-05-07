@@ -3,8 +3,18 @@ import { Product_info } from "../Styles/Product";
 import Small_product from "./Small_product";
 import { Link } from "react-router-dom";
 import { Product_slider } from "./Product_slider";
+import { Products_data } from "../Slider_products/Slider_product";
 
-export const Product_info_component = () => {
+export const Product_info_component = ({
+  image_url,
+  name,
+  desc,
+  mrp,
+  price,
+  discount,
+}) => {
+  const random = Math.floor(Math.random() * (9 - 0)) + 0;
+
   return (
     <Product_info>
       <div>
@@ -142,17 +152,21 @@ export const Product_info_component = () => {
         <div>
           <div className="Frequently_bought_together">
             <div>Frequently bought together</div>
-            <Small_product />
+            <Small_product
+              data={{ image_url, name, desc, mrp, price, discount }}
+            />
             <div className="style__plus">
               <img src="https://www.1mg.com/images/add.png" alt="" />
             </div>
-            <Small_product />
+            <Small_product
+              data={Products_data[Math.floor(Math.random() * (9 - 0)) + 0]}
+            />
             <hr />
             <div className="total_div">
               <div>
                 <span className="style__total-price_title">TOTAL PRICE</span>
                 <br />
-                <span className="style__total-price_price">₹668</span>
+                <span className="style__total-price_price">₹{price + 334}</span>
               </div>
               <div className="add_both_to_cart">
                 <a
