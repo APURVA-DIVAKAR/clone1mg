@@ -627,21 +627,21 @@ export default function CarePlan() {
         {/* care plan payment page end */}
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          className="carousel slide"
           data-ride="carousel"
           style={{ minHeight: "400px", marginTop: "20px" }}
         >
-          <ol class="carousel-indicators">
+          <ol className="carousel-indicators">
             <li
               data-target="#carouselExampleIndicators"
               data-slide-to="0"
-              class="active"
+              className="active"
             ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <div
                 style={{
                   display: "flex",
@@ -698,7 +698,7 @@ export default function CarePlan() {
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div
                 style={{
                   display: "flex",
@@ -755,7 +755,7 @@ export default function CarePlan() {
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div
                 style={{
                   display: "flex",
@@ -808,7 +808,7 @@ export default function CarePlan() {
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div
                 style={{
                   display: "flex",
@@ -835,9 +835,9 @@ export default function CarePlan() {
                 >
                   The Diabetes Care Plan from 1 Mg makes Diabetes care much more
                   affordable for Diabetics. It is well thought out comprehensive
-                  plan and is the best in class Diabetic plan in the marketplace
-                  today. I have saved some 12-15 thousand using diabetes plan in
-                  the first 3 months.
+                  plan and is the best in className Diabetic plan in the
+                  marketplace today. I have saved some 12-15 thousand using
+                  diabetes plan in the first 3 months.
                 </div>
                 <div
                   style={{
@@ -864,7 +864,7 @@ export default function CarePlan() {
             </div>
           </div>
           <a
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             href="#carouselExampleIndicators"
             role="button"
             data-slide="prev"
@@ -877,7 +877,7 @@ export default function CarePlan() {
             </span>
           </a>
           <a
-            class="carousel-control-next"
+            className="carousel-control-next"
             href="#carouselExampleIndicators"
             role="button"
             data-slide="next"
