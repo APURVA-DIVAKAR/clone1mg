@@ -26,6 +26,7 @@ export const Products_data_func = (dispatch) => {
   axios
     .get(`http://localhost:8080/Featured`)
     .then((response) => {
+      console.log("response:", response);
       dispatch({ type: GET_PRODUCTS, payload: response.data });
     })
     .catch((error) => {

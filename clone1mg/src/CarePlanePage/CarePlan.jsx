@@ -1,9 +1,11 @@
 import React from "react";
-import LastFooter from "../Components/LastFooter";
+import { Navbar_search } from "../Navbar/Components/Navbar_search";
+// import LastFooter from "../Components/LastFooter";
 
 export default function CarePlan() {
   return (
     <>
+      <Navbar_search />
       <div>
         {/* upper img start */}
         <div
