@@ -1,4 +1,4 @@
-/* .flexp{
+ .flexp{
     display:flex;
     gap:10px;
 }
@@ -29,12 +29,12 @@
 .flex>div>h6{
     line-height: 1.6;
     /* margin-bottom: -10px; */
-/* } */
-/* .flex>div>p{
+ } 
+.flex>div>p{
     line-height: 1.6;
     /* margin-top: -10px; */
-/* }
-a{
+ }
+.box>form>a{
     height:30px;
     background-color:coral;
     text-decoration: none;
@@ -42,12 +42,12 @@ a{
     padding-left: 100px;
     padding-right: 100px;
 }
-box>form>a{
+.box>form>a{
     width: 100%;
 }
-p{
+.flex>div>p{
     margin-bottom: -10px;
 }
-h6{
+.flex>div>h6{
     margin-bottom: -10px;
-} */ 
+} 
