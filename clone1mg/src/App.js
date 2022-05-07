@@ -43,7 +43,7 @@ function App() {
 
       {/* <LastsecFooter /> */}
       <LastFooter />
-      {/* <Products /> */}
+      {/* <Delivery/> */}
     </div>
   );
 }
