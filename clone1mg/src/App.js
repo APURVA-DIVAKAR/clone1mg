@@ -20,7 +20,9 @@ import Address from "./Address/Address";
 import ProductsDelivery from "./Address/ProductsDelivery";
 import AddAddress from "./Address/AddAddress";
 import Delivery from "./Address/Delivery";
-
+import { Cart_com } from './Cart/Components/Cart_com'
+import { Individual_Product_Page} from './individual_product_page/Components/Individual_Product_Page'
+import  CarePlan   from './CarePlanePage/CarePlan'
 
 
 
@@ -50,11 +52,12 @@ function App() {
 
       <LastsecFooter />
       <LastFooter />
-    <AddAddress/>
-     <Delivery/>
+    {/* <AddAddress/>
+     <Delivery/> */}
     </div>
   );
   //  1e43b11d541f9bd2d6674dcf7ee4bb986007622f
 }
+
 
 export default App;
