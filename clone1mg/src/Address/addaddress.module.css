@@ -1,4 +1,4 @@
-.flexp{
+/* .flexp{
     display:flex;
     gap:10px;
 }
@@ -29,11 +29,11 @@
 .flex>div>h6{
     line-height: 1.6;
     /* margin-bottom: -10px; */
-}
-.flex>div>p{
+/* } */
+/* .flex>div>p{
     line-height: 1.6;
     /* margin-top: -10px; */
-}
+/* }
 a{
     height:30px;
     background-color:coral;
@@ -50,4 +50,4 @@ p{
 }
 h6{
     margin-bottom: -10px;
-}
+} */ 
