@@ -6,7 +6,7 @@
 ## 🔗Deployed Link
 
 
-## login signup page
+## Login/Signup page
 
 
 
