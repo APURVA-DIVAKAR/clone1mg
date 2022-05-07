@@ -42,3 +42,20 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding:15px;
 }
+.card{
+    display: flex;
+    gap:20px;
+   
+}
+.card>div>img{
+    width:30px;
+    height:30px;
+    margin-top: 30px;
+}
+.card>div>p{
+    margin-top:-15px;
+}
+.detail{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:10px;
+}

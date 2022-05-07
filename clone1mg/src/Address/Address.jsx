@@ -13,11 +13,9 @@ const Address = () => {
     const add = async (data) => {
         let response = await fetch(`http://localhost:8080/address`,
        {
-        method:"PUT",
+        method:"POST",
         headers: {"content-type": "application/json"},
-        body: JSON.stringify({data})
-      
-       });
+        body: JSON.stringify(data)});
        let data1 = await response.json();
        setData(data1);
     }
@@ -53,7 +51,7 @@ const Address = () => {
                </div>
                <div className={styles.flexbtn}>
                    <button type="submit">CANCEL</button>
-                   <button type="submit" value="Submit"  onClick={handleSubmit}>SAVE</button>
+                   <button type="submit" value="Submit" onSubmit={handleSubmit}>SAVE</button>
                </div>
 
             </div>

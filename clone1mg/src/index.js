@@ -8,6 +8,7 @@ import { SignupProvider } from "./LoginSignup/SignupProvider";
 import { LoginProvider } from "./LoginSignup/LoginProvider";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store";
+import { AddressProvider } from "./Address/AddressApi";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +17,9 @@ root.render(
       <BrowserRouter>
         <SignupProvider>
           <LoginProvider>
+            <AddressProvider>
             <App />
+            </AddressProvider>
           </LoginProvider>
         </SignupProvider>
       </BrowserRouter>
