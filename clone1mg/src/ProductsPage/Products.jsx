@@ -8,7 +8,7 @@ import { get_data, Products_data_func } from "../Redux/actions";
 
 const Products = () => {
   const { Product_data, isLoading, isError } = useSelector((state) => state);
-  console.log('isLoading:', isLoading)
+  console.log("Product_data:", Product_data);
   const dispatch = useDispatch();
   useEffect(() => {
     Products_data_func(dispatch);
@@ -21,7 +21,7 @@ const Products = () => {
   return (
     <>
       <div
-        style={{ display: (isLoading ? "flex" : "none" )}}
+        style={{ display: isLoading ? "flex" : "none" }}
         className={styles.loading_div}
       >
         <div className={styles.Loader__loader___1IOHb}></div>
