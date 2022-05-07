@@ -3,13 +3,13 @@ import "./App.css";
 import { Navbar } from "./Navbar/Components/Navbar";
 // import Signup from "./LoginSignup/Signup";
 import "./App.css";
-import LastsecFooter from "./components/LastsecFooter";
-import LastFooter from "./components/LastFooter";
+import LastsecFooter from "./Components/LastsecFooter";
+import LastFooter from "./Components/LastFooter";
 
 import Covid from "./COVID19/Covid";
-import Upload from "./components/UPLOAD/Upload";
+import Upload from "./Components/UPLOAD/Upload";
 import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Home_page/Home";
 
 import Signup from "./LoginSignup/Signup";
@@ -20,17 +20,16 @@ import Address from "./Address/Address";
 import ProductsDelivery from "./Address/ProductsDelivery";
 import AddAddress from "./Address/AddAddress";
 import Delivery from "./Address/Delivery";
-import { Cart_com } from './Cart/Components/Cart_com'
-import { Individual_Product_Page} from './individual_product_page/Components/Individual_Product_Page'
-import  CarePlan   from './CarePlanePage/CarePlan'
-
-
-
+import { Cart_com } from "./Cart/Components/Cart_com";
+import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
+import CarePlan from "./CarePlanePage/CarePlan";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
-      <Navbar />
+      {location.pathname === "/Cart" ? null : <Navbar />}
 
       {/* <Individual_Product_Page /> */}
       {/* <Cart_com /> */}
@@ -50,14 +49,17 @@ function App() {
         ></Route>
       </Routes>
 
-      <LastsecFooter />
-      <LastFooter />
-    {/* <AddAddress/>
+      {location.pathname === "/Cart" ? null : (
+        <>
+          <LastsecFooter />
+          <LastFooter />
+        </>
+      )}
+
+      {/* <AddAddress/>
      <Delivery/> */}
     </div>
   );
-
 }
-
 
 export default App;

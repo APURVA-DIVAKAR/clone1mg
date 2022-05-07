@@ -1,8 +1,50 @@
+import axios from "axios";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { get_data } from "../../Redux/actions";
 import { Upper_div } from "../Styles/Product";
 
-export const Product_div = ({ image_url, name }) => {
+export const Product_div = ({
+  image_url,
+  name,
+  desc,
+  mrp,
+  price,
+  discount,
+}) => {
   const [show, setShow] = React.useState(false);
+
+  const { isAuth } = useSelector((state) => {
+    // console.log(state);
+    return state;
+  });
+
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleADD = () => {
+    if (!isAuth) {
+      navigate("/Login");
+      return;
+    }
+
+    axios
+      .post(`http://localhost:8080/Cart`, {
+        qty: 1,
+        image_url,
+        name,
+        desc,
+        mrp,
+        price,
+        discount,
+      })
+      .then((data) => {
+        get_data(dispatch);
+      })
+      .catch((err) => console.error(err));
+  };
 
   return (
     <>
@@ -114,11 +156,10 @@ export const Product_div = ({ image_url, name }) => {
                 </select>
                 of 60 tablets
               </div>
-              <div className="add_to_cart">
+              <div className="add_to_cart" onClick={handleADD}>
                 <a
                   className="add_to_cart_anc"
                   data-auto-upload-prescription="true"
-                  href=""
                 >
                   <span>ADD TO CART</span>
                 </a>

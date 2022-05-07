@@ -4,24 +4,26 @@ import Sidebar from "./SideBar/Sidebar";
 import Cards from "./Cards";
 import styles from "./Products.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { get_data, Products_data_func } from "../Redux/actions";
+import { filter_data, get_data, Products_data_func } from "../Redux/actions";
 
 const Products = () => {
-  const { Product_data, isLoading, isError } = useSelector((state) => state);
-  console.log('isLoading:', isLoading)
+  const { Product_data, isLoading, isError, Fitered_data } = useSelector(
+    (state) => state
+  );
+  console.log("Fitered_data:", Fitered_data);
   const dispatch = useDispatch();
   useEffect(() => {
     Products_data_func(dispatch);
   }, []);
 
   const handleChange = (e) => {
-    // dispatch();
+    filter_data(dispatch, e.target.value);
   };
 
   return (
     <>
       <div
-        style={{ display: (isLoading ? "flex" : "none" )}}
+        style={{ display: isLoading ? "flex" : "none" }}
         className={styles.loading_div}
       >
         <div className={styles.Loader__loader___1IOHb}></div>
@@ -35,7 +37,7 @@ const Products = () => {
             <div>
               <span>Sort by </span>
               <select onChange={handleChange}>
-                <option value="ralvance">Relevance</option>
+                <option value="relevance">Relevance</option>
                 <option value="lth">By low to high price</option>
                 <option value="htl">By High to low price</option>
                 <option value="rating">by rating</option>
@@ -44,7 +46,7 @@ const Products = () => {
             </div>
           </div>
           <div className={styles.container}>
-            {Product_data.map((el) => {
+            {Fitered_data.map((el) => {
               return (
                 <div key={el.id} className="cards">
                   <Cards value={el} />
