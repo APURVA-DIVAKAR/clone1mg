@@ -52,7 +52,7 @@ export const Navbar = () => {
                 <Link to="/Ayurveda">AYURVEDA</Link>
               </div>
               <div>
-                <Link to="/">CARE PLAN</Link>
+                <Link to="/CarePlan">CARE PLAN</Link>
                 <div className="reddiv">SAVE MORE</div>
               </div>
             </div>

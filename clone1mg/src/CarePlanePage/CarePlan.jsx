@@ -4,34 +4,86 @@ import LastFooter from "../Components/LastFooter";
 export default function CarePlan() {
   return (
     <>
-      <div className="container">
+      <div>
         {/* upper img start */}
-        <div className="style__main-container___2P0i5">
+        <div
+          style={{
+            width: "100%",
+            backgroundColor: "#f8f8f8",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           {/* All work inside in that */}
-          <div className="style__benefit-herobanner___1y1jz">
+          <div
+            style={{
+              position: "relative",
+              justifyContent: "space-between",
+              display: "flex",
+              padding: "30px",
+              alignItems: "center",
+              backgroundColor: "#fdf2e3",
+              justifyContent: "center",
+            }}
+          >
             <div style={{ paddingLeft: "16px" }}>
               <div>
                 <img src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" />
               </div>
-              <div className="style__banner-header___lpQg0">
+              <div
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "700",
+                  padding: "10px 0",
+                  lineHeight: "37px",
+                }}
+              >
                 Reduce your medical <br />
                 expenses by HALF
               </div>
-              <div className="style__banner-subheader___mpKtP">
+              <div
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "500",
+                  marginBottom: "40px",
+                }}
+              >
                 Save for things that make you happy
               </div>
-              <a className="style__link-dweb___3C7YA">
-                <div className="style__join-now-dweb___sHfBM">
+              <a style={{ display: "flex", alignSelf: "flex-start" }}>
+                <div
+                  style={{
+                    background: "#ff6f61",
+                    borderRadius: "45px",
+                    padding: "10px 45px",
+                    fontSize: "16px",
+                    fontWeight: "700",
+                    color: "#fff",
+                    display: "flex",
+                    alignSelf: "flex-start",
+                  }}
+                >
                   Explore plans
                 </div>
               </a>
-              <div className="style__plan-text___2Bx_l ">
+              <div
+                style={{
+                  fontSize: "16px",
+                  lineHeight: "1.75em",
+                  fontWeight: "400",
+                  margin: "5px 0 0",
+                }}
+              >
                 Plans starting Rs 46/month
               </div>
             </div>
-            <div className="style__overlay-heroimg___2vqD_">
+            <div style={{ position: "relative", width: "35%" }}>
               <img
-                className="img-1-2-3"
+                style={{
+                  maxWidth: "100%",
+                  verticalAlign: "middle",
+                  border: "0",
+                  marginLeft: "50px",
+                }}
                 src="https://onemg.gumlet.io/image/upload/q_auto,f_auto/v1579675864/marketing/gek7gtlcjca85q0l3ees.jpg"
               />
             </div>
@@ -39,10 +91,29 @@ export default function CarePlan() {
         </div>
         {/* upper img ends */}
         {/* Benifit Part start */}
-        <div className="style__benefit-wrapper___2soth">
+        <div
+          style={{
+            background: "#fff",
+            borderBottom: "8px solid #f0f0f0",
+            fontFamily: "Poppins, sans-serif",
+            flexDirection: "column",
+            display: "flex",
+          }}
+        >
           <div>
             <div style={{ borderBottam: "8px solid #f0f0f0" }}>
-              <div className="style__hOne___2079I">Benefits</div>
+              <div
+                style={{
+                  fontSize: "40px",
+                  color: "#2b2b2b",
+                  fontWeight: "700",
+                  textAlign: "center",
+                  paddingBottom: "40px",
+                  marginTop: "40px",
+                }}
+              >
+                Benefits
+              </div>
               <div style={{ flexDirection: "column" }}>
                 <div style={{ flexDirection: "row", display: "flex" }}>
                   <div
@@ -189,11 +260,48 @@ export default function CarePlan() {
 
         {/* Additional benifits start */}
         <div>
-          <div className="style__benefit_card___1J_h0">
-            <div className="style__header___vVVl1">Additional Benefits</div>
-            <div className="style__list-wrapper___1YJW_">
-              <div className="style__listing___2xQWp">
-                <div className="style__benefit-list___1FEPT">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              background: "#fff",
+              letterSpacing: "0.5px",
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "30px",
+                color: "#2b2b2b",
+                fontWeight: "700",
+                textAlign: "center",
+                paddingBottom: "40px",
+              }}
+            >
+              Additional Benefits
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                padding: "0 15%",
+              }}
+            >
+              <div
+                style={{
+                  textAlign: "center",
+                  width: "33.333%",
+                  padding: "0 2%",
+                }}
+              >
+                <div
+                  style={{
+                    paddingBottom: "15px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
                   <img
                     style={{ width: "60px", height: "60px" }}
                     src="http://res.cloudinary.com/dusqx2w0c/image/upload/v1617169012/marketing/mqwi4hji0xmevi0leqxt.png"
@@ -207,8 +315,21 @@ export default function CarePlan() {
                   </p>
                 </div>
               </div>
-              <div className="style__listing___2xQWp ">
-                <div className="style__benefit-list___1FEPT">
+              <div
+                style={{
+                  textAlign: "center",
+                  width: "33.333%",
+                  padding: "0 2%",
+                }}
+              >
+                <div
+                  style={{
+                    paddingBottom: "15px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
                   <img
                     style={{ width: "60px", height: "60px" }}
                     src="http://res.cloudinary.com/dusqx2w0c/image/upload/v1617169094/marketing/rciejxt8uupxvkdoztx1.png"
@@ -224,8 +345,21 @@ export default function CarePlan() {
                   </p>
                 </div>
               </div>
-              <div className="style__listing___2xQWp ">
-                <div className="style__benefit-list___1FEPT">
+              <div
+                style={{
+                  textAlign: "center",
+                  width: "33.333%",
+                  padding: "0 2%",
+                }}
+              >
+                <div
+                  style={{
+                    paddingBottom: "15px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
                   <img
                     style={{ width: "60px", height: "60px" }}
                     src="http://res.cloudinary.com/dusqx2w0c/image/upload/v1617169138/marketing/q2xl4gwlyw55awctv1lk.png"
@@ -248,44 +382,111 @@ export default function CarePlan() {
         {/* Additional benifits end */}
 
         {/* care plan payment page  start */}
-        <div className="style__benefit_card1___2VNCE">
-          <div className="style__list-wrapper1___UVkc2">
-            <div className="style__variant-info-wrapper___1Og-Q">
+
+        <div style={{ background: "#fefaf1", padding: "43px 24px 48px" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: " 20px 15%",
+            }}
+          >
+            <div
+              style={{
+                background: "#fff3e3",
+                padding: "24px",
+                justifyContent: "space-between",
+                width: "40%",
+              }}
+            >
               <div>
                 <img src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" />
-                <div className="style__variant-header___3-7XL">
+                <div
+                  style={{
+                    fontSize: "30px",
+                    fontWeight: "700",
+                    lineHeight: "45px",
+                    letterSpacing: "0",
+                    padding: "8px 0",
+                    color: "#131e5e",
+                  }}
+                >
                   More discounts, faster delivery and extra care
                 </div>
-                <div className="style__variant-subheader___24Cmf">
+                <div
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "500",
+                    color: "#131e5e",
+                  }}
+                >
                   Join now and enjoy all the benefits
                 </div>
               </div>
-              <div className="style__variant-benefits___1veD6">
+              <div
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  color: "#131e5e",
+                  paddingTop: "24px",
+                  marginTop: "100px",
+                }}
+              >
                 <div>Membership includes</div>
                 <div>
-                  <div className="style__f-row___337rD">
+                  <div
+                    style={{
+                      marginTop: "10px",
+                      flexDirection: "row",
+                      display: "flex",
+                    }}
+                  >
                     <img src="https://i.postimg.cc/T1cYdz3t/Fill-3-1.png" />
                     <div
-                      style={{ marginLeft: "10px" }}
-                      className="style__variant-benefit___3RFCy"
+                      style={{
+                        marginLeft: "10px",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        color: "#131e5e",
+                      }}
                     >
                       1 Free lab test
                     </div>
                   </div>
-                  <div className="style__f-row___337rD">
+                  <div
+                    style={{
+                      marginTop: "10px",
+                      flexDirection: "row",
+                      display: "flex",
+                    }}
+                  >
                     <img src="https://i.postimg.cc/T1cYdz3t/Fill-3-1.png" />
                     <div
-                      style={{ marginLeft: "10px" }}
-                      className="style__variant-benefit___3RFCy"
+                      style={{
+                        marginLeft: "10px",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        color: "#131e5e",
+                      }}
                     >
                       1 Free E-consultation
                     </div>
                   </div>
-                  <div className="style__f-row___337rD">
+                  <div
+                    style={{
+                      marginTop: "10px",
+                      flexDirection: "row",
+                      display: "flex",
+                    }}
+                  >
                     <img src="https://i.postimg.cc/T1cYdz3t/Fill-3-1.png" />
                     <div
-                      style={{ marginLeft: "10px" }}
-                      className="style__variant-benefit___3RFCy"
+                      style={{
+                        marginLeft: "10px",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        color: "#131e5e",
+                      }}
                     >
                       All other benefits mentioned above
                     </div>
@@ -304,12 +505,43 @@ export default function CarePlan() {
                 Choose a plan that’s right for you
               </div>
               <div style={{ weight: "400px" }}>
-                <div className="borederwith-1-3-4">
+                <div
+                  style={{
+                    padding: "16px 0",
+                    margin: "16px 0",
+                    background: "#fff",
+                    border: "2px solid #ff6f61",
+                    boxShadow:
+                      " 0 0 4px rgb(0 0 0 / 8%), 0 4px 4px rgb(0 0 0 / 8%)",
+                    borderRadius: "8px",
+                    padding: "10px",
+                  }}
+                >
                   <div style={{ flexGrow: "1" }}>
-                    <div className="style__f-row___337rD ">
+                    <div
+                      style={{
+                        marginTop: "10px",
+                        flexDirection: "row",
+                        display: "flex",
+                      }}
+                    >
                       <span style={{ fontweight: "600", display: "flex" }}>
                         <h2>3 months plan</h2>
-                        <span className="style__tag___2MzGY">New</span>
+                        <span
+                          style={{
+                            backgroundColor: "#ff6f61",
+                            color: "#fff",
+                            fontSize: "12px",
+                            fontWeight: "900",
+                            padding: "2px 6px",
+                            marginLeft: "4px",
+                            borderRadius: "4px",
+                            height: "20px",
+                            marginTop: "25px",
+                          }}
+                        >
+                          New
+                        </span>
                       </span>
                     </div>
                     <div style={{ fontSize: "48px" }}>₹ 165</div>
@@ -324,9 +556,26 @@ export default function CarePlan() {
                     <span>₹55/month</span>
                   </div>
                 </div>
-                <div className="borederwith-1-3-4">
+                <div
+                  style={{
+                    padding: "16px 0",
+                    margin: "16px 0",
+                    background: "#fff",
+                    border: "2px solid #ff6f61",
+                    boxShadow:
+                      " 0 0 4px rgb(0 0 0 / 8%), 0 4px 4px rgb(0 0 0 / 8%)",
+                    borderRadius: "8px",
+                    padding: "10px",
+                  }}
+                >
                   <div style={{ flexGrow: "1" }}>
-                    <div className="style__f-row___337rD ">
+                    <div
+                      style={{
+                        marginTop: "10px",
+                        flexDirection: "row",
+                        display: "flex",
+                      }}
+                    >
                       <span style={{ fontweight: "600", display: "flex" }}>
                         <h2>6 months plan</h2>
                       </span>
@@ -343,9 +592,32 @@ export default function CarePlan() {
                     <span>₹46/month</span>
                   </div>
                 </div>
-                <div className="styles__cta-wrapper___YNJZq">
-                  <div className="style__round___3d7wi">
-                    <span className="spanmain-12-3-4">Join now</span>
+                <div
+                  style={{
+                    margin: "auto",
+                    width: "100%",
+                    padding: "10px 0",
+                    alignSelf: "flex-end",
+                  }}
+                >
+                  <div
+                    style={{
+                      borderRadius: "45px",
+                      justifyContent: "center",
+                      backgroundColor: "#ff6f61",
+                      padding: "10px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "20px",
+                        color: "white",
+                      }}
+                    >
+                      Join now
+                    </span>
                   </div>
                 </div>
               </div>
@@ -386,7 +658,14 @@ export default function CarePlan() {
                 >
                   See what our member are saying
                 </div>
-                <div className="style__desc___1y7j2">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    paddingBottom: "15px",
+                    width: "400px",
+                    alignSelf: "center",
+                  }}
+                >
                   Mujhe es plan mein dawaiyon pe discounts ke saath saath HbA1c
                   test bhi milta hai, matlab mai bahar karata hu HbA1c toh mera
                   250 rupaye lag jate hai aur ye poora diabetes care plan mujhe
@@ -396,7 +675,24 @@ export default function CarePlan() {
                   charge nahi lagega, aur aapko discount jo hai wo milega hi
                   milega.
                 </div>
-                <div className="style__name-circle___1HvS_ ">s</div>
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "100%",
+                    fontSize: "20px",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    marginBottom: "10px",
+                    background: "#000",
+                    alignSelf: "center",
+                  }}
+                >
+                  s
+                </div>
                 <div style={{ fontSize: "14px", fontWeight: "700" }}>
                   Sonu Shukla
                 </div>
@@ -419,7 +715,14 @@ export default function CarePlan() {
                 >
                   See what our member are saying
                 </div>
-                <div className="style__desc___1y7j2">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    paddingBottom: "15px",
+                    width: "400px",
+                    alignSelf: "center",
+                  }}
+                >
                   Har purchase pe itna discount kahi nahi milta, pharmacy wale
                   bhi 10% discount hi dete hai, aur baki jangah bas first
                   purchase mein 40% discount dete hai. With this plan I get free
@@ -429,7 +732,24 @@ export default function CarePlan() {
                   paise toh lag hee jaayenge! Otherwise 1200 rs lagao doctor ke
                   paas jaane mein aur woh wahi dawaiyyan repeat kar deta tha.
                 </div>
-                <div className="style__name-circle___1HvS_ ">R</div>
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "100%",
+                    fontSize: "20px",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    marginBottom: "10px",
+                    background: "#000",
+                    alignSelf: "center",
+                  }}
+                >
+                  R
+                </div>
                 <div style={{ fontSize: "14px", fontWeight: "700" }}>
                   Rakesh Kumar Gupta
                 </div>
@@ -452,13 +772,37 @@ export default function CarePlan() {
                 >
                   See what our member are saying
                 </div>
-                <div className="style__desc___1y7j2">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    paddingBottom: "15px",
+                    width: "400px",
+                    alignSelf: "center",
+                  }}
+                >
                   I use DCP for tests and purchase of other items. There is free
                   delivery on every product with amazing discounts. Also, if I
                   go for the test outside, it would definitely cost me more. Ye
                   bhi hai ki check ho jaata hai aapka.
                 </div>
-                <div className="style__name-circle___1HvS_ ">A</div>
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "100%",
+                    fontSize: "20px",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    marginBottom: "10px",
+                    background: "#000",
+                    alignSelf: "center",
+                  }}
+                >
+                  A
+                </div>
                 <div style={{ fontSize: "14px", fontWeight: "700" }}>
                   Ajay yadav
                 </div>
@@ -481,14 +825,38 @@ export default function CarePlan() {
                 >
                   See what our member are saying
                 </div>
-                <div className="style__desc___1y7j2">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    paddingBottom: "15px",
+                    width: "400px",
+                    alignSelf: "center",
+                  }}
+                >
                   The Diabetes Care Plan from 1 Mg makes Diabetes care much more
                   affordable for Diabetics. It is well thought out comprehensive
                   plan and is the best in class Diabetic plan in the marketplace
                   today. I have saved some 12-15 thousand using diabetes plan in
                   the first 3 months.
                 </div>
-                <div className="style__name-circle___1HvS_ ">S</div>
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "100%",
+                    fontSize: "20px",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    marginBottom: "10px",
+                    background: "#000",
+                    alignSelf: "center",
+                  }}
+                >
+                  S
+                </div>
                 <div style={{ fontSize: "14px", fontWeight: "700" }}>
                   Shakti Yadav
                 </div>
@@ -522,7 +890,7 @@ export default function CarePlan() {
             </span>
           </a>
         </div>
-        <LastFooter />
+        {/* <LastFooter /> */}
       </div>
     </>
   );

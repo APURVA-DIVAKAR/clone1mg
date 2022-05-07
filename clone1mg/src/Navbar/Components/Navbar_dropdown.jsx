@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Nav_dropdown } from "../Styleing/Navbar_dropdown";
+import { Link } from "react-router-dom";
 
 export const Navbar_dropdown = () => {
   return (
@@ -9,619 +10,625 @@ export const Navbar_dropdown = () => {
       <div className="dropdown_div">
         <ul>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Health Resource Center
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container1">
                 <div className="notborder">
                   <li>
-                    <a href="#">All Diseases</a>
+                    <Link to="/Products">All Diseases</Link>
                   </li>
                   <li>
-                    <a href="#">All Medicines</a>
+                    <Link to="/Products">All Medicines</Link>
                   </li>
                   <li>
-                    <a href="#">Medicines by Therapeutic className</a>
+                    <Link to="/Products">
+                      Medicines by Therapeutic className
+                    </Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Covid Essentials
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container1">
                 <div className="notborder">
                   <li>
-                    <a href="#">Covid-19 Self test kits</a>
+                    <Link to="/Products">Covid-19 Self test kits</Link>
                   </li>
                   <li>
-                    <a href="#">Oxygen Cans & Concentrators</a>
+                    <Link to="/Products">Oxygen Cans & Concentrators</Link>
                   </li>
                   <li>
-                    <a href="#">Masks</a>
+                    <Link to="/Products">Masks</Link>
                   </li>
                   <li>
-                    <a href="#">Sanitizers & Handwash Products</a>
+                    <Link to="/Products">Sanitizers & Handwash Products</Link>
                   </li>
                   <li>
-                    <a href="#">Boost Your Immunity</a>
+                    <Link to="/Products">Boost Your Immunity</Link>
                   </li>
                   <li>
-                    <a href="#">Thermometer</a>
+                    <Link to="/Products">Thermometer</Link>
                   </li>
                   <li>
-                    <a href="#">Chyawanprash</a>
+                    <Link to="/Products">Chyawanprash</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Featured
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container1">
                 <div className="notborder">
                   <li>
-                    <a href="#">Winter Care</a>
+                    <Link to="/Products">Winter Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Hair & Scalp Care</a>
-                    <a href="#">Cough & Cold</a>
-                    <a href="#">Fever & Headache</a>
-                    <a href="#">Vaporizers & Nebulizers</a>
-                    <a href="#">Heating Aid</a>
-                    <a href="#">Winter Combos</a>
+                    <Link to="/Products">Hair & Scalp Care</Link>
+                    <Link to="/Products">Cough & Cold</Link>
+                    <Link to="/Products">Fever & Headache</Link>
+                    <Link to="/Products">Vaporizers & Nebulizers</Link>
+                    <Link to="/Products">Heating Aid</Link>
+                    <Link to="/Products">Winter Combos</Link>
                   </li>
                   <li>
-                    <a href="#">Tata 1mg Health Products</a>
+                    <Link to="/Products">Tata 1mg Health Products</Link>
                   </li>
                   <li>
-                    <a href="#">Trending Products</a>
+                    <Link to="/Products">Trending Products</Link>
                   </li>
                   <li>
-                    <a href="#">New Arrivals on Tata 1MG</a>
+                    <Link to="/Products">New Arrivals on Tata 1MG</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Buy More, Save More</a>
+                    <Link to="/Products">Buy More, Save More</Link>
                   </li>
                   <li>
-                    <a href="#">Vaccination</a>
+                    <Link to="/Products">Vaccination</Link>
                   </li>
                   <li>
-                    <a href="#">Minimum 33% Off</a>
+                    <Link to="/Products">Minimum 33% Off</Link>
                   </li>
                   <li>
-                    <a href="#">Combos</a>
+                    <Link to="/Products">Combos</Link>
                   </li>
                   <li>
-                    <a href="#">Deals of the Day</a>
+                    <Link to="/Products">Deals of the Day</Link>
                   </li>
                   <li>
-                    <a href="#">Top Brands</a>
+                    <Link to="/Products">Top Brands</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Accu-Chek</a>
-                    <a href="#">Ensure</a>
-                    <a href="#">Revital</a>
-                    <a href="#">Optimum Nutrition (ON)</a>
-                    <a href="#">Dr. Morepen</a>
-                    <a href="#">Pediasure</a>
+                    <Link to="/Products">Accu-Chek</Link>
+                    <Link to="/Products">Ensure</Link>
+                    <Link to="/Products">Revital</Link>
+                    <Link to="/Products">Optimum Nutrition (ON)</Link>
+                    <Link to="/Products">Dr. Morepen</Link>
+                    <Link to="/Products">Pediasure</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Products
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container1">
                 <div className="notborder">
                   <li>
-                    <a href="#">Vitamins & Supplements</a>
+                    <Link to="/Products">Vitamins & Supplements</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Multivitamins</a>
-                    <a href="#">Vitamins A-Z</a>
-                    <a href="#">Mineral Supplements</a>
+                    <Link to="/Products">Multivitamins</Link>
+                    <Link to="/Products">Vitamins A-Z</Link>
+                    <Link to="/Products">Mineral Supplements</Link>
                   </li>
                   <li>
-                    <a href="#">Nutritional Drinks</a>
+                    <Link to="/Products">Nutritional Drinks</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Adult Daily Nutrition</a>
-                    <a href="#">Kids Nutrition (2-15 Yrs)</a>
-                    <a href="#">For Women</a>
+                    <Link to="/Products">Adult Daily Nutrition</Link>
+                    <Link to="/Products">Kids Nutrition (2-15 Yrs)</Link>
+                    <Link to="/Products">For Women</Link>
                   </li>
                   <li>
-                    <a href="#">Health Food & Drinks</a>
+                    <Link to="/Products">Health Food & Drinks</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Green Tea & Herbal Tea</a>
-                    <a href="#">Apple Cider Vinegar</a>
-                    <a href="#">Healthy Snacks</a>
+                    <Link to="/Products">Green Tea & Herbal Tea</Link>
+                    <Link to="/Products">Apple Cider Vinegar</Link>
+                    <Link to="/Products">Healthy Snacks</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Protein Supplements</a>
+                    <Link to="/Products">Protein Supplements</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Whey Protein</a>
-                    <a href="#">Amino Acids</a>
-                    <a href="#">Mass Gainers</a>
-                    <a href="#">Workout Essential</a>
-                    <a href="#">Fat Burners</a>
+                    <Link to="/Products">Whey Protein</Link>
+                    <Link to="/Products">Amino Acids</Link>
+                    <Link to="/Products">Mass Gainers</Link>
+                    <Link to="/Products">Workout Essential</Link>
+                    <Link to="/Products">Fat Burners</Link>
                   </li>
                   <li>
-                    <a href="#">Omega & Fish Oil</a>
+                    <Link to="/Products">Omega & Fish Oil</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Fish Oil</a>
-                    <a href="#">Cod Liver Oil</a>
-                    <a href="#">Flax Seed Oil</a>
+                    <Link to="/Products">Fish Oil</Link>
+                    <Link to="/Products">Cod Liver Oil</Link>
+                    <Link to="/Products">Flax Seed Oil</Link>
                   </li>
                   <li>
-                    <a href="#">Immunity Boosters</a>
+                    <Link to="/Products">Immunity Boosters</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Chyawanprasha</a>
-                    <a href="#">Vitamin C</a>
-                    <a href="#">Herbal Teas</a>
-                    <a href="#">Antioxidant Supplements</a>
-                    <a href="#">Ayurvedic Supplements</a>
+                    <Link to="/Products">Chyawanprasha</Link>
+                    <Link to="/Products">Vitamin C</Link>
+                    <Link to="/Products">Herbal Teas</Link>
+                    <Link to="/Products">Antioxidant Supplements</Link>
+                    <Link to="/Products">Ayurvedic Supplements</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Specialty Supplements</a>
+                    <Link to="/Products">Specialty Supplements</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Green Supplements</a>
-                    <a href="#">Beauty Supplements</a>
-                    <a href="#">Pre and Probiotics</a>
-                    <a href="#">Glucosamine</a>
-                    <a href="#">Collagen</a>
-                    <a href="#">Antioxidants</a>
-                    <a href="#">Biotin</a>
+                    <Link to="/Products">Green Supplements</Link>
+                    <Link to="/Products">Beauty Supplements</Link>
+                    <Link to="/Products">Pre and Probiotics</Link>
+                    <Link to="/Products">Glucosamine</Link>
+                    <Link to="/Products">Collagen</Link>
+                    <Link to="/Products">Antioxidants</Link>
+                    <Link to="/Products">Biotin</Link>
                   </li>
                   <li>
-                    <a href="#">Weight Management</a>
+                    <Link to="/Products">Weight Management</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Weight Management Herbs</a>
-                    <a href="#">Meal Replacements</a>
-                    <a href="#">Weight Gain</a>
+                    <Link to="/Products">Weight Management Herbs</Link>
+                    <Link to="/Products">Meal Replacements</Link>
+                    <Link to="/Products">Weight Gain</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Diabetes
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container1">
                 <div className="notborder">
                   <li>
-                    <a href="#">Devices</a>
+                    <Link to="/Products">Devices</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Blood Glucose Monitors</a>
-                    <a href="#">Test Strips & Lancets</a>
-                    <a href="#">Syringes & Pens</a>
+                    <Link to="/Products">Blood Glucose Monitors</Link>
+                    <Link to="/Products">Test Strips & Lancets</Link>
+                    <Link to="/Products">Syringes & Pens</Link>
                   </li>
                   <li>
-                    <a href="#">Diabetic Medicines</a>
+                    <Link to="/Products">Diabetic Medicines</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Vitamins, Minerals & Antioxidants</a>
-                    <a href="#">Homeopathy Medicines</a>
-                    <a href="#">Ayurvedic Medicines</a>
+                    <Link to="/Products">
+                      Vitamins, Minerals & Antioxidants
+                    </Link>
+                    <Link to="/Products">Homeopathy Medicines</Link>
+                    <Link to="/Products">Ayurvedic Medicines</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Sugar Substitutes</a>
+                    <Link to="/Products">Sugar Substitutes</Link>
                   </li>
                   <li>
-                    <a href="#">Diabetic Diet</a>
+                    <Link to="/Products">Diabetic Diet</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Juices & Vinegars</a>
-                    <a href="#">Superfoods</a>
+                    <Link to="/Products">Juices & Vinegars</Link>
+                    <Link to="/Products">Superfoods</Link>
                   </li>
                   <li>
-                    <a href="#">Diabetic Foot Health</a>
+                    <Link to="/Products">Diabetic Foot Health</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Healthcare Devices
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container2">
                 <div className="notborder">
                   <li>
-                    <a href="#">Masks (N95, Surgical and more)</a>
+                    <Link to="/Products">Masks (N95, Surgical and more)</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Face Shield</a>
-                    <a href="#">Surgical Masks</a>
-                    <a href="#">N95 Masks</a>
+                    <Link to="/Products">Face Shield</Link>
+                    <Link to="/Products">Surgical Masks</Link>
+                    <Link to="/Products">N95 Masks</Link>
                   </li>
                   <li>
-                    <a href="#">Oxygen Concentrators & Cans</a>
+                    <Link to="/Products">Oxygen Concentrators & Cans</Link>
                   </li>
                   <li>
-                    <a href="#">BP Monitors</a>
+                    <Link to="/Products">BP Monitors</Link>
                   </li>
                   <li>
-                    <a href="#">Nebulizers & Vaporizers</a>
+                    <Link to="/Products">Nebulizers & Vaporizers</Link>
                   </li>
                   <li>
-                    <a href="#">Oximeters & Pedometers</a>
+                    <Link to="/Products">Oximeters & Pedometers</Link>
                   </li>
                   <li>
-                    <a href="#">Vital Signs Monitors & Wearables</a>
+                    <Link to="/Products">Vital Signs Monitors & Wearables</Link>
                   </li>
                   <li>
-                    <a href="#">Weighing Scales</a>
+                    <Link to="/Products">Weighing Scales</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Thermometers</a>
+                    <Link to="/Products">Thermometers</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">IR Thermometers</a>
+                    <Link to="/Products">IR Thermometers</Link>
                   </li>
                   <li>
-                    <a href="#">Body Massager</a>
+                    <Link to="/Products">Body Massager</Link>
                   </li>
 
                   <li>
-                    <a href="#">Diabetes Monitors</a>
+                    <Link to="/Products">Diabetes Monitors</Link>
                   </li>
                   <li>
-                    <a href="#">Mobility Equipments</a>
+                    <Link to="/Products">Mobility Equipments</Link>
                   </li>
                   <li>
-                    <a href="#">Exercise Equipments</a>
+                    <Link to="/Products">Exercise Equipments</Link>
                   </li>
                   <li>
-                    <a href="#">Doctor's Corner</a>
+                    <Link to="/Products">Doctor's Corner</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Stethoscopes</a>
-                    <a href="#">Tapes & Bandages</a>
-                    <a href="#">Clinical Diagnostic Equipments</a>
-                    <a href="#">Dressings & Wound Care</a>
+                    <Link to="/Products">Stethoscopes</Link>
+                    <Link to="/Products">Tapes & Bandages</Link>
+                    <Link to="/Products">Clinical Diagnostic Equipments</Link>
+                    <Link to="/Products">Dressings & Wound Care</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Supports & Braces</a>
+                    <Link to="/Products">Supports & Braces</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Neck & Shoulder Suppor</a>
-                    <a href="#">Knee & Leg Support</a>
-                    <a href="#">Back & Abdomen Support</a>
-                    <a href="#">Ankle & Foot Support</a>
-                    <a href="#">Hand & Wrist Braces</a>
-                    <a href="#">Arm & Elbow Support</a>
-                    <a href="#">Cervical Pillows</a>
-                    <a href="#">Compression support & sleeves</a>
-                    <a href="#">Heel support</a>
+                    <Link to="/Products">Neck & Shoulder Suppor</Link>
+                    <Link to="/Products">Knee & Leg Support</Link>
+                    <Link to="/Products">Back & Abdomen Support</Link>
+                    <Link to="/Products">Ankle & Foot Support</Link>
+                    <Link to="/Products">Hand & Wrist Braces</Link>
+                    <Link to="/Products">Arm & Elbow Support</Link>
+                    <Link to="/Products">Cervical Pillows</Link>
+                    <Link to="/Products">Compression support & sleeves</Link>
+                    <Link to="/Products">Heel support</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Personal Care{" "}
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container2">
                 <div className="notborder">
                   <li>
-                    <a href="#">Sexual Wellness</a>
+                    <Link to="/Products">Sexual Wellness</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Condoms</a>
-                    <a href="#">Lubricants & Massage Gels</a>
-                    <a href="#">Personal body massagers</a>
-                    <a href="#">Men Performance Enhancers</a>
-                    <a href="#">Sexual Health Supplements</a>
+                    <Link to="/Products">Condoms</Link>
+                    <Link to="/Products">Lubricants & Massage Gels</Link>
+                    <Link to="/Products">Personal body massagers</Link>
+                    <Link to="/Products">Men Performance Enhancers</Link>
+                    <Link to="/Products">Sexual Health Supplements</Link>
                   </li>
                   <li>
-                    <a href="#">Skin Care</a>
+                    <Link to="/Products">Skin Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Body Lotions</a>
-                    <a href="#">Mosquito Repellents</a>
-                    <a href="#">Lip Balm</a>
-                    <a href="#">Acne Care</a>
-                    <a href="#">Bath Essentials</a>
-                    <a href="#">Facewash</a>
-                    <a href="#">Sanitizers & Handwash</a>
-                    <a href="#">Sunscreen Products</a>
+                    <Link to="/Products">Body Lotions</Link>
+                    <Link to="/Products">Mosquito Repellents</Link>
+                    <Link to="/Products">Lip Balm</Link>
+                    <Link to="/Products">Acne Care</Link>
+                    <Link to="/Products">Bath Essentials</Link>
+                    <Link to="/Products">Facewash</Link>
+                    <Link to="/Products">Sanitizers & Handwash</Link>
+                    <Link to="/Products">Sunscreen Products</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Baby Care</a>
+                    <Link to="/Products">Baby Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Baby & Infant Food</a>
-                    <a href="#">Baby Diapers, wipes & more</a>
-                    <a href="#">Nursing & Feeding</a>
-                    <a href="#">Baby Bath Essentials</a>
-                    <a href="#">Baby Skin Care</a>
-                    <a href="#">Baby Healthcare</a>
-                    <a href="#">Baby Oral Health</a>
+                    <Link to="/Products">Baby & Infant Food</Link>
+                    <Link to="/Products">Baby Diapers, wipes & more</Link>
+                    <Link to="/Products">Nursing & Feeding</Link>
+                    <Link to="/Products">Baby Bath Essentials</Link>
+                    <Link to="/Products">Baby Skin Care</Link>
+                    <Link to="/Products">Baby Healthcare</Link>
+                    <Link to="/Products">Baby Oral Health</Link>
                   </li>
                   <li>
-                    <a href="#">Hair Care</a>
+                    <Link to="/Products">Hair Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Shampoo</a>
-                    <a href="#">Hair Conditioners</a>
-                    <a href="#">Hair Growth Supplements</a>
-                    <a href="#">Hair Oils</a>
-                    <a href="#">Hair Growth for Men</a>
+                    <Link to="/Products">Shampoo</Link>
+                    <Link to="/Products">Hair Conditioners</Link>
+                    <Link to="/Products">Hair Growth Supplements</Link>
+                    <Link to="/Products">Hair Oils</Link>
+                    <Link to="/Products">Hair Growth for Men</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Elderly Care</a>
+                    <Link to="/Products">Elderly Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Adult Diapers</a>
-                    <a href="#">Bone & Joint Health</a>
-                    <a href="#">Living & Safety Aids</a>
-                    <a href="#">Orthopaedic Supports</a>
+                    <Link to="/Products">Adult Diapers</Link>
+                    <Link to="/Products">Bone & Joint Health</Link>
+                    <Link to="/Products">Living & Safety Aids</Link>
+                    <Link to="/Products">Orthopaedic Supports</Link>
                   </li>
                   <li>
-                    <a href="#">Women Care</a>
+                    <Link to="/Products">Women Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Feminine Hygiene</a>
-                    <a href="#">Women Care Supplements</a>
-                    <a href="#">Mother Care</a>
-                    <a href="#">Menopause</a>
-                    <a href="#">Polycystic Ovary Syndrome</a>
+                    <Link to="/Products">Feminine Hygiene</Link>
+                    <Link to="/Products">Women Care Supplements</Link>
+                    <Link to="/Products">Mother Care</Link>
+                    <Link to="/Products">Menopause</Link>
+                    <Link to="/Products">Polycystic Ovary Syndrome</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Men Care</a>
+                    <Link to="/Products">Men Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Men Grooming</a>
+                    <Link to="/Products">Men Grooming</Link>
                   </li>
                   <li>
-                    <a href="#">Oral Care</a>
+                    <Link to="/Products">Oral Care</Link>
                   </li>
                   <li>
-                    <a href="#">Pet Care</a>
+                    <Link to="/Products">Pet Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Pet Grooming</a>
-                    <a href="#">Pet Food</a>
-                    <a href="#">Pet Health Care</a>
+                    <Link to="/Products">Pet Grooming</Link>
+                    <Link to="/Products">Pet Food</Link>
+                    <Link to="/Products">Pet Health Care</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Health Conditions
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container2">
                 <div className="notborder">
                   <li>
-                    <a href="#">Stomach Care</a>
+                    <Link to="/Products">Stomach Care</Link>
                   </li>
                   <li>
-                    <a href="#">Heart Care</a>
+                    <Link to="/Products">Heart Care</Link>
                   </li>
                   <li>
-                    <a href="#">Bone, Joint & Muscle Care</a>
+                    <Link to="/Products">Bone, Joint & Muscle Care</Link>
                   </li>
                   <li>
-                    <a href="#">Pain Relief</a>
+                    <Link to="/Products">Pain Relief</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Heating Aids</a>
+                    <Link to="/Products">Heating Aids</Link>
                   </li>
                   <li>
-                    <a href="#">Eye Care</a>
+                    <Link to="/Products">Eye Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Eye Lubricants</a>
+                    <Link to="/Products">Eye Lubricants</Link>
                   </li>
                   <li>
-                    <a href="#">Ear Care</a>
+                    <Link to="/Products">Ear Care</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Hearing Aid Devices</a>
+                    <Link to="/Products">Hearing Aid Devices</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">First Aid</a>
+                    <Link to="/Products">First Aid</Link>
                   </li>
                   <li>
-                    <a href="#">Liver Care</a>
+                    <Link to="/Products">Liver Care</Link>
                   </li>
                   <li>
-                    <a href="#">Cold & Cough</a>
+                    <Link to="/Products">Cold & Cough</Link>
                   </li>
                   <li>
-                    <a href="#">Fever</a>
+                    <Link to="/Products">Fever</Link>
                   </li>
                   <li>
-                    <a href="#">Mental Wellness</a>
+                    <Link to="/Products">Mental Wellness</Link>
                   </li>
                   <li>
-                    <a href="#">Kidney Care</a>
+                    <Link to="/Products">Kidney Care</Link>
                   </li>
                   <li>
-                    <a href="#">Respiratory Care</a>
+                    <Link to="/Products">Respiratory Care</Link>
                   </li>
                   <li>
-                    <a href="#">Piles, Fissures & Fistula</a>
+                    <Link to="/Products">Piles, Fissures & Fistula</Link>
                   </li>
                   <li>
-                    <a href="#">Smoking Cessation</a>
+                    <Link to="/Products">Smoking Cessation</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Ayurveda Products
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container2">
                 <div className="notborder">
                   <li>
-                    <a href="#">Ayurveda Top Brands</a>
+                    <Link to="/Products">Ayurveda Top Brands</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Dabur</a>
-                    <a href="#">Sri Sri Tattva</a>
-                    <a href="#">Baidyanath Products</a>
-                    <a href="#">Kerala Ayurveda</a>
-                    <a href="#">Jiva Ayurveda</a>
-                    <a href="#">Tata 1mg Herbal Supplements</a>
-                    <a href="#">Patanjali</a>
+                    <Link to="/Products">Dabur</Link>
+                    <Link to="/Products">Sri Sri Tattva</Link>
+                    <Link to="/Products">Baidyanath Products</Link>
+                    <Link to="/Products">Kerala Ayurveda</Link>
+                    <Link to="/Products">Jiva Ayurveda</Link>
+                    <Link to="/Products">Tata 1mg Herbal Supplements</Link>
+                    <Link to="/Products">Patanjali</Link>
                   </li>
                   <li>
-                    <a href="#">Popular categories</a>
+                    <Link to="/Products">Popular categories</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Herbal Juice</a>
-                    <a href="#">Herbal Juice</a>
-                    <a href="#">Ayurveda Personal Care</a>
-                    <a href="#">Ayurvedic Immunity Boosters</a>
-                    <a href="#">Explore Popular Herbs</a>
-                    <a href="#">Herbal Supplements</a>
+                    <Link to="/Products">Herbal Juice</Link>
+                    <Link to="/Products">Herbal Juice</Link>
+                    <Link to="/Products">Ayurveda Personal Care</Link>
+                    <Link to="/Products">Ayurvedic Immunity Boosters</Link>
+                    <Link to="/Products">Explore Popular Herbs</Link>
+                    <Link to="/Products">Herbal Supplements</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Top Health Concerns</a>
+                    <Link to="/Products">Top Health Concerns</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Ayurvedic Respiratory care</a>
-                    <a href="#">Cough, Cold & Fever</a>
-                    <a href="#">Sexual Wellness</a>
-                    <a href="#">Bone, Joint and Muscle Care</a>
-                    <a href="#">Stomach Care</a>
-                    <a href="#">Diabetes Care</a>
-                    <a href="#">Liver Care</a>
-                    <a href="#">Mind Care</a>
-                    <a href="#">Cardiac Care</a>
+                    <Link to="/Products">Ayurvedic Respiratory care</Link>
+                    <Link to="/Products">Cough, Cold & Fever</Link>
+                    <Link to="/Products">Sexual Wellness</Link>
+                    <Link to="/Products">Bone, Joint and Muscle Care</Link>
+                    <Link to="/Products">Stomach Care</Link>
+                    <Link to="/Products">Diabetes Care</Link>
+                    <Link to="/Products">Liver Care</Link>
+                    <Link to="/Products">Mind Care</Link>
+                    <Link to="/Products">Cardiac Care</Link>
                   </li>
                   <li>
-                    <a href="#">Unani Medicines</a>
+                    <Link to="/Products">Unani Medicines</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Hamdard Unani</a>
-                    <a href="#">AMU Dawakhana</a>
-                    <a href="#">Rex Remedies</a>
-                    <a href="#">Dehlvi Remedies</a>
+                    <Link to="/Products">Hamdard Unani</Link>
+                    <Link to="/Products">AMU Dawakhana</Link>
+                    <Link to="/Products">Rex Remedies</Link>
+                    <Link to="/Products">Dehlvi Remedies</Link>
                   </li>
                 </div>
               </div>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <Link to="/Products">
               Homeopathy{" "}
               <FontAwesomeIcon className="dropdown_icon" icon={faAngleDown} />
-            </a>
+            </Link>
             <ul className="dropdown">
               <div className="container2">
                 <div className="notborder">
                   <li>
-                    <a href="#">Homeopathy Top Brands</a>
+                    <Link to="/Products">Homeopathy Top Brands</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">SBL Homoeopathy</a>
-                    <a href="#">Dr Reckeweg</a>
-                    <a href="#">Dr Willmar Schwabe India</a>
-                    <a href="#">Adel Pekana</a>
-                    <a href="#">BJAIN Homeopathy</a>
-                    <a href="#">Bakson's</a>
-                    <a href="#">Allen</a>
-                    <a href="#">Wheezal</a>
-                    <a href="#">Dr Willmar Schwabe Germany</a>
-                    <a href="#">Haslab</a>
-                    <a href="#">Medisynth</a>
-                    <a href="#">Boiron</a>
-                    <a href="#">Bhandari</a>
-                    <a href="#">Dr Bakshi Bakson</a>
-                    <a href="#">Dr Batra's</a>
+                    <Link to="/Products">SBL Homoeopathy</Link>
+                    <Link to="/Products">Dr Reckeweg</Link>
+                    <Link to="/Products">Dr Willmar Schwabe India</Link>
+                    <Link to="/Products">Adel Pekana</Link>
+                    <Link to="/Products">BJAIN Homeopathy</Link>
+                    <Link to="/Products">Bakson's</Link>
+                    <Link to="/Products">Allen</Link>
+                    <Link to="/Products">Wheezal</Link>
+                    <Link to="/Products">Dr Willmar Schwabe Germany</Link>
+                    <Link to="/Products">Haslab</Link>
+                    <Link to="/Products">Medisynth</Link>
+                    <Link to="/Products">Boiron</Link>
+                    <Link to="/Products">Bhandari</Link>
+                    <Link to="/Products">Dr Bakshi Bakson</Link>
+                    <Link to="/Products">Dr Batra's</Link>
                   </li>
                   <li>
-                    <a href="#">Homeopathy Wellness Combos</a>
+                    <Link to="/Products">Homeopathy Wellness Combos</Link>
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="#">Homeopathy Popular Categories</a>
+                    <Link to="/Products">Homeopathy Popular Categories</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Homeopathic Care for Cold & Cough</a>
-                    <a href="#">Respiratory Wellness</a>
-                    <a href="#">Homeopathy Covid Essentials</a>
-                    <a href="#">Sexual Health</a>
-                    <a href="#">Hair Care Products</a>
-                    <a href="#">Skin Care Products</a>
-                    <a href="#">Children's Health</a>
-                    <a href="#">Women's Health</a>
+                    <Link to="/Products">
+                      Homeopathic Care for Cold & Cough
+                    </Link>
+                    <Link to="/Products">Respiratory Wellness</Link>
+                    <Link to="/Products">Homeopathy Covid Essentials</Link>
+                    <Link to="/Products">Sexual Health</Link>
+                    <Link to="/Products">Hair Care Products</Link>
+                    <Link to="/Products">Skin Care Products</Link>
+                    <Link to="/Products">Children's Health</Link>
+                    <Link to="/Products">Women's Health</Link>
                   </li>
                   <li>
-                    <a href="#">Homeopathy Medicines</a>
+                    <Link to="/Products">Homeopathy Medicines</Link>
                   </li>
                   <li className="innerli">
-                    <a href="#">Homeopathic Drops</a>
-                    <a href="#">Dilutions</a>
-                    <a href="#">Mother Tinctures</a>
-                    <a href="#">Trituration</a>
-                    <a href="#">Bio Combinations</a>
-                    <a href="#">Millesimal LM Potencies</a>
-                    <a href="#">Biochemics</a>
-                    <a href="#">Bach Flower Remedies</a>
+                    <Link to="/Products">Homeopathic Drops</Link>
+                    <Link to="/Products">Dilutions</Link>
+                    <Link to="/Products">Mother Tinctures</Link>
+                    <Link to="/Products">Trituration</Link>
+                    <Link to="/Products">Bio Combinations</Link>
+                    <Link to="/Products">Millesimal LM Potencies</Link>
+                    <Link to="/Products">Biochemics</Link>
+                    <Link to="/Products">Bach Flower Remedies</Link>
                   </li>
                 </div>
               </div>
