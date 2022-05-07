@@ -45,11 +45,11 @@ const Address = () => {
                <div className={styles.flexip}>
                   
                     <input type="radio" name="address_place" value="Home" onChange={handleChange}/>
-                    <label for="Home">Home</label>
+                    <label htmlFor="Home">Home</label>
                     <input type="radio" name="address_place" value="Office" onChange={handleChange} />
-                    <label for="Office">Office</label>
+                    <label htmlFor="Office">Office</label>
                     <input type="radio" name="address_place" value="Other" onChange={handleChange}/>
-                    <label for="Other">Other</label>
+                    <label htmlFor="Other">Other</label>
                </div>
                <div className={styles.flexbtn}>
                    <button type="submit">CANCEL</button>

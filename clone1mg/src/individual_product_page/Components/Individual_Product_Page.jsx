@@ -7,20 +7,16 @@ import { Navbar_search } from "../../Navbar/Components/Navbar_search";
 import { Product } from "../Styles/Product";
 import { Product_div } from "./Product_div";
 import { Product_info_component } from "./Product_info";
+import { useDispatch } from "react-redux";
+import { Products_data_func } from "../../Redux/actions";
 
 export const Individual_Product_Page = () => {
   const [product, setProduct] = React.useState({});
   const { type, id } = useParams();
+  const dispatch = useDispatch();
 
   React.useEffect(() => {
-    axios
-      .get(`http://localhost:8080/${type}/${id}`)
-      .then((response) => {
-        setProduct(response.data);
-      })
-      .catch((error) => {
-        console.log("error:", error);
-      });
+    Products_data_func(dispatch, type, id);
   }, []);
 
   console.log("product:", product);

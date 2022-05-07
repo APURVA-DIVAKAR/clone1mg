@@ -20,6 +20,18 @@ export const get_data = (dispatch) => {
     });
 };
 
+export const Products_data_func = (dispatch, type, id) => {
+  dispatch({ type: LOADING });
+  axios
+    .get(`http://localhost:8080/${type}/${id}`)
+    .then((response) => {
+      dispatch({ type: ADD_TO_CART, payload: response.data });
+    })
+    .catch((error) => {
+      dispatch({ type: ERROR });
+    });
+};
+
 export const add_to_cart = (payload) => {
   return { type: ADD_TO_CART, payload };
 };
