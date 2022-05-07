@@ -25,11 +25,12 @@ const Home = () => {
       <ProductDetails />
       <PopularCategories />
       <DealsDay />
+      <ShopByConcern />
       <TataMg />
       <ComboDeals />
-      <ShopByConcern />
-      <Flashdeals />
+
       <Healthconcern />
+      <Flashdeals />
       <Ayurved />
     </div>
   );
