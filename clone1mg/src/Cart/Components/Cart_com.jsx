@@ -13,6 +13,9 @@ export const Cart_com = () => {
   const [Dtotal, setDtotal] = React.useState(0);
   const [Ptotal, setPtotal] = React.useState(0);
   const [change, setChange] = React.useState(false);
+  let m = 0;
+  let p = 0;
+  let d = 0;
 
   const { cartData } = useSelector((state) => {
     return state;
@@ -23,14 +26,17 @@ export const Cart_com = () => {
   }, []);
 
   React.useEffect(() => {
-    let m = 0;
-    let p = 0;
-    let d = 0;
+    m = 0;
+    p = 0;
+    d = 0;
     cartData.map((el) => {
       console.log(el.qty);
-      setMtotal((prev) => (m += (el.qty - 1) * el.MRP));
-      setPtotal((prev) => (p += (el.qty - 1) * el.price));
-      setDtotal((prev) => (d += (el.qty - 1) * Math.abs(el.MRP - el.price)));
+      m += el.qty * el.MRP;
+      p += el.qty * el.price;
+      d += el.qty * Math.abs(el.MRP - el.price);
+      setMtotal(m);
+      setPtotal(p);
+      setDtotal(d);
     });
   }, [change, cartData]);
 

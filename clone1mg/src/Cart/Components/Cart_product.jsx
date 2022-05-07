@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -19,17 +20,17 @@ const Cart_product = ({
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    fetch(`http://localhost:8080/Cart/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
+    axios
+      .delete(`http://localhost:8080/Cart/${id}`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
       .then((data) => {
-        fetch("https://jsonplaceholder.typicode.com/posts")
-          .then((response) => response.json())
+        axios
+          .get("https://jsonplaceholder.typicode.com/posts")
           .then((data) => {
+            // console.log("data:", data);
             get_data(dispatch);
           })
           .catch((err) => console.error(err));
@@ -37,21 +38,26 @@ const Cart_product = ({
       .catch((err) => console.error(err));
   };
 
-  const handleQty = () => {
-    fetch(`http://localhost:8080/Cart/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        qty: count,
-      }),
-    })
-      .then((response) => response.json())
+  const handleQty = (t) => {
+    if (t) {
+      var payload = {
+        qty: qty + 1,
+      };
+    } else {
+      var payload = {
+        qty: qty - 1,
+      };
+    }
+    axios
+      .patch(`http://localhost:8080/Cart/${id}`, payload, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
       .then((data) => {
-        funcChange(!varChange);
-        console.log("data:", data);
+        console.log("data:", data.data);
         get_data(dispatch);
+        funcChange(!varChange);
       })
       .catch((err) => console.error(err));
   };
@@ -89,8 +95,9 @@ const Cart_product = ({
                   className=""
                   onClick={() => {
                     if (count > 1) {
-                      setCount(count - 1);
-                      handleQty();
+                      console.log("count:", count);
+                      handleQty(false);
+                      setCount((prev) => prev - 1);
                     } else {
                       handleDelete();
                     }
@@ -103,8 +110,8 @@ const Cart_product = ({
                   src="https://www.1mg.com/images/plus-cart.svg"
                   alt="increase"
                   onClick={() => {
-                    handleQty();
-                    setCount(count + 1);
+                    handleQty(true);
+                    setCount((prev) => prev + 1);
                   }}
                 />
               </div>

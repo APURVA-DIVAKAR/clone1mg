@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
-      {/* <Individual_Product_Page /> */}
+      <Individual_Product_Page />
       <Cart_com />
 
       {/* <Routes>
