@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 // import { Link } from 'react-router-dom'
 // import 'react-slideshow-image/dist/styles.css'
 // import { Fade } from "react-slideshow-image";
@@ -16,6 +16,10 @@ import styles from './signup.module.css'
 const Signup = () => {
     const {Clicked,setClicked,toggle} = useContext(SignupContext)
     console.log (Clicked,toggle);
+    const[log,setLog] = useState(false)
+    const handle =()=>{
+      setLog(true)
+    }
   return (
    <>
       <button
@@ -65,11 +69,11 @@ const Signup = () => {
            <h1>Sign Up</h1>
            <p>Please enter your Mobile number to receive One Time Password (OTP)</p>
            <br/>
-           <input type="number" placeholder="Enter Mobile Number" />
+           {log ? <input type="number" placeholder="Enter OTP"/> : <input type="text" placeholder="Enter Mobile Number/email" /> }
            <br/>
            <input type="checkbox"/><span>Are you a healthcare professional?</span>
            <br/>
-           <button type="submit" onClick={toggle}> Continue</button>
+           <button type="submit" onClick={handle}> Continue</button>
            <p>Have an account?<b style={{"color":"pink"}}>Login</b></p>
            <p>For corporate Sign up,<a style={{"color":"pink"}}>Click Here</a></p>
            <p>By signing up, you agree to our</p>

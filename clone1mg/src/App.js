@@ -3,23 +3,22 @@ import "./App.css";
 import { Navbar } from "./Navbar/Components/Navbar";
 // import Signup from "./LoginSignup/Signup";
 import "./App.css";
-import LastsecFooter from "./Components/LastsecFooter";
-import LastFooter from "./Components/LastFooter";
+import LastsecFooter from "./components/LastsecFooter";
+import LastFooter from "./components/LastFooter";
 
 import Covid from "./COVID19/Covid";
-import Upload from "./Components/UPLOAD/Upload";
+import Upload from "./components/UPLOAD/Upload";
 import { Ask_Doctor } from "./Ask_Doctor/Components/Ask_Doctor";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home_page/Home";
 
 import Signup from "./LoginSignup/Signup";
 import Login from "./LoginSignup/Login";
-import Ayurveda from "./Ayurveda_Navbar/Ayurveda";
+import Ayurveda from "./Ayurveda_Navbar/Ayurveda"
 import Products from "./ProductsPage/Products";
-import Address from "./Address/Address";
-import Delivery from "./Address/Delivery";
-import { Cart_com } from "./Cart/Components/Cart_com";
-import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
+
+
+
 
 function App() {
   return (
@@ -41,9 +40,9 @@ function App() {
         ></Route>
       </Routes>
 
-      {/* <LastsecFooter /> */}
+      <LastsecFooter />
       <LastFooter />
-      {/* <Delivery/> */}
+     
     </div>
   );
 }
