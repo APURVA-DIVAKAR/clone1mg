@@ -159,14 +159,14 @@ export const Product_info_component = ({
               <img src="https://www.1mg.com/images/add.png" alt="" />
             </div>
             <Small_product
-              data={Products_data[Math.floor(Math.random() * (9 - 0)) + 0]}
+              data={Products_data[random]}
             />
             <hr />
             <div className="total_div">
               <div>
                 <span className="style__total-price_title">TOTAL PRICE</span>
                 <br />
-                <span className="style__total-price_price">₹{price + 334}</span>
+                <span className="style__total-price_price">₹{price + Products_data[random].price}</span>
               </div>
               <div className="add_both_to_cart">
                 <a
