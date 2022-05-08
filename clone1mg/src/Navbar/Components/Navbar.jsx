@@ -6,6 +6,7 @@ import { Navbar_dropdown } from "./Navbar_dropdown";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { get_data } from "../../Redux/actions";
+import Login from "../../LoginSignup/Login";
 
 export const Navbar = () => {
   const nevigate = useNavigate();
@@ -58,7 +59,7 @@ export const Navbar = () => {
             </div>
           </div>
           <div id="loginSignup">
-            <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               {isAuth ? (
                 <div className="userProfile">
                   <div className="styles__profile-menu___1m4r-">
@@ -154,12 +155,12 @@ export const Navbar = () => {
                 </div>
               ) : (
                 <>
-                  <a href="login.html" className="logandsign">
-                    Login
+                  <a className="logandsign">
+                    <Login show={true} />
                   </a>
                   |
-                  <a href="signUp.html" className="logandsign">
-                    Sign Up
+                  <a className="logandsign">
+                    <Login show={false} />
                   </a>
                 </>
               )}

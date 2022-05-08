@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Login from "../../LoginSignup/Login";
 import { get_data } from "../../Redux/actions";
 import { Upper_div } from "../Styles/Product";
 
@@ -20,14 +21,12 @@ export const Product_div = ({
     return state;
   });
 
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleADD = () => {
     if (!isAuth) {
-      navigate("/Login");
-      return;
+      return <Login show={true} />;
     }
 
     axios
@@ -161,6 +160,7 @@ export const Product_div = ({
                   className="add_to_cart_anc"
                   data-auto-upload-prescription="true"
                 >
+                  <Login show={true} />
                   <span>ADD TO CART</span>
                 </a>
               </div>

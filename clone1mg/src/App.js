@@ -24,6 +24,8 @@ import { Cart_com } from "./Cart/Components/Cart_com";
 import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 import CarePlan from "./CarePlanePage/CarePlan";
 
+// json-server --watch db.json --port 8080
+
 function App() {
   const location = useLocation();
 

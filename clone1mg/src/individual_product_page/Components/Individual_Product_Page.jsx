@@ -23,8 +23,6 @@ export const Individual_Product_Page = () => {
       });
   }, []);
 
-  console.log("product:", product);
-
   return (
     <>
       <Navbar_search />
