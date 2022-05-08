@@ -34,9 +34,6 @@ function App() {
     <div className="App">
       {location.pathname === "/Cart" ? null : <Navbar />}
 
-      {/* <Individual_Product_Page /> */}
-      {/* <Cart_com /> */}
-
       <Login />
 
       <Routes>
