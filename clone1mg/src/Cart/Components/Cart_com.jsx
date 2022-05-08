@@ -222,9 +222,9 @@ export const Cart_com = () => {
                     </div>
                   </div>
                   <div id="checkoutButton">
-                    <a href="address.html" id="a">
+                    <Link href="/AddAddress" id="a">
                       CHECKOUT
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
