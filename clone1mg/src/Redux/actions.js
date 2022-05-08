@@ -81,3 +81,26 @@ export const filter_data = (dispatch, filter) => {
     dispatch({ type: REVIEW });
   }
 };
+
+export const Login_func = (dispatch) => {
+  console.log("dispatch:", dispatch);
+  dispatch({ type: LOADING });
+  axios
+    .post("https://reqres.in/api/login", {
+      email: "eve.holt@reqres.in",
+      password: "cityslicka",
+    })
+    .then((response) => {
+      console.log("response:", response);
+      localStorage.setItem("token", response.data.token);
+      dispatch({ type: LOGED_IN, payload: response.data.token });
+    })
+    .catch((error) => {
+      dispatch({ type: ERROR });
+    });
+};
+
+export const Logout = () => {
+  localStorage.removeItem("token");
+  return { type: LOGED_OUT };
+};

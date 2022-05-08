@@ -1,20 +1,38 @@
 import { TextField } from "@mui/material";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Form_container } from "./Login.styled";
-import { LoginContext } from "./LoginProvider";
 
 export const Login_form = ({ setting }) => {
-  const [log, setLog] = useState(false);
+  const [error, setError] = useState(false);
+
   const handle = () => {
-    setLog(true);
+    if (Number(setting.Number_Email)) {
+      if (setting.Number_Email.length === 10) {
+        setError(false);
+        setting.setOtp_show(true);
+      } else {
+        setError(true);
+      }
+    } else {
+      setting.setOtp_show(true);
+    }
   };
+
+  const handleChange = (e) => {
+    setError(false);
+    setting.setNumber_Email(e.target.value);
+  };
+
   return (
     <Form_container>
       <div>
         <div className="style__cross-wrapper">
           <span
             className="style__pointer"
-            onClick={() => setting.setvisible(false)}
+            onClick={() => {
+              setting.setOtp_show(false);
+              setting.setvisible(false);
+            }}
           >
             ×
           </span>
@@ -32,19 +50,18 @@ export const Login_form = ({ setting }) => {
           </div>
 
           <div>
-            {log ? (
-              <TextField
-                id="standard-basic"
-                label="Enter OTP"
-                variant="standard"
-              />
-            ) : (
-              <TextField
-                id="standard-basic"
-                label="Enter Email ID or Mobile Number"
-                variant="standard"
-              />
-            )}
+            <TextField
+              error={error}
+              id="standard-basic"
+              label="Enter Email ID or Mobile Number"
+              variant="standard"
+              onChange={handleChange}
+              helperText={
+                error
+                  ? "Please enter a valid 10 digit Mobile Number or Email ID"
+                  : ""
+              }
+            />
           </div>
 
           <div>

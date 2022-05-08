@@ -16,7 +16,6 @@ let initState = {
   isLoading: false,
   isError: false,
   cartData: [],
-  isAuth: false,
   Addresses: [],
   Product_data: [],
   Fitered_data: [],
@@ -47,12 +46,12 @@ export const reducer = (state = initState, { type, payload }) => {
       };
     }
     case LOGED_IN: {
-      return { ...state, isAuth: true, token: payload };
+      return { ...state, isLoading: false, token: payload };
     }
     case LOGED_OUT: {
       return {
         ...state,
-        isAuth: false,
+        isLoading: false,
         token: "",
       };
     }

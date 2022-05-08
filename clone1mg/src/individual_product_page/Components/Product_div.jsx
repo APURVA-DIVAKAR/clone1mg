@@ -18,7 +18,7 @@ export const Product_div = ({
   const { isvisible, setvisible } = useContext(AuthContext);
   const [show, setShow] = React.useState(false);
 
-  const { isAuth } = useSelector((state) => {
+  const { token } = useSelector((state) => {
     // console.log(state);
     return state;
   });
@@ -27,7 +27,7 @@ export const Product_div = ({
   const dispatch = useDispatch();
 
   const handleADD = () => {
-    if (!isAuth) {
+    if (!token) {
       return setvisible(true);
     }
 

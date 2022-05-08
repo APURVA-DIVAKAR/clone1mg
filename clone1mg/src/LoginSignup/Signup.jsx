@@ -1,21 +1,26 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
-import { Box, Blok, Signup_container } from "./Signup.styled";
-import { SignupContext } from "./SignupProvider";
-import { useContext } from "react";
-import { AiFillCloseCircle } from "react-icons/ai";
-import styles from "./signup.module.css";
-import { Form_container } from "./Login.styled";
+import { Signup_container } from "./Signup.styled";
 import { TextField } from "@mui/material";
 
 const Signup = ({ setting }) => {
-  const [log, setLog] = useState(false);
+  const [error, setError] = useState(false);
 
   const handle = () => {
-    setLog(true);
+    if (Number(setting.Number_Email)) {
+      if (setting.Number_Email.length === 10) {
+        setError(false);
+        setting.setOtp_show(true);
+      } else {
+        setError(true);
+      }
+    } else {
+      setting.setOtp_show(true);
+    }
+  };
+
+  const handleChange = (e) => {
+    setError(false);
+    setting.setNumber_Email(e.target.value);
   };
 
   return (
@@ -25,7 +30,7 @@ const Signup = ({ setting }) => {
           <span
             className="style__pointer"
             onClick={(e) => {
-              console.log(e);
+              setting.setOtp_show(false);
               setting.setvisible(false);
             }}
           >
@@ -45,19 +50,16 @@ const Signup = ({ setting }) => {
           </div>
 
           <div>
-            {log ? (
-              <TextField
-                id="standard-basic"
-                label="Enter OTP"
-                variant="standard"
-              />
-            ) : (
-              <TextField
-                id="standard-basic"
-                label="Enter Mobile Number"
-                variant="standard"
-              />
-            )}
+            <TextField
+              error={error}
+              id="standard-basic"
+              label="Enter Mobile Number"
+              variant="standard"
+              onChange={handleChange}
+              helperText={
+                error ? "Please enter a valid mobile number to continue" : ""
+              }
+            />
           </div>
 
           <div>

@@ -18,6 +18,8 @@ import { Otp_form } from "./Otp_form";
 
 const Login = () => {
   const { isvisible, setvisible, show, setShow } = useContext(AuthContext);
+  const [Otp_show, setOtp_show] = useState(false);
+  const [Number_Email, setNumber_Email] = useState(0);
 
   return (
     <>
@@ -88,12 +90,37 @@ const Login = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            {/* <Otp_form setting={{ setShow, setvisible }}  /> */}
 
-            {show ? (
-              <Login_form setting={{ setShow, setvisible }} />
+            {Otp_show ? (
+              <Otp_form
+                setting={{
+                  setShow,
+                  setvisible,
+                  setOtp_show,
+                  Number_Email,
+                  setNumber_Email,
+                }}
+              />
+            ) : show ? (
+              <Login_form
+                setting={{
+                  setShow,
+                  setvisible,
+                  setOtp_show,
+                  Number_Email,
+                  setNumber_Email,
+                }}
+              />
             ) : (
-              <Signup setting={{ setShow, setvisible }} />
+              <Signup
+                setting={{
+                  setShow,
+                  setvisible,
+                  setOtp_show,
+                  Number_Email,
+                  setNumber_Email,
+                }}
+              />
             )}
           </div>
         </Blok>
