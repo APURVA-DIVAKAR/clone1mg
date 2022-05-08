@@ -24,6 +24,7 @@ import { Cart_com } from "./Cart/Components/Cart_com";
 import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
+import Sucess from "./Sucess_page/Sucess";
 
 // json-server --watch db.json --port 8080
 
@@ -54,6 +55,7 @@ function App() {
         <Route path="/ProductsDelivery" element={<ProductsDelivery />}></Route>
         <Route path="/Address" element={<Address />}></Route>
         <Route path="/Payment" element={<Payment />}></Route>
+        <Route path="/Sucess" element={<Sucess />}></Route>
       </Routes>
 
       {location.pathname === "/Cart" ? null : (

@@ -1,11 +1,12 @@
 import React from 'react'
-import "./Sucess.css"
+// import "./Sucess.css"
+import styles from "./Sucess.module.css"
 // import {Link} from "react-router-dom;"
 
 
 const Sucess = () => {
   return (
-    <>
+    < div className={styles.container1}>
     <div>
         <img src='https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png' />
         <h1>Thank you for your purchase!</h1>
@@ -19,7 +20,8 @@ const Sucess = () => {
     </div>
  
 
-    </>
+    <div/>
+    </div>
     
   )
 }
