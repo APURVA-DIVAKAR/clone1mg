@@ -11,12 +11,12 @@ const Delivery = () => {
     //  console.log(address1)
     setAddress(...address, address1);
   };
-  // console.log(address)
+   console.log(address)
   // console.log(id)
   useEffect(() => {
     getAddress();
   
-  }, []);
+  }, [id]);
  
 
   return (
@@ -36,16 +36,20 @@ const Delivery = () => {
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-            <div>
-              <h6>{address.address_place}</h6>
-              <p>{address.name}</p>
+           {address.map((el)=>{
+             return(
+              <div>
+              <h6>{el.address_place}</h6>
+              <p>{el.name}</p>
               <p>
-                {address.mobile},{address.buliding},{address.locality}
+                {el.mobile},{el.buliding},{el.locality}
               </p>
               <p>
-                {address.city},{address.state}-{address.pincode}
+                {el.city},{el.state}-{el.pincode}
               </p>
             </div>
+             )
+           })}
           </div>
           <button>CONTINUE</button>
         </div>

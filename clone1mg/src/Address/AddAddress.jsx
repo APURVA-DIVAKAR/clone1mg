@@ -20,7 +20,7 @@ const AddAddress = () => {
   }, []);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setId(e.target.value);
   };
   
@@ -28,14 +28,14 @@ const AddAddress = () => {
     e.preventDefault();
     handle(id);
   };
-  console.log(id);
+  // console.log(id);
 
   return (
     <div className={styles.box}>
       <form onSubmit={handleSubmit}>
         {address.map((el) => {
           return (
-            <div className={styles.flex}>
+            <div className={styles.flex} key={el.id}>
               <div>
                 <input
                   type="radio"
