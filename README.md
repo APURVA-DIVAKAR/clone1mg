@@ -50,6 +50,7 @@
 - JavaScript (ES6)
 - ReactJS
 - Redux
+- JSON API
 
 
 # Blog
