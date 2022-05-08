@@ -1,25 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AddressContext } from "./AddressApi";
 import styles from "./Delivery.module.css";
 
 const ProductsDelivery = () => {
   const [data, setData] = useState([]);
-  const [address, setAddress] = useState([]);
+  
   const getData = async () => {
     let res = await fetch(`http://localhost:8080/Cart`);
     let data1 = await res.json();
     //  console.log(data1)
     setData(...data, data1);
   };
+  const [address, setAddress] = useState([]);
+  const { id } = useContext(AddressContext);
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address`);
-    let data1 = await res.json();
-    //  console.log(data1)
-    setAddress(...address, data1);
+    let res = await fetch(`http://localhost:8080/address?id=${id}`);
+    let address1 = await res.json();
+    //  console.log(address1)
+    setAddress(...address, address1);
   };
+  
   useEffect(() => {
     getData();
     getAddress();
-  }, []);
+  }, [id]);
   // console.log(address[0])
   // console.log(address[0])
   return (
@@ -74,8 +78,20 @@ const ProductsDelivery = () => {
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-            {/* <h6>{address[0].address_place}</h6> */}
-            {/* <p>{address[0].buliding}</p> */}
+          {address.map((el)=>{
+             return(
+              <div>
+              <h6>{el.address_place}</h6>
+              <p>{el.name}</p>
+              <p>
+                {el.mobile},{el.buliding},{el.locality}
+              </p>
+              <p>
+                {el.city},{el.state}-{el.pincode}
+              </p>
+            </div>
+             )
+           })}
           </div>
           <button>CONTINUE</button>
         </div>

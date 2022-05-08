@@ -6,20 +6,18 @@ const Delivery = () => {
   const [address, setAddress] = useState([]);
   const { id } = useContext(AddressContext);
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address`);
-    let data1 = await res.json();
-    //  console.log(data1)
-    setAddress(...address, data1);
+    let res = await fetch(`http://localhost:8080/address?id=${id}`);
+    let address1 = await res.json();
+    //  console.log(address1)
+    setAddress(...address, address1);
   };
-  // console.log(address)
+   console.log(address)
   // console.log(id)
   useEffect(() => {
     getAddress();
-  }, []);
-  let data;
-  let data1 = address.filter((element) => element.id == id);
-  data = data1[0];
-  console.log(data);
+  
+  }, [id]);
+ 
 
   return (
     <div className={styles.container}>
@@ -38,16 +36,20 @@ const Delivery = () => {
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-            <div>
-              <h6>{data.address_place}</h6>
-              <p>{data.name}</p>
+           {address.map((el)=>{
+             return(
+              <div>
+              <h6>{el.address_place}</h6>
+              <p>{el.name}</p>
               <p>
-                {data.mobile},{data.buliding},{data.locality}
+                {el.mobile},{el.buliding},{el.locality}
               </p>
               <p>
-                {data.city},{data.state}-{data.pincode}
+                {el.city},{el.state}-{el.pincode}
               </p>
             </div>
+             )
+           })}
           </div>
           <button>CONTINUE</button>
         </div>
