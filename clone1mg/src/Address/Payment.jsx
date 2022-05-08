@@ -4,21 +4,19 @@ import CardsPay from './CardsPay';
 import styles from "./payment.module.css"
 import PayOnDelivery from './PayOnDelivery';
 import Wallet from './Wallet';
+import {useNavigate} from "react-router-dom";
 
 const Payment = () => {
-
-
-    const [Mtotal, setMtotal] = React.useState(0);
+   const navigate = useNavigate();
+   
+  const [Mtotal, setMtotal] = React.useState(0);
   const [Dtotal, setDtotal] = React.useState(0);
   const [Ptotal, setPtotal] = React.useState(0);
   const [change, setChange] = React.useState(false);
   let m = 0;
   let p = 0;
   let d = 0;
-  const handleSubmit=()=>{
-     
-  }
-
+ 
   const { cartData } = useSelector((state) => {
     return state;
   });
@@ -38,6 +36,9 @@ const Payment = () => {
       setDtotal(d);
     });
   }, [change, cartData]);
+  const handleSubmit=()=>{
+    navigate('/Sucess')
+  }
   
   return (
     <div>
@@ -70,7 +71,8 @@ const Payment = () => {
             </div>
             <div>
                  {/* ComponentS */}
-                 <CardsPay/>
+                 {/* <CardsPay/> */}
+                 <PayOnDelivery/>
             </div>
             <div className={styles.three}>
               <div>
@@ -103,7 +105,7 @@ const Payment = () => {
                     <span id="totalSavingGreen">₹{Dtotal.toFixed(2)}</span>
                   </div>
                 </div>
-                <button>Place Order</button>
+                <button onClick={handleSubmit}>Place Order</button>
             </div>
         </div>
     </div>
