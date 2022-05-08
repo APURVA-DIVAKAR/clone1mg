@@ -6,21 +6,18 @@ const Delivery = () => {
   const [address, setAddress] = useState([]);
   const { id } = useContext(AddressContext);
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address`);
-    let data1 = await res.json();
-    //  console.log(data1)
-    setAddress(...address, data1);
+    let res = await fetch(`http://localhost:8080/address?id=${id}`);
+    let address1 = await res.json();
+    //  console.log(address1)
+    setAddress(...address, address1);
   };
   // console.log(address)
   // console.log(id)
   useEffect(() => {
     getAddress();
-    setData(data1[0]);
+  
   }, []);
-  let data;
-  let data1 = address.filter((element) => element.id == id);
-  data = data1[0];
-  console.log(data);
+ 
 
   return (
     <div className={styles.container}>
@@ -40,13 +37,13 @@ const Delivery = () => {
           </div>
           <div className={styles.address}>
             <div>
-              <h6>{data.address_place}</h6>
-              <p>{data.name}</p>
+              <h6>{address.address_place}</h6>
+              <p>{address.name}</p>
               <p>
-                {data.mobile},{data.buliding},{data.locality}
+                {address.mobile},{address.buliding},{address.locality}
               </p>
               <p>
-                {data.city},{data.state}-{data.pincode}
+                {address.city},{address.state}-{address.pincode}
               </p>
             </div>
           </div>
