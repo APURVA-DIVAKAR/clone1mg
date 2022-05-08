@@ -88,13 +88,13 @@ const Login = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <Otp_form setting={{ setShow, setvisible }}  />
+            {/* <Otp_form setting={{ setShow, setvisible }}  /> */}
 
-            {/* {show ? (
+            {show ? (
               <Login_form setting={{ setShow, setvisible }} />
             ) : (
               <Signup setting={{ setShow, setvisible }} />
-            )} */}
+            )}
           </div>
         </Blok>
       </Box>
