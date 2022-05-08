@@ -24,7 +24,7 @@ var popularBrand = [
     id: 4,
     image_url:
       "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525284/cabpuknnlyyzgqfnb4x5.png",
-    name: "Vitamins &amp; Supplements",
+    name: "Vitamins & Supplements",
     link: "https://www.1mg.com/categories/fitness-supplements/vitamins-minerals-9",
   },
   {
