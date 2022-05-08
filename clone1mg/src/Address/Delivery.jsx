@@ -1,15 +1,23 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AddressContext } from "./AddressApi";
 import styles from "./Delivery.module.css";
+import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const Delivery = () => {
-  const [address, setAddress] = useState([]);
+  const [address, setAddress] = useState();
   const { id } = useContext(AddressContext);
+  const navigate = useNavigate();
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address?id=${id}`);
-    let address1 = await res.json();
+    // let res = await fetch(`http://localhost:8080/address?id=${id}`);
+    // let address1 = await res.json();
     //  console.log(address1)
-    setAddress(...address, address1);
+      axios.get(`http://localhost:8080/address/${id}`)
+      .then(res=>{  
+         console.log(res.data)
+        setAddress(res.data);
+       })
+    
   };
    console.log(address)
   // console.log(id)
@@ -17,6 +25,9 @@ const Delivery = () => {
     getAddress();
   
   }, [id]);
+  const handleSubmit=()=>{
+    navigate('/ProductsDelivery')
+  }
  
 
   return (
@@ -30,31 +41,31 @@ const Delivery = () => {
             <label htmlFor="date">Between 14-15 May</label>
           </div>
         </div>
+        </div>
+        <div>
         <div className={styles.box2}>
           <div className={styles.header}>
             <h2>Select Address</h2>
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-           {address.map((el)=>{
-             return(
-              <div>
-              <h6>{el.address_place}</h6>
-              <p>{el.name}</p>
+           
+              {address &&  <div key={address.id}>
+              <h6>{address.address_place}</h6>
+              <p>{address.name}</p>
               <p>
-                {el.mobile},{el.buliding},{el.locality}
+                {address.mobile},{address.buliding},{address.locality}
               </p>
               <p>
-                {el.city},{el.state}-{el.pincode}
+                {address.city},{address.state}-{address.pincode}
               </p>
-            </div>
-             )
-           })}
+            </div> }
+           
           </div>
-          <button>CONTINUE</button>
+          <button onClick={handleSubmit}>CONTINUE</button>
         </div>
-        <div className={styles.address}></div>
-        <button>CONTINUE</button>
+        {/* <div className={styles.address}></div>
+        <button>CONTINUE</button> */}
       </div>
     </div>
   );

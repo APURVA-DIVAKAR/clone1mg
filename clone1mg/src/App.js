@@ -23,6 +23,8 @@ import Delivery from "./Address/Delivery";
 import { Cart_com } from "./Cart/Components/Cart_com";
 import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 import CarePlan from "./CarePlanePage/CarePlan";
+import Payment from "./Address/Payment";
+
 
 function App() {
   const location = useLocation();
@@ -47,6 +49,11 @@ function App() {
           path="/Products/:type/:id"
           element={<Individual_Product_Page />}
         ></Route>
+        <Route path="/AddAddress" element={ <AddAddress /> }></Route>
+        <Route path="/Delivery" element={<Delivery />}></Route>
+        <Route path="/ProductsDelivery" element={<ProductsDelivery />}></Route>
+        <Route path="/Address" element={<Address />}></Route>
+        <Route path="/Payment" element={<Payment />}></Route>
       </Routes>
 
       {location.pathname === "/Cart" ? null : (
@@ -56,8 +63,8 @@ function App() {
         </>
       )}
 
-      <AddAddress /> 
-       <Delivery/> 
+      {/* <AddAddress /> 
+       <Delivery/>  */}
     </div>
   );
 }
