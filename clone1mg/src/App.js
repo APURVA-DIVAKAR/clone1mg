@@ -25,6 +25,8 @@ import { Individual_Product_Page } from "./individual_product_page/Components/In
 import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
 import Sucess from "./Sucess_page/Sucess";
+import { Otp } from "./Otp_component/Components/Otp";
+import LabTests from "./LabTests/components/LabTests";
 
 // json-server --watch db.json --port 8080
 
@@ -36,11 +38,14 @@ function App() {
       {location.pathname === "/Cart" ? null : <Navbar />}
 
       <Login />
+      <Otp />
+
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Cart" element={<Cart_com />}></Route>
         <Route path="/Upload" element={<Upload />}></Route>
+        <Route path="/LabTests" element={<LabTests />}></Route>
         <Route path="/AskDoctor" element={<Ask_Doctor />}></Route>
         <Route path="/Covid" element={<Covid />}></Route>
         <Route path="/CarePlan" element={<CarePlan />}></Route>
@@ -60,7 +65,6 @@ function App() {
 
       {location.pathname === "/Cart" ? null : (
         <>
-          <LastsecFooter />
           <LastFooter />
         </>
       )}

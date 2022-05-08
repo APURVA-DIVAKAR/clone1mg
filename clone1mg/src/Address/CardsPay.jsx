@@ -2,8 +2,10 @@ import React from 'react'
 import styles from './CardsPay.module.css'
 import { AuthContext } from "../Redux/Login_Auth";
 import { Otp_form } from "../LoginSignup/Otp_form";
+import { useNavigate } from 'react-router-dom';
 const CardsPay = () => {
   const[data, setData] = React.useState({})
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const inputName = e.target.name;
     setData({
@@ -17,8 +19,11 @@ const CardsPay = () => {
     setOtp_show(true)
     
   };
+  const handle=()=>{
+    navigate('/Sucess');
+  }
   const [Otp_show, setOtp_show] = React.useState(false);
-  console.log(data);
+  
   return (
     <div className={styles.container}>
         <div>
@@ -54,6 +59,7 @@ const CardsPay = () => {
               <Otp_form
                 setting={{
                   setOtp_show,
+                  onClick:{handle}
                 }}
               />
             ) }
