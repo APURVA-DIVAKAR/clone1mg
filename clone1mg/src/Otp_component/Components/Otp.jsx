@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../../Redux/Login_Auth";
 import { Otp_container } from "../Styles/Otp_styled";
 
 export const Otp = () => {
-
-    const [isvisible,setIsVisible] = useState(false)
+  const { Otpvisible, setOtpVisible } = useContext(AuthContext);
 
   return (
-    <Otp_container disabled={isvisible}>
+    <Otp_container disabled={Otpvisible}>
       <div id="container">
         <form id="otpform">
           <h3>Mobile phone verification</h3>

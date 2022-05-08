@@ -11,6 +11,7 @@ export const Login_Auth = ({ children }) => {
 
   const [isvisible, setvisible] = useState(false);
   const [show, setShow] = useState(true);
+  const [Otpvisible, setOtpVisible] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -24,7 +25,16 @@ export const Login_Auth = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ isAuth, toggleAuth, isvisible, setvisible, show, setShow }}
+      value={{
+        isAuth,
+        toggleAuth,
+        isvisible,
+        setvisible,
+        show,
+        setShow,
+        Otpvisible,
+        setOtpVisible,
+      }}
     >
       {children}
     </AuthContext.Provider>
