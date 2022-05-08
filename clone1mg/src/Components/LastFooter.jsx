@@ -4,83 +4,104 @@ export default function LastFooter() {
   return (
     <>
       <div style={{ background: "#fffcf8" }}>
-        <div style={{ boxShadow: "2px 0 4px 0 rgb(0 0 0 / 12%)" }}>
-          <div className="style__f14___1FE-V">
-            <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
-          </div>
-          <div className="style__flex-box____V1Y1">
-            <div>
-              <div className="style__stats-num___3Ns_4">260m+</div>
-              <div>Visitors</div>
+        <div>
+          <div style={{ boxShadow: "2px 0 4px 0 rgb(0 0 0 / 12%)" }}>
+            <div className="style__f14___1FE-V">
+              <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
             </div>
-            <div>
-              <div className="style__stats-num___3Ns_4">31m+</div>
-              <div>Orders Delivered</div>
-            </div>
-            <div>
-              <div className="style__stats-num___3Ns_4">1800+</div>
-              <div>Cities</div>
-            </div>
-          </div>
-          <hr />
-          <div className="style__down-bar___3FV6g">
-            <div className="style__f20___2opYM">
-              Get the link to download App
+            <div className="style__flex-box____V1Y1">
+              <div>
+                <div className="style__stats-num___3Ns_4">260m+</div>
+                <div>Visitors</div>
+              </div>
+              <div>
+                <div className="style__stats-num___3Ns_4">31m+</div>
+                <div>Orders Delivered</div>
+              </div>
+              <div>
+                <div className="style__stats-num___3Ns_4">1800+</div>
+                <div>Cities</div>
+              </div>
             </div>
             <div
-              className="style__input-box___7akGm"
-              style={{ marginTop: "20px" }}
+              style={{
+                height: "60px",
+                display: "flex",
+                background: "white",
+                alignItems: "center",
+              }}
             >
-              <form>
-                <input
-                  type="tel"
-                  placeholder="Enter Phone Number"
-                  autoComplete="off"
-                  className="style__input-phone___2P9PU"
-                />
-                <button type="submit" className="style__next-button___3J4Nx">
-                  Send Link
-                </button>
-              </form>
+              <div
+                style={{
+                  display: "flex",
+                  height: "1px",
+                  borderTop: "1px solid #eaeaea",
+                  width: "90%",
+                  margin: "24px auto",
+                  backgroundColor: "white",
+                }}
+              ></div>
+            </div>
+
+            <div className="style__down-bar___3FV6g">
+              <div className="style__f20___2opYM">
+                Get the link to download App
+              </div>
+              <div
+                className="style__input-box___7akGm"
+                style={{ marginTop: "20px" }}
+              >
+                <form>
+                  <input
+                    type="tel"
+                    placeholder="Enter Phone Number"
+                    autoComplete="off"
+                    className="style__input-phone___2P9PU"
+                  />
+                  <button type="submit" className="style__next-button___3J4Nx">
+                    Send Link
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-          <hr style={{ color: "grey" }} />
+
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <div className="style__main-link-bar___12igi">
-              <h3 className="style__main-content___2sd49">Know Us</h3>
+              <div className="style__main-content___2sd49">Know Us</div>
               <ul>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> About Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Contact Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Press Coverage</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Careers</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Business Partnership</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Become a Health Partner</span>
                   </a>
@@ -88,40 +109,40 @@ export default function LastFooter() {
               </ul>
             </div>
             <div className="style__main-link-bar___12igi">
-              <h3 className="style__main-content___2sd49">Our Policies</h3>
+              <div className="style__main-content___2sd49">Our Policies</div>
               <ul>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span>Privacy Policy </span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Terms and Conditions</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Editorial Policy</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Return Policy</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span>IP Policy </span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Grievance Redressal Policy</span>
                   </a>
@@ -129,40 +150,40 @@ export default function LastFooter() {
               </ul>
             </div>
             <div className="style__main-link-bar___12igi">
-              <h3 className="style__main-content___2sd49">Our Services</h3>
+              <div className="style__main-content___2sd49">Our Services</div>
               <ul>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Order Medicines</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Book Lab Tests</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span>Consult a Doctor </span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span>Ayurveda Articles </span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Hindi Articles</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a style={{ textDecoration: "none" }} href="">
                     {" "}
                     <span> Care Plan</span>
                   </a>
@@ -170,64 +191,56 @@ export default function LastFooter() {
               </ul>
             </div>
             <div className="style__main-link-bar___12igi">
-              <h3 className="style__main-content___2sd49">Connect</h3>
+              <div className="style__main-content___2sd49">Connect</div>
               <ul>
                 <li>
                   <span className="style__s-head___367TK">Social Links</span>
                 </li>
                 <li className="style__m-web___2xu0C">
                   <a
+                    style={{ textDecoration: "none" }}
                     href="https://www.facebook.com/1mgOfficial"
                     alt="Facebook"
                     rel="nofollow"
                     target="_blank"
                   >
-                    <div className="facebook">
-                      <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" />
-                    </div>
+                    <div className="facebook"></div>
                   </a>
                   <a
+                    style={{ textDecoration: "none" }}
                     href="https://twitter.com/1mgofficial"
                     alt="Twitter"
                     rel="nofollow"
                     target="_blank"
                   >
-                    <div className="twitter">
-                      <img src="https://cdn-icons.flaticon.com/png/128/3256/premium/3256013.png?token=exp=1651597199~hmac=817ad1e7f5b43f644069a121044bc346" />
-                    </div>
+                    <div className="twitter"></div>
                   </a>
                   <a
+                    style={{ textDecoration: "none" }}
                     href="https://www.youtube.com/c/1mgofficial"
                     alt="You Tube"
                     rel="nofollow"
                     target="_blank"
                   >
-                    <div className="youtube">
-                      {" "}
-                      <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" />
-                    </div>
+                    <div className="youtube"> </div>
                   </a>
                   <a
+                    style={{ textDecoration: "none" }}
                     href="https://www.linkedin.com/company/1mg"
                     alt="Linkedin"
                     rel="nofollow"
                     target="_blank"
                   >
-                    <div className="linkedin">
-                      {" "}
-                      <img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" />
-                    </div>
+                    <div className="linkedin"> </div>
                   </a>
                   <a
+                    style={{ textDecoration: "none" }}
                     href="https://medium.com/1mgofficial"
                     alt="Medium Link"
                     rel="nofollow"
                     target="_blank"
                   >
-                    <div className="medium">
-                      {" "}
-                      <img src="https://cdn-icons.flaticon.com/png/128/2582/premium/2582607.png?token=exp=1651597289~hmac=a2f584f454b402e567f12882a08b6020" />
-                    </div>
+                    <div className="medium"> </div>
                   </a>
                 </li>
                 <li>
@@ -243,23 +256,23 @@ export default function LastFooter() {
               </ul>
             </div>
             <div>
-              <h3>Download App</h3>
-              <img
-                style={{ width: "50px" }}
-                src="https://cdn-icons-png.flaticon.com/128/888/888873.png"
-              />
-              <img
-                style={{ width: "50px", marginLeft: "10px" }}
-                src="https://cdn-icons-png.flaticon.com/128/831/831378.png"
-              />
+              <h5>Download App</h5>
+              <ul className="ul_appstore">
+                <li>
+                  <div className="google_play"></div>
+                </li>
+                <li>
+                  <div className="apple_store"></div>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="style__auth-bar___bYPU8">
             <div className="style__auth-cont___2vf7G">
               <div className="reliable "></div>
               <div style={{ marginLeft: "25px" }}>
-                <h5>Reliable</h5>
-                <p>
+                <div>Reliable</div>
+                <p style={{ fontSize: "12px", color: "#767676" }}>
                   All products displayed on Tata 1mg are procured from verified
                   and licensed pharmacies. All labs listed on the platform are
                   accredited
@@ -269,8 +282,8 @@ export default function LastFooter() {
             <div className="style__auth-cont___2vf7G">
               <div className="secure "></div>
               <div style={{ marginLeft: "25px" }}>
-                <h5>Secure</h5>
-                <p>
+                <div>Secure</div>
+                <p style={{ fontSize: "12px", color: "#767676" }}>
                   Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption
                   and is Payment Card Industry Data Security Standard (PCI DSS)
                   compliant
@@ -280,8 +293,8 @@ export default function LastFooter() {
             <div className="style__auth-cont___2vf7G">
               <div className="affordable "></div>
               <div>
-                <h5>Affordable</h5>
-                <p>
+                <div>Affordable</div>
+                <p style={{ fontSize: "12px", color: "#767676" }}>
                   Find affordable medicine substitutes, save up to 50% on health
                   products, up to 80% off on lab tests and free doctor
                   consultations.
@@ -299,11 +312,15 @@ export default function LastFooter() {
               healthcare platform
             </div>
           </div>
-          <hr style={{ color: "grey" }} />
           <div className="style__collapse___1sCdv">
             <h2 style={{ fontSize: "14px" }}>Know more about Tata 1mg</h2>
+            <span>
+              <img
+                src="https://img.1mg.com/images/down-arrowRebrand.svg"
+                alt="downArrow"
+              />
+            </span>
           </div>
-          <hr style={{ color: "grey" }} />
           <div className="style__b-text___uV-wn">
             <div>
               <p className="style__copyright___qclAW">
@@ -313,12 +330,7 @@ export default function LastFooter() {
                 drugs.
               </p>
             </div>
-            <div className="payment">
-              <img
-                style={{ width: "70px" }}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKbg7AtKrub1HrftwJsuCH3eXD2qDZ-3kcA&usqp=CAU"
-              />
-            </div>
+            <div className="payment"></div>
           </div>
         </div>
       </div>

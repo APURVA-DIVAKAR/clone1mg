@@ -89,6 +89,18 @@ export const Blok = styled.div`
   .swiper-pagination {
     bottom: 110px !important;
   }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    width: 677px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
 `;
 
 export const Form_container = styled.div`

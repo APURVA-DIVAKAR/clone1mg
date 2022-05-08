@@ -20,6 +20,12 @@ export const Cart_com = () => {
     return state;
   });
 
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    get_data(dispatch);
+  }, []);
+
   React.useEffect(() => {
     m = 0;
     p = 0;
@@ -216,9 +222,9 @@ export const Cart_com = () => {
                     </div>
                   </div>
                   <div id="checkoutButton">
-                    <a href="address.html" id="a">
+                    <Link href="/AddAddress" id="a">
                       CHECKOUT
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
