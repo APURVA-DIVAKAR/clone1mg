@@ -10,37 +10,17 @@ import { Pagination, Autoplay } from "swiper";
 import { Box, Blok } from "./Login.styled";
 import { LoginContext } from "./LoginProvider";
 import { AiFillCloseCircle } from "react-icons/ai";
-import styles from "./login.module.css";
 import { TextField } from "@mui/material";
 import { Login_form } from "./Login_form";
 import Signup from "./Signup";
+import { AuthContext } from "../Redux/Login_Auth";
+import { Otp_form } from "./Otp_form";
 
-const Login = ({ show }) => {
-  const [isL_Or_S, setIs_Or_S] = useState(true);
-  const [isvisible, setvisible] = useState(false);
+const Login = () => {
+  const { isvisible, setvisible, show, setShow } = useContext(AuthContext);
 
   return (
     <>
-      {show ? (
-        <div
-          onClick={() => {
-            setIs_Or_S(true);
-            setvisible(true);
-          }}
-        >
-          Login
-        </div>
-      ) : (
-        <div
-          onClick={() => {
-            setIs_Or_S(false);
-            setvisible(true);
-          }}
-        >
-          Sign Up
-        </div>
-      )}
-
       <Box block={isvisible}>
         <Blok>
           <div>
@@ -108,11 +88,13 @@ const Login = ({ show }) => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            {isL_Or_S ? (
-              <Login_form setting={{ setIs_Or_S, setvisible }} />
+            <Otp_form setting={{ setShow, setvisible }}  />
+
+            {/* {show ? (
+              <Login_form setting={{ setShow, setvisible }} />
             ) : (
-              <Signup setting={{ setIs_Or_S, setvisible }} />
-            )}
+              <Signup setting={{ setShow, setvisible }} />
+            )} */}
           </div>
         </Blok>
       </Box>

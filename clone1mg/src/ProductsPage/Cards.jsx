@@ -1,12 +1,14 @@
 import axios from "axios";
-import React from "react";
+import React, { useContext } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { get_data } from "../Redux/actions";
+import { AuthContext } from "../Redux/Login_Auth";
 import styles from "./Cards.module.css";
 const Cards = ({ value }) => {
   // console.log(value);
+  const { isvisible, setvisible } = useContext(AuthContext);
   const { name, desc, image_url, mrp, off, price, review, star, id } = value;
 
   const { isAuth } = useSelector((state) => {
@@ -18,8 +20,7 @@ const Cards = ({ value }) => {
 
   const handleADD = () => {
     if (!isAuth) {
-      navigate("/Login");
-      return;
+      return setvisible(true);
     }
 
     axios

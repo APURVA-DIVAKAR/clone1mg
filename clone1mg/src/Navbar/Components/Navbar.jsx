@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Nav } from "../Styleing/Navbar_Styled";
 import Advertisement from "./Advertisement";
 import { Navbar_search } from "./Navbar_search";
@@ -7,8 +7,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { get_data } from "../../Redux/actions";
 import Login from "../../LoginSignup/Login";
+import { AuthContext } from "../../Redux/Login_Auth";
 
 export const Navbar = () => {
+  const { isvisible, setvisible, setShow } = useContext(AuthContext);
   const nevigate = useNavigate();
   const { cartData, isAuth, toggleAuth } = useSelector((state) => {
     return state;
@@ -155,12 +157,26 @@ export const Navbar = () => {
                 </div>
               ) : (
                 <>
-                  <a className="logandsign">
-                    <Login show={true} />
+                  <a
+                    onClick={() => {
+                      setShow(true);
+                      setvisible(true);
+                    }}
+                    className="logandsign"
+                  >
+                    {/* <Login show={true} /> */}
+                    Login
                   </a>
                   |
-                  <a className="logandsign">
-                    <Login show={false} />
+                  <a
+                    onClick={() => {
+                      setShow(false);
+                      setvisible(true);
+                    }}
+                    className="logandsign"
+                  >
+                    {/* <Login show={false} /> */}
+                    Sign Up
                   </a>
                 </>
               )}

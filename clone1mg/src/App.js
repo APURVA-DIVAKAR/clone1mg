@@ -36,6 +36,8 @@ function App() {
       {/* <Individual_Product_Page /> */}
       {/* <Cart_com /> */}
 
+      <Login />
+
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Cart" element={<Cart_com />}></Route>
@@ -58,8 +60,8 @@ function App() {
         </>
       )}
 
-      <AddAddress /> 
-       <Delivery/> 
+      <AddAddress />
+      <Delivery />
     </div>
   );
 }

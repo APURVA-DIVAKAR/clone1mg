@@ -1,9 +1,10 @@
 import axios from "axios";
-import React from "react";
+import React, { useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Login from "../../LoginSignup/Login";
 import { get_data } from "../../Redux/actions";
+import { AuthContext } from "../../Redux/Login_Auth";
 import { Upper_div } from "../Styles/Product";
 
 export const Product_div = ({
@@ -14,6 +15,7 @@ export const Product_div = ({
   price,
   discount,
 }) => {
+  const { isvisible, setvisible } = useContext(AuthContext);
   const [show, setShow] = React.useState(false);
 
   const { isAuth } = useSelector((state) => {
@@ -26,7 +28,7 @@ export const Product_div = ({
 
   const handleADD = () => {
     if (!isAuth) {
-      return <Login show={true} />;
+      return setvisible(true);
     }
 
     axios
@@ -160,7 +162,6 @@ export const Product_div = ({
                   className="add_to_cart_anc"
                   data-auto-upload-prescription="true"
                 >
-                  <Login show={true} />
                   <span>ADD TO CART</span>
                 </a>
               </div>

@@ -1,97 +1,6 @@
 import styled from "styled-components";
 
-export const Box = styled.div`
-  display: ${(props) => (props.block ? "block" : "none")};
-  z-index: 10001;
-  position: relative;
-  text-transform: none;
-`;
-
-export const Blok = styled.div`
-  font-size: 14px;
-  font-family: Clear Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.65);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  > div {
-    display: flex;
-    justify-content: center;
-    max-height: 640px;
-    width: fit-content;
-    overflow: scroll;
-    overflow: hidden;
-    border-radius: 8px;
-
-    > div:nth-of-type(1) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-right: 1px solid #f5f5f5;
-    }
-
-    > div:nth-of-type(2) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-right: 1px solid #f5f5f5;
-    }
-
-    > div {
-      background-color: #fff;
-      display: block;
-      width: 500px;
-      height: 500px;
-    }
-  }
-
-  .swiper-wrapper {
-    width: 100%;
-  }
-
-  .swiper-slide {
-    height: 308px;
-    margin: auto;
-
-    > div:nth-of-type(1) {
-      font-size: 20px;
-      font-weight: 700;
-      color: #4a4a4a;
-      margin: 50px 0 20px;
-    }
-
-    > div:nth-of-type(2) {
-      font-size: 14px;
-      padding: 0 50px;
-      color: #686363;
-      font-weight: 100;
-    }
-  }
-
-  .swiper-pagination-bullet {
-    background-color: hsla(0, 0%, 46%, 0.87);
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: #a5a5a5;
-  }
-
-  .swiper-pagination {
-    bottom: 110px !important;
-  }
-`;
-
-export const Form_container = styled.div`
+export const Otp_container = styled.div`
   display: flex;
   flex-direction: column;
   text-transform: none;
@@ -99,7 +8,7 @@ export const Form_container = styled.div`
   > div:nth-of-type(1) {
     font-size: 18px;
     height: 100%;
-    width: 100%;
+    width: 80%;
     color: #666;
 
     .style__cross-wrapper {
@@ -135,6 +44,12 @@ export const Form_container = styled.div`
           font-size: 12px;
           font-weight: 400;
           text-align: left;
+
+          > span {
+            color: #ff6f61;
+            cursor: pointer;
+            font-weight: 700;
+          }
         }
       }
 

@@ -9,13 +9,14 @@ export const Signup_container = styled.div`
     height: 100%;
     width: 100%;
 
-    > div:nth-of-type(1) {
+    .style__cross-wrapper {
       font-size: 18px;
       padding-top: 6px;
       padding-right: 16px;
       text-align: right;
+      color: #333;
 
-      > span {
+      .style__pointer {
         cursor: pointer;
       }
     }
@@ -24,19 +25,20 @@ export const Signup_container = styled.div`
       margin-top: 16px;
       padding: 0 50px;
 
-      > div:nth-of-type(1) {
+      .LS_heading {
         font-size: 28px;
         font-weight: 700;
         display: flex;
         justify-content: left;
+        color: #000000;
       }
 
-      > div:nth-of-type(2) {
+      .otp_text {
         margin: 10px 0 60px;
         display: flex;
         justify-content: left;
 
-        > span {
+        .otp_text_span {
           color: #616161;
           font-size: 12px;
           font-weight: 400;

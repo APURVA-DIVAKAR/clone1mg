@@ -12,18 +12,21 @@ export const Login_form = ({ setting }) => {
     <Form_container>
       <div>
         <div className="style__cross-wrapper">
-          <span className="style__pointer" onClick={() => setting.setvisible(false)}>
+          <span
+            className="style__pointer"
+            onClick={() => setting.setvisible(false)}
+          >
             ×
           </span>
         </div>
 
         <div>
           <div>
-            <span>Login</span>
+            <span className="LS_heading">Login</span>
           </div>
 
-          <div>
-            <span>
+          <div className="otp_text">
+            <span className="otp_text_span">
               Get access to your orders, lab tests & doctor consultations
             </span>
           </div>
@@ -52,7 +55,7 @@ export const Login_form = ({ setting }) => {
             <div>
               <div>
                 <span>Have an account?</span>
-                <span onClick={() => setting.setIs_Or_S(false)}>Sign Up</span>
+                <span onClick={() => setting.setShow(false)}>Sign Up</span>
               </div>
               <div>
                 <span> For corporate Sign up,</span>

@@ -34,12 +34,12 @@ const Signup = ({ setting }) => {
         </div>
 
         <div>
-          <div>
+          <div className="LS_heading">
             <span>Sign Up</span>
           </div>
 
-          <div>
-            <span>
+          <div className="otp_text">
+            <span className="otp_text_span">
               Please enter your Mobile number to receive One Time Password (OTP)
             </span>
           </div>
@@ -66,12 +66,10 @@ const Signup = ({ setting }) => {
               <span>Are you a healthcare professional?</span>
             </div>
 
-            <div type="submit" onClick={handle}>
-              Continue
-            </div>
+            <div onClick={handle}>Continue</div>
             <div>
               <span>Have an account?</span>
-              <span onClick={() => setting.setIs_Or_S(true)}>Login</span>
+              <span onClick={() => setting.setShow(true)}>Login</span>
             </div>
             <div>
               <span>For corporate Sign up,</span>

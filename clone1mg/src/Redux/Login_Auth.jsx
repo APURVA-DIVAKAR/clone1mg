@@ -9,6 +9,9 @@ export const Login_Auth = ({ children }) => {
     return state;
   });
 
+  const [isvisible, setvisible] = useState(false);
+  const [show, setShow] = useState(true);
+
   const dispatch = useDispatch();
 
   const toggleAuth = (s) => {
@@ -20,7 +23,9 @@ export const Login_Auth = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isAuth, toggleAuth }}>
+    <AuthContext.Provider
+      value={{ isAuth, toggleAuth, isvisible, setvisible, show, setShow }}
+    >
       {children}
     </AuthContext.Provider>
   );
