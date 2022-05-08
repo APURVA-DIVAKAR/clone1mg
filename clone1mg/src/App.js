@@ -25,7 +25,6 @@ import { Individual_Product_Page } from "./individual_product_page/Components/In
 import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
 
-
 // json-server --watch db.json --port 8080
 
 function App() {
@@ -53,7 +52,7 @@ function App() {
           path="/Products/:type/:id"
           element={<Individual_Product_Page />}
         ></Route>
-        <Route path="/AddAddress" element={ <AddAddress /> }></Route>
+        <Route path="/AddAddress" element={<AddAddress />}></Route>
         <Route path="/Delivery" element={<Delivery />}></Route>
         <Route path="/ProductsDelivery" element={<ProductsDelivery />}></Route>
         <Route path="/Address" element={<Address />}></Route>

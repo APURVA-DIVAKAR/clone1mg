@@ -8,7 +8,7 @@ export const Otp_container = styled.div`
   > div:nth-of-type(1) {
     font-size: 18px;
     height: 100%;
-    width: 80%;
+    width: 100%;
     color: #666;
 
     .style__cross-wrapper {
@@ -24,7 +24,7 @@ export const Otp_container = styled.div`
 
     > div:nth-of-type(2) {
       margin-top: 16px;
-      padding: 0 50px;
+      padding: 0 100px;
 
       .LS_heading {
         font-size: 28px;
@@ -46,6 +46,7 @@ export const Otp_container = styled.div`
           text-align: left;
 
           > span {
+            margin-left: 4px;
             color: #ff6f61;
             cursor: pointer;
             font-weight: 700;
@@ -60,8 +61,23 @@ export const Otp_container = styled.div`
       }
 
       > div:nth-of-type(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        gap: 20px;
+
+        > span {
+          font-size: 14px;
+          color: #ff6f61;
+          cursor: pointer;
+          font-weight: 700;
+        }
+      }
+
+      > div:nth-of-type(5) {
         > div:nth-of-type(1) {
-          margin-top: 100px;
+          margin-top: 130px;
           background-color: rgb(255, 111, 97);
           color: rgb(255, 255, 255);
           height: 40px;

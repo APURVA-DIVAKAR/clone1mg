@@ -11,7 +11,7 @@ const Cards = ({ value }) => {
   const { isvisible, setvisible } = useContext(AuthContext);
   const { name, desc, image_url, mrp, off, price, review, star, id } = value;
 
-  const { isAuth } = useSelector((state) => {
+  const { token } = useSelector((state) => {
     // console.log(state);
     return state;
   });
@@ -19,7 +19,7 @@ const Cards = ({ value }) => {
   const dispatch = useDispatch();
 
   const handleADD = () => {
-    if (!isAuth) {
+    if (!token) {
       return setvisible(true);
     }
 

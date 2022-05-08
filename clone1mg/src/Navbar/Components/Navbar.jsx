@@ -5,14 +5,14 @@ import { Navbar_search } from "./Navbar_search";
 import { Navbar_dropdown } from "./Navbar_dropdown";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { get_data } from "../../Redux/actions";
+import { get_data, Logout } from "../../Redux/actions";
 import Login from "../../LoginSignup/Login";
 import { AuthContext } from "../../Redux/Login_Auth";
 
 export const Navbar = () => {
   const { isvisible, setvisible, setShow } = useContext(AuthContext);
   const nevigate = useNavigate();
-  const { cartData, isAuth, toggleAuth } = useSelector((state) => {
+  const { cartData, token, toggleAuth } = useSelector((state) => {
     return state;
   });
   const dispatch = useDispatch();
@@ -62,7 +62,7 @@ export const Navbar = () => {
           </div>
           <div id="loginSignup">
             <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {isAuth ? (
+              {token ? (
                 <div className="userProfile">
                   <div className="styles__profile-menu___1m4r-">
                     <ul className="styles__profile-links___3za_6">
@@ -144,7 +144,7 @@ export const Navbar = () => {
                       <li className="styles__link___xWDD5">
                         <a
                           onClick={() => {
-                            toggleAuth(false);
+                            dispatch(Logout());
                           }}
                           href=""
                           data-auto-profile-logout="true"
