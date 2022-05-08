@@ -20,6 +20,12 @@ export const Cart_com = () => {
     return state;
   });
 
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    get_data(dispatch);
+  }, []);
+
   React.useEffect(() => {
     m = 0;
     p = 0;
