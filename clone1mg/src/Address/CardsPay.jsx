@@ -59,7 +59,7 @@ const CardsPay = () => {
               <Otp_form
                 setting={{
                   setOtp_show,
-                  onClick:{handle}
+                 
                 }}
               />
             ) }
