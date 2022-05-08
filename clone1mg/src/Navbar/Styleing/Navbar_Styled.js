@@ -229,4 +229,63 @@ export const Nav = styled.div`
     color: #212121;
     font-size: 13px;
   }
+
+  .userProfile {
+    background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571139390/profile-rebrand_aboy0q.svg)
+      no-repeat;
+    background-position: center center;
+    width: 22px;
+    height: 26px;
+
+    :hover > div {
+      display: block;
+    }
+
+    > div {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      z-index: 5000;
+      background-color: #fff;
+      width: 250px;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+
+      > ul {
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+
+        > li {
+          list-style-type: none;
+          text-align: left;
+          padding: 5px 15px;
+          display: block;
+          line-height: 30px;
+          font-weight: 700;
+          color: rgba(72, 72, 72, 0.87);
+
+          > a {
+            text-decoration: none;
+            color: rgba(72, 72, 72, 0.87);
+
+            > div {
+              display: flex;
+              justify-content: space-between;
+
+              > div:nth-of-type(2) {
+                color: #ff6f61;
+                opacity: 0.87;
+              }
+            }
+          }
+        }
+
+        > li:nth-of-type(1) {
+          border-bottom: 1px solid #dbdbdb;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 `;

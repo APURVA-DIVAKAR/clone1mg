@@ -1,31 +1,26 @@
-import React,{useState,useEffect,useContext} from 'react'
-import { AddressContext } from './AddressApi'
-import styles from './Delivery.module.css'
+import React, { useState, useEffect, useContext } from "react";
+import { AddressContext } from "./AddressApi";
+import styles from "./Delivery.module.css";
 
 const Delivery = () => {
-  const[address,setAddress] = useState([])
-  const[data,setData] = useState({})
-  const {id} = useContext(AddressContext)
-  const getAddress = async() =>{
-    let res = await fetch(`http://localhost:8080/address`)
+  const [address, setAddress] = useState([]);
+  const { id } = useContext(AddressContext);
+  const getAddress = async () => {
+    let res = await fetch(`http://localhost:8080/address`);
     let data1 = await res.json();
     //  console.log(data1)
-    setAddress(...address,data1)
-  }
-  const data1 = address.filter(element => {if(element.id == id){
-    return element}
-    });
-    
+    setAddress(...address, data1);
+  };
   // console.log(address)
   // console.log(id)
-  useEffect(() => {            
+  useEffect(() => {
     getAddress();
     setData(data1[0]);
   }, []);
-
- 
-
-console.log(data);
+  let data;
+  let data1 = address.filter((element) => element.id == id);
+  data = data1[0];
+  console.log(data);
 
   return (
     <div className={styles.container}>
@@ -39,20 +34,23 @@ console.log(data);
           </div>
         </div>
         <div className={styles.box2}>
-             <div className={styles.header}>
-             <h2>Select Address</h2>
-             <button>CHANGE</button>
-             </div>
-             <div className={styles.address}>
-                <div>
-                    {/* <h6>{data.address_place}</h6>
-                    <p>{data.name}</p>
-                    <p>{data.mobile},{data.buliding},{data.locality}</p>
-                    <p>{data.city},{data.state}-{data.pincode}</p> */}
-                 </div>
-             </div>
-             <button>CONTINUE</button>
-            
+          <div className={styles.header}>
+            <h2>Select Address</h2>
+            <button>CHANGE</button>
+          </div>
+          <div className={styles.address}>
+            <div>
+              <h6>{data.address_place}</h6>
+              <p>{data.name}</p>
+              <p>
+                {data.mobile},{data.buliding},{data.locality}
+              </p>
+              <p>
+                {data.city},{data.state}-{data.pincode}
+              </p>
+            </div>
+          </div>
+          <button>CONTINUE</button>
         </div>
         <div className={styles.address}></div>
         <button>CONTINUE</button>

@@ -790,6 +790,7 @@ export const Listed_product = styled.div`
   > div > img {
     width: 100%;
     width: 80px;
+    max-height: 110px;
   }
 
   .style__title {

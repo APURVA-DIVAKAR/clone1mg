@@ -7,7 +7,8 @@
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1600767666/cropped/vy7omzxieyisfu4sehn9.jpg",
     "mrp": "₹1500.00",
     "sellingPrice": "₹1125.00",
-    "discount": "25%off"
+    "discount": "25%off",
+    "star": 4.1
   },
   {
     "id": 2,
@@ -17,8 +18,8 @@
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1637776838/enifrnkht8xlqqamnr2k.jpg",
     "mrp": "₹450.00",
     "sellingPrice": "₹ 316.00",
-
-    "discount": "29%off"
+    "discount": "29%off",
+    "star": 4.3
   },
   {
     "id": 3,
@@ -28,9 +29,11 @@
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1601232336/cropped/cojrtmk74ajkg3sfbikx.png",
     "mrp": "₹350.00",
     "sellingPrice": "₹ 252.00",
-    "discount": "28%off"
+    "discount": "28%off",
+    "star": 4.2
   },
   {
+    "id": 4,
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1613566715/w84792bbroguuvsqyyh8.jpg",
     "title": "Horlicks Health and Nutrition Drink",
     "link": "https://www.1mg.com/otc/tata-1mg-salmon-omega-3-fish-oil-capsule-otc503411",
@@ -38,9 +41,11 @@
     "mrp": "₹ 120",
     "rating": "278rating",
     "discount": "5%off",
-    "sellingPrice": "₹ 199"
+    "sellingPrice": "₹ 199",
+    "star": 3.3
   },
   {
+    "id": 5,
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1632981764/noekunzlypna6hkheoft.jpg",
     "title": "Dabur Hajmola Imli",
     "link": "https://www.1mg.com/otc/tata-1mg-bis-approved-ffp2-n95-mask-for-kids-5-mask-otc692293",
@@ -48,9 +53,11 @@
     "mrp": "₹49",
     "rating": "1340rating",
     "discount": "14%off",
-    "sellingPrice": "₹ 295"
+    "sellingPrice": "₹ 295",
+    "star": 3.1
   },
   {
+    "id": 6,
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_130,h_100,c_fit,q_auto,f_auto/v1600089684/cropped/pvae0u3lqct2buryvo0r.jpg",
     "title": "Electral Power",
     "link": "https://www.1mg.com/otc/1mg-high-fiber-with-pre-probiotics-with-inulin-guar-gum-resistant-maltodextrin-unflavoured-unflavoured-with-resistant-maltodextrin-inulin-and-guar-gum-otc640226",
@@ -58,9 +65,11 @@
     "mrp": "₹19.84",
     "rating": "2361rating",
     "discount": "19%off",
-    "sellingPrice": "₹16"
+    "sellingPrice": "₹16",
+    "star": 4.3
   },
   {
+    "id": 7,
     "imgURL": "https://onemg.gumlet.io/image/upload/a_ignore,w_100,h_100,c_fit,q_auto,f_auto/v1646741709/rddjrx5bg3uoa6iz51fq.jpg",
     "title": "Prohance -D Diabetes  Supplement",
     "link": "https://www.1mg.com/otc/1mg-high-fiber-with-pre-probiotics-with-inulin-guar-gum-resistant-maltodextrin-unflavoured-unflavoured-with-resistant-maltodextrin-inulin-and-guar-gum-otc640226",
@@ -68,6 +77,7 @@
     "mrp": "₹675",
     "rating": "2361rating",
     "discount": "20%off",
-    "sellingPrice": "₹540"
+    "sellingPrice": "₹540",
+    "star": 4.2
   }
 ]
