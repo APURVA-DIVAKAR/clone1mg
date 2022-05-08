@@ -5,15 +5,14 @@
 
 ## 🔗Deployed Link
 
+## Homepage
+![Tata1mg-HomePage](https://user-images.githubusercontent.com/74173626/167311801-ec9942ea-3b0e-4d46-b3a0-3cacacd7b7b4.png)
 
 ## Login page
 ![Tata1mg-LoginPage](https://user-images.githubusercontent.com/74173626/167312289-20663023-f532-42db-99a0-21c614238aad.png)
 
 ## Signup page
 ![Tata1mg-SignupPage](https://user-images.githubusercontent.com/74173626/167312319-51b0ad63-e959-47df-9d41-7b20f1c771ba.png)
-
-## Homepage
-![Tata1mg-HomePage](https://user-images.githubusercontent.com/74173626/167311801-ec9942ea-3b0e-4d46-b3a0-3cacacd7b7b4.png)
 
 ## Lab Tests page
 ![Tata1mg-LabTestsPage](https://user-images.githubusercontent.com/74173626/167311835-f054efa3-0970-40e6-a15d-4f6dd866968b.png)
