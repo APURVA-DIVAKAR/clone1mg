@@ -1,0 +1,21 @@
+.cartSummary {
+    
+    height: 12%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cartTotalSavings {
+    /* border: 1px solid black; */
+    height: 13%;
+    background-color: rgb(228, 246, 231);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
