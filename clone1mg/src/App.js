@@ -26,6 +26,8 @@ import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
 
 
+// json-server --watch db.json --port 8080
+
 function App() {
   const location = useLocation();
 
