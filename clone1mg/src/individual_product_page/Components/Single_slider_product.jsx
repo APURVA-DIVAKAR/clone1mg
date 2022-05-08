@@ -14,7 +14,8 @@ export const Single_slider_product = ({
   price,
   discount,
 }) => {
-  const { isAuth } = useSelector((state) => {
+  const { isvisible, setvisible } = useContext(AuthContext);
+  const { token } = useSelector((state) => {
     // console.log(state);
     return state;
   });
@@ -22,9 +23,8 @@ export const Single_slider_product = ({
   const dispatch = useDispatch();
 
   const handleADD = () => {
-    if (!isAuth) {
-      navigate("/Login");
-      return;
+    if (!token) {
+      return setvisible(true);
     }
 
     axios
