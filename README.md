@@ -1,6 +1,6 @@
 # Tata 1 mg
 
-- We are a team of 6 from the Masai Web-16 batch who worked on cloning the Tata 1mg website as part of our Unit-4 construct week. As a team, we were assigned to clone the Tata 1mg website. Our project demonstrates a basic flow of an e-commerce page, where a customer can view and filter products, add their product to a cart and place his or her happy order.
+-We are a team of 6 from Unit-4, Masai School, batch FT-16, who worked on cloning the Tata 1mg website as part of our Unit-4 construct week. As a team, we were assigned to clone the Tata 1mg website. Our project demonstrates a basic flow of an e-commerce page, where a customer can view and filter products, add their product to a cart and place his or her happy order.
 - Tata 1mg, previously 1mg, is a healthcare platform based in Gurgaon, India. It provides services, including e-pharmacy, diagnostics, e-consultation and health content.
 
 ## 🔗Deployed Link
