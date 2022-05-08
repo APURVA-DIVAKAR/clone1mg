@@ -5,12 +5,14 @@
 
 ## 🔗Deployed Link
 
-
-## Login/Signup page
-
-
 ## Homepage
 ![Tata1mg-HomePage](https://user-images.githubusercontent.com/74173626/167311801-ec9942ea-3b0e-4d46-b3a0-3cacacd7b7b4.png)
+
+## Login page
+![Tata1mg-LoginPage](https://user-images.githubusercontent.com/74173626/167312289-20663023-f532-42db-99a0-21c614238aad.png)
+
+## Signup page
+![Tata1mg-SignupPage](https://user-images.githubusercontent.com/74173626/167312319-51b0ad63-e959-47df-9d41-7b20f1c771ba.png)
 
 ## Lab Tests page
 ![Tata1mg-LabTestsPage](https://user-images.githubusercontent.com/74173626/167311835-f054efa3-0970-40e6-a15d-4f6dd866968b.png)
@@ -27,24 +29,22 @@
 ## Care Plan page
 ![Tata1mg-CarePlanPage](https://user-images.githubusercontent.com/74173626/167311973-f54e9be4-8bd8-4779-b10e-2ea55f289dc2.png)
 
-## Product page
+## Products page
+![Tata1mg-ProductsPage](https://user-images.githubusercontent.com/74173626/167312080-0e1bfea6-962e-41fe-bef8-45eade9444e6.png)
 
-
-
-
-## Product details page
-
-
-
+## Product Details page
+![Tata1mg-ProductDetailsPage](https://user-images.githubusercontent.com/74173626/167312145-79024ef8-b5a5-45dd-af1a-2bc4dcb2ab19.png)
 
 ## Cart page
+![Tata1mg-CartPage](https://user-images.githubusercontent.com/74173626/167312257-d1478b0d-84b8-4419-baf1-a082f491444b.png)
 
+## Offers page
+![Tata1mg-OffersPage](https://user-images.githubusercontent.com/74173626/167312381-a7005c39-7388-48f7-8e6a-823743fc320f.png)
 
-
+## Upload Prescription page
+![Tata1mg-UploadPrescriptionPage](https://user-images.githubusercontent.com/74173626/167312427-66d81b76-9ac6-4cbc-8cbf-bc707286a989.png)
 
 ## Payment page
-
-
 
 
 # Features
