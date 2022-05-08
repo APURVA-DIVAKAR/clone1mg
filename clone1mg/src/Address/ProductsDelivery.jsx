@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AddressContext } from "./AddressApi";
-import styles from "./Delivery.module.css";
-
+import axios from "axios";
+import styles from "./ProductsDel.module.css";
+import { useSelector } from "react-redux"
+import {useNavigate} from "react-router-dom";
 const ProductsDelivery = () => {
   const [data, setData] = useState([]);
-  
+  const navigate = useNavigate();
   const getData = async () => {
     let res = await fetch(`http://localhost:8080/Cart`);
     let data1 = await res.json();
@@ -14,18 +16,46 @@ const ProductsDelivery = () => {
   const [address, setAddress] = useState([]);
   const { id } = useContext(AddressContext);
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address?id=${id}`);
-    let address1 = await res.json();
-    //  console.log(address1)
-    setAddress(...address, address1);
+    axios.get(`http://localhost:8080/address/${id}`)
+      .then(res=>{  
+         console.log(res.data)
+        setAddress(res.data);
+       })
   };
-  
-  useEffect(() => {
+  const [Mtotal, setMtotal] = React.useState(0);
+  const [Dtotal, setDtotal] = React.useState(0);
+  const [Ptotal, setPtotal] = React.useState(0);
+  const [change, setChange] = React.useState(false);
+  let m = 0;
+  let p = 0;
+  let d = 0;
+  const handleSubmit=()=>{
+    navigate('/Payment')
+  }
+
+  const { cartData } = useSelector((state) => {
+    return state;
+  });
+
+  React.useEffect(() => {
     getData();
     getAddress();
-  }, [id]);
-  // console.log(address[0])
-  // console.log(address[0])
+    m = 0;
+    p = 0;
+    d = 0;
+    cartData.map((el) => {
+      console.log(el.qty);
+      m += el.qty * el.mrp;
+      p += el.qty * el.price;
+      d += el.qty * Math.abs(el.mrp - el.price);
+      setMtotal(m);
+      setPtotal(p);
+      setDtotal(d);
+    });
+  }, [change, cartData,id]);
+  
+
+ 
   return (
     <div>
       return (
@@ -53,7 +83,9 @@ const ProductsDelivery = () => {
           <div className={styles.box}>
             <p>Choose a delivery speed</p>
             <div className={styles.inputflex}>
-              <input type="radio" name="date" value="date" />
+              <input type="radio" 
+              name="date" 
+              value="date" />
               <label for="date">Between 14-15 May</label>
             </div>
           </div>
@@ -78,22 +110,45 @@ const ProductsDelivery = () => {
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-          {address.map((el)=>{
-             return(
-              <div>
-              <h6>{el.address_place}</h6>
-              <p>{el.name}</p>
+          <div key={address.id}>
+              <h6>{address.address_place}</h6>
+              <p>{address.name}</p>
               <p>
-                {el.mobile},{el.buliding},{el.locality}
+                {address.mobile},{address.buliding},{address.locality}
               </p>
               <p>
-                {el.city},{el.state}-{el.pincode}
+                {address.city},{address.state}-{address.pincode}
               </p>
             </div>
-             )
-           })}
           </div>
-          <button>CONTINUE</button>
+         
+          <div>
+                  <div className={styles.cartSummary}>
+                    <span style={{fontSize: "24px",paddingLeft:"-5px"}}>Item Total(MRP)</span>
+                    <span style={{fontSize: "24px"}}>₹{Mtotal}</span>
+                  </div>
+                  <div className={styles.cartSummary}>
+                    <span>Price Discount</span>
+                    <span id="cartSummaryDiscount">-₹{Dtotal.toFixed(2)}</span>
+                  </div>
+                  <hr />
+                  <div className={styles.cartSummary}>
+                    <span>Shipping Fee</span>
+                    <span id="cartSummaryShippingFee">
+                      As per delivery address
+                    </span>
+                  </div>
+                  <hr />
+                  <div className={styles.cartSummary} id="fontbold">
+                    <span>To be paid</span>
+                    <span id="cartSummaryToBePaid">₹{Ptotal.toFixed(2)}</span>
+                  </div>
+                  <div className={styles.cartTotalSavings}>
+                    <span id="totalSavingFont">Total Savings</span>
+                    <span id="totalSavingGreen">₹{Dtotal.toFixed(2)}</span>
+                  </div>
+                </div>
+                <button onClick={handleSubmit}>PROCEED TO PAYMENT</button>
         </div>
       </div>
       )

@@ -2,22 +2,25 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import styles from "./addaddress.module.css";
 import { AddressContext } from "./AddressApi";
+import {useNavigate} from "react-router-dom";
+
 const AddAddress = () => {
   const { id, setId, handle } = useContext(AddressContext);
-  const [address, setAddress] = useState([]);
+  const [address, setAddress] = useState();
+  let navigate = useNavigate();
 
   const getAddress = async () => {
     let res = await fetch(`http://localhost:8080/address`);
     let data1 = await res.json();
-    //  console.log(data1)
-    setAddress(...address, data1);
+     console.log(data1)
+    setAddress(data1);
   };
 
-  console.log(address);
+  // console.log(address);
 
   useEffect(() => {
     getAddress();
-  }, []);
+  }, [id]);
 
   const handleChange = (e) => {
     // console.log(e.target.value);
@@ -27,13 +30,14 @@ const AddAddress = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handle(id);
+    navigate('/Delivery');
   };
   // console.log(id);
 
   return (
     <div className={styles.box}>
       <form onSubmit={handleSubmit}>
-        {address.map((el) => {
+        {address && address.map((el) => {
           return (
             <div className={styles.flex} key={el.id}>
               <div>
@@ -57,7 +61,7 @@ const AddAddress = () => {
             </div>
           );
         })}
-        <Link to="/">+ ADD NEW ADDRESS</Link>
+        <Link to="/Address">+ ADD NEW ADDRESS</Link>
         <br />
         <button type="submit" onClick={handleSubmit}>
           CONTINUE
