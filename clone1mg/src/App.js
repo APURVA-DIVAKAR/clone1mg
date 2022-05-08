@@ -25,6 +25,7 @@ import { Individual_Product_Page } from "./individual_product_page/Components/In
 import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
 import Sucess from "./Sucess_page/Sucess";
+import { Otp } from "./Otp_component/Components/Otp";
 
 // json-server --watch db.json --port 8080
 
@@ -36,6 +37,8 @@ function App() {
       {location.pathname === "/Cart" ? null : <Navbar />}
 
       <Login />
+      <Otp />
+
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
