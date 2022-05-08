@@ -10,7 +10,7 @@ export const Otp_form = ({ setting }) => {
   const dispatch = useDispatch();
 
   const handleOtp = () => {
-    if (otp.length === 6) {
+    if (otp.length === 6 && Number(otp)) {
       Login_func(dispatch);
       setting.setOtp_show(false);
       setting.setvisible(false);
