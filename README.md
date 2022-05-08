@@ -9,14 +9,23 @@
 ## Login/Signup page
 
 
-
-
 ## Homepage
 ![Tata1mg-HomePage](https://user-images.githubusercontent.com/74173626/167311801-ec9942ea-3b0e-4d46-b3a0-3cacacd7b7b4.png)
 
+## Lab Tests page
+![Tata1mg-LabTestsPage](https://user-images.githubusercontent.com/74173626/167311835-f054efa3-0970-40e6-a15d-4f6dd866968b.png)
 
+## Ask Doctor page
+![Tata1mg-AskDocPage](https://user-images.githubusercontent.com/74173626/167311871-28dfe491-e3d3-484b-aef5-a2669991f02b.png)
 
+## Covid-19 page
+![Tata1mg-Covid-19Page](https://user-images.githubusercontent.com/74173626/167311888-2554d60c-4daa-4e1e-8c0f-66d41c655b11.png)
 
+## Ayurveda page
+![Tata1mg-AyurvedaPage](https://user-images.githubusercontent.com/74173626/167311911-4f40baae-78d9-4fb0-bca5-0de34611c8de.png)
+
+## Care Plan page
+![Tata1mg-CarePlanPage](https://user-images.githubusercontent.com/74173626/167311973-f54e9be4-8bd8-4779-b10e-2ea55f289dc2.png)
 
 ## Product page
 
