@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+    gap:30px;
+}
+.container{
+    border: 1px solid rgb(231, 22, 22);
+    margin-top:20px;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    cursor: pointer;
+
+}
+.container>p{
+    color: green;
+}

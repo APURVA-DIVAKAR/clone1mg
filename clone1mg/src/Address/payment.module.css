@@ -1,0 +1,68 @@
+.cartSummary {
+    
+    height: 12%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cartTotalSavings {
+    /* border: 1px solid black; */
+    height: 13%;
+    background-color: rgb(228, 246, 231);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dis_flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap:10px;
+  }
+  .flex{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+  }
+  .flex:last-child{
+    gap: 25px;
+  }
+  .one{
+    background-color:linen;
+    padding:20px;
+  }
+  .flex:hover{
+    background-color:white;
+  }
+  .dis_flex>div:nth-child(1){
+     width: 20%;
+  }
+  .dis_flex>div:nth-child(2){
+    width: 60%;
+  }
+  .dis_flex>div:nth-child(3){
+    width: 40%;
+  }
+  .three>button{
+    width: 100%;
+    margin-top:20px;
+  }
+  .three>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 20px;
+  }
+  .three>div:nth-child(1){
+    display: flex;
+    gap:10px;
+  }
+  .three>div:nth-child(1)>img{
+    width:40px;
+    height: 30px;
+    margin-top: 18px;
+  }

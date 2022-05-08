@@ -1,0 +1,18 @@
+.box{
+    border: 1px solid grey;
+    margin-top:20px;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    cursor: pointer;
+}
+.container>div{
+    margin-bottom: 20px;
+}
+.flex{
+    display:flex;
+    gap:30px;
+}
+.box>h3{
+    color:pink;
+}
