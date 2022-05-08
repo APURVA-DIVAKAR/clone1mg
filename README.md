@@ -57,7 +57,7 @@
 
 # Team
 
-- [Aditya Yadav](https://github.com/Ajayraoyadav) 
+- [Ajay Yadav](https://github.com/Ajayraoyadav) 
 - [Apurva Divakar](https://github.com/APURVA-DIVAKAR)
 - [Devesh Goyal](https://github.com/DeveshGoyal26)
 - [K Bushra Jabeen](https://github.com/bushrajabeenk)
