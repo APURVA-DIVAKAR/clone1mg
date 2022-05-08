@@ -1,4 +1,5 @@
 import React from "react";
+import LastsecFooter from "../Components/LastsecFooter";
 import Advertisement from "../Navbar/Components/Advertisement";
 import { Navbar_dropdown } from "../Navbar/Components/Navbar_dropdown";
 import { Navbar_search } from "../Navbar/Components/Navbar_search";
@@ -32,6 +33,7 @@ const Home = () => {
       <Healthconcern />
       <Flashdeals />
       <Ayurved />
+      <LastsecFooter />
     </div>
   );
 };

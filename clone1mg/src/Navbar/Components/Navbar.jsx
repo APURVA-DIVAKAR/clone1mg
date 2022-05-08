@@ -40,7 +40,7 @@ export const Navbar = () => {
                 <Link to="/">MEDICINES</Link>
               </div>
               <div>
-                <Link to="/">LAB TESTS</Link>
+                <Link to="/LabTests">LAB TESTS</Link>
                 <div className="reddiv Safe_div">
                   <div>SAFE</div>
                 </div>
