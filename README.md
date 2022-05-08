@@ -38,6 +38,12 @@
 ## Cart page
 ![Tata1mg-CartPage](https://user-images.githubusercontent.com/74173626/167312257-d1478b0d-84b8-4419-baf1-a082f491444b.png)
 
+## Offers page
+![Tata1mg-OffersPage](https://user-images.githubusercontent.com/74173626/167312381-a7005c39-7388-48f7-8e6a-823743fc320f.png)
+
+## Upload Prescription page
+![Tata1mg-UploadPrescriptionPage](https://user-images.githubusercontent.com/74173626/167312427-66d81b76-9ac6-4cbc-8cbf-bc707286a989.png)
+
 ## Payment page
 
 
