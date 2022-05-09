@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { get_data } from "../../Redux/actions";
 import { Cart_product_style } from "../Style/Cart_Product_style";
 // import { Cart_products } from "./Medora.styled";
@@ -18,6 +18,11 @@ const Cart_product = ({
 }) => {
   const [count, setCount] = React.useState(qty);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    navigate(`/Products/Cart/${id}`);
+  };
 
   const handleDelete = () => {
     axios
@@ -64,10 +69,12 @@ const Cart_product = ({
 
   return (
     <Cart_product_style>
-      <Link to={`/Products/Cart/${id}`}>
+      <Link to="">
         <div id="leftPurchaseDetail">
           <div>
-            <div id="leftPurchaseName">{name}</div>
+            <div id="leftPurchaseName" onClick={handleClick}>
+              {name}
+            </div>
             <div id="leftPurchasePrice">
               <div>
                 ₹<b id="leftPurchasePriceFirst">{price}</b>
