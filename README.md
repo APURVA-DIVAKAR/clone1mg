@@ -45,7 +45,7 @@
 ![Tata1mg-UploadPrescriptionPage](https://user-images.githubusercontent.com/74173626/167312427-66d81b76-9ac6-4cbc-8cbf-bc707286a989.png)
 
 ## Payment page
-
+![Tata1mgPaymentPage](https://user-images.githubusercontent.com/74173626/167362134-020c6503-164f-4d03-b3e3-ac48997c67ea.jpeg)
 
 # Features
 
