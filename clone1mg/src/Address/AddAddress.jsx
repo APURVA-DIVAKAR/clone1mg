@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import styles from "./addaddress.module.css";
 import { AddressContext } from "./AddressApi";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddAddress = () => {
   const { id, setId, handle } = useContext(AddressContext);
@@ -12,7 +12,7 @@ const AddAddress = () => {
   const getAddress = async () => {
     let res = await fetch(`http://localhost:8080/address`);
     let data1 = await res.json();
-     console.log(data1)
+    console.log(data1);
     setAddress(data1);
   };
 
@@ -26,42 +26,45 @@ const AddAddress = () => {
     // console.log(e.target.value);
     setId(e.target.value);
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     handle(id);
-    navigate('/Delivery');
+    navigate("/Delivery");
   };
   // console.log(id);
 
   return (
     <div className={styles.box}>
       <form onSubmit={handleSubmit}>
-        {address && address.map((el) => {
-          return (
-            <div className={styles.flex} key={el.id}>
-              <div>
-                <input
-                  type="radio"
-                  name="deliveryAdd"
-                  value={el.id}
-                  onChange={handleChange}
-                />
+        {address &&
+          address.map((el) => {
+            return (
+              <div className={styles.flex} key={el.id}>
+                <div>
+                  <input
+                    type="radio"
+                    name="deliveryAdd"
+                    value={el.id}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <h6>{el.address_place}</h6>
+                  <p>{el.name}</p>
+                  <p>
+                    {el.mobile},{el.buliding},{el.locality}
+                  </p>
+                  <p>
+                    {el.city},{el.state}-{el.pincode}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h6>{el.address_place}</h6>
-                <p>{el.name}</p>
-                <p>
-                  {el.mobile},{el.buliding},{el.locality}
-                </p>
-                <p>
-                  {el.city},{el.state}-{el.pincode}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-        <Link to="/Address">+ ADD NEW ADDRESS</Link>
+            );
+          })}
+        <div>
+          <Link to="/Address">+ ADD NEW ADDRESS</Link>
+        </div>
         <br />
         <button type="submit" onClick={handleSubmit}>
           CONTINUE
