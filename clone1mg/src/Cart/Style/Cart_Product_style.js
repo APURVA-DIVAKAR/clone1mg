@@ -37,6 +37,7 @@ export const Cart_product_style = styled.div`
     font-size: 14px;
     font-weight: 700;
     color: rgb(33, 33, 33);
+    cursor: pointer;
   }
 
   #leftPurchasePrice {
