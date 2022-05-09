@@ -15,7 +15,6 @@ const Cards = ({ value }) => {
     // console.log(state);
     return state;
   });
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleADD = () => {

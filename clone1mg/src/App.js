@@ -35,7 +35,10 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname === "/Cart" ? null : <Navbar />}
+      {location.pathname === "/Cart" ||
+      location.pathname === "/Success" ? null : (
+        <Navbar />
+      )}
 
       <Login />
       <Otp />
@@ -62,31 +65,13 @@ function App() {
         <Route path="/Success" element={<Success />}></Route>
       </Routes>
 
-      {location.pathname === "/Cart" ? null : (
-        <>
-          <LastFooter />
-        </>
-      )}
-
-      {location.pathname === "/AddAddress" ? null : (
-        <>
-          <LastFooter />
-        </>
-      )}
-
-      {location.pathname === "/Address" ? null : (
-        <>
-          <LastFooter />
-        </>
-      )}
-
-      {location.pathname === "/Payment" ? null : (
-        <>
-          <LastFooter />
-        </>
-      )}
-
-      {location.pathname === "/Success" ? null : (
+      {location.pathname === "/Cart" ||
+      location.pathname === "/AddAddress" ||
+      location.pathname === "/Delivery" ||
+      location.pathname === "/ProductsDelivery" ||
+      location.pathname === "/Address" ||
+      location.pathname === "/Payment" ||
+      location.pathname === "/Success" ? null : (
         <>
           <LastFooter />
         </>
