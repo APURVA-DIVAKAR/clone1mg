@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 
 import "./style.css";
 
-console.log(featureBrand);
+// console.log(featureBrand);
 
 const FeaturedBrand = () => {
   return (

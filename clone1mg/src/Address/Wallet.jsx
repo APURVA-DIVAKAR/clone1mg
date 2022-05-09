@@ -12,7 +12,7 @@ const Wallet = () => {
             <div>
                 <p>Pay with Paytm Postpaid or Paytm wallet on Tata 1mg for ₹999 or more and get 4000 cashback points. Offer ends 31st May 2022.</p>
             </div>
-            <h3>LINK WALLET</h3>
+            <p>LINK WALLET</p>
         </div>
         <div className={styles.box}>
            <div className={styles.flex}>
@@ -22,7 +22,7 @@ const Wallet = () => {
             <div>
                 <p>Pay with Mobiwiki Postpaid or Mobiwiki wallet on Tata 1mg for ₹999 or more and get 4000 cashback points. Offer ends 31st May 2022.</p>
             </div>
-            <h3>LINK WALLET</h3>
+            <p>LINK WALLET</p>
         </div>
         <div className={styles.box}>
            <div className={styles.flex}>
@@ -36,7 +36,7 @@ const Wallet = () => {
                <h6>FreeCharger PayLater | Wallet </h6>
             </div>
            
-            <h3>LINK WALLET</h3>
+            <p>LINK WALLET</p>
         </div>
         <div className={styles.box}>
         <div className={styles.flex}>

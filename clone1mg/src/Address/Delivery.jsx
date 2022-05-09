@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { AddressContext } from "./AddressApi";
 import styles from "./Delivery.module.css";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Delivery = () => {
   const [address, setAddress] = useState();
@@ -12,23 +12,19 @@ const Delivery = () => {
     // let res = await fetch(`http://localhost:8080/address?id=${id}`);
     // let address1 = await res.json();
     //  console.log(address1)
-      axios.get(`http://localhost:8080/address/${id}`)
-      .then(res=>{  
-         console.log(res.data)
-        setAddress(res.data);
-       })
-    
+    axios.get(`http://localhost:8080/address/${id}`).then((res) => {
+      //  console.log(res.data)
+      setAddress(res.data);
+    });
   };
-   console.log(address)
-  // console.log(id)
+  //  console.log(address)
   useEffect(() => {
     getAddress();
-  
   }, [id]);
-  const handleSubmit=()=>{
-    navigate('/ProductsDelivery')
-  }
- 
+
+  const handleSubmit = () => {
+    navigate("/ProductsDelivery");
+  };
 
   return (
     <div className={styles.container}>
@@ -41,26 +37,26 @@ const Delivery = () => {
             <label htmlFor="date">Between 14-15 May</label>
           </div>
         </div>
-        </div>
-        <div>
+      </div>
+      <div>
         <div className={styles.box2}>
           <div className={styles.header}>
             <h2>Select Address</h2>
             <button>CHANGE</button>
           </div>
           <div className={styles.address}>
-           
-              {address &&  <div key={address.id}>
-              <h6>{address.address_place}</h6>
-              <p>{address.name}</p>
-              <p>
-                {address.mobile},{address.buliding},{address.locality}
-              </p>
-              <p>
-                {address.city},{address.state}-{address.pincode}
-              </p>
-            </div> }
-           
+            {address && (
+              <div key={address.id}>
+                <h6>{address.address_place}</h6>
+                <p>{address.name}</p>
+                <p>
+                  {address.mobile},{address.buliding},{address.locality}
+                </p>
+                <p>
+                  {address.city},{address.state}-{address.pincode}
+                </p>
+              </div>
+            )}
           </div>
           <button onClick={handleSubmit}>CONTINUE</button>
         </div>

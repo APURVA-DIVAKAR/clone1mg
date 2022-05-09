@@ -29,6 +29,16 @@
       "price": 7881,
       "discount": 9,
       "id": 5
+    },
+    {
+      "qty": 1,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090672/cropped/zulvh6fdr7bukuu18zhq.jpg",
+      "name": "Accu-Chek Active Test Strip",
+      "desc": "box of 50 Test Strips",
+      "mrp": 975,
+      "price": 858,
+      "discount": 12,
+      "id": 6
     }
   ],
   "Featured": [
