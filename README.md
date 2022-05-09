@@ -65,6 +65,7 @@
 
 
 # Blog
+https://medium.com/@bushrajabeen/tata-1mg-6a32b78576ef
 
 
 # Team

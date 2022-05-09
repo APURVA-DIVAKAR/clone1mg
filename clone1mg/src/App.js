@@ -24,7 +24,7 @@ import { Cart_com } from "./Cart/Components/Cart_com";
 import { Individual_Product_Page } from "./individual_product_page/Components/Individual_Product_Page";
 import CarePlan from "./CarePlanePage/CarePlan";
 import Payment from "./Address/Payment";
-import Sucess from "./Sucess_page/Sucess";
+import Success from "./Success_page/Success";
 import { Otp } from "./Otp_component/Components/Otp";
 import LabTests from "./LabTests/components/LabTests";
 
@@ -35,11 +35,13 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname === "/Cart" ? null : <Navbar />}
+      {location.pathname === "/Cart" ||
+      location.pathname === "/Success" ? null : (
+        <Navbar />
+      )}
 
       <Login />
       <Otp />
-
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -60,10 +62,16 @@ function App() {
         <Route path="/ProductsDelivery" element={<ProductsDelivery />}></Route>
         <Route path="/Address" element={<Address />}></Route>
         <Route path="/Payment" element={<Payment />}></Route>
-        <Route path="/Sucess" element={<Sucess />}></Route>
+        <Route path="/Success" element={<Success />}></Route>
       </Routes>
 
-      {location.pathname === "/Cart" ? null : (
+      {location.pathname === "/Cart" ||
+      location.pathname === "/AddAddress" ||
+      location.pathname === "/Delivery" ||
+      location.pathname === "/ProductsDelivery" ||
+      location.pathname === "/Address" ||
+      location.pathname === "/Payment" ||
+      location.pathname === "/Success" ? null : (
         <>
           <LastFooter />
         </>
