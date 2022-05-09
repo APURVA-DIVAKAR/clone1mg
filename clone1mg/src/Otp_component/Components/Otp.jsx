@@ -4,13 +4,20 @@ import { Otp_container } from "../Styles/Otp_styled";
 import {useNavigate} from "react-router-dom";
 
 export const Otp = () => {
- 
+  const navigate = useNavigate();
   const { Otpvisible, setOtpVisible } = useContext(AuthContext);
+  const handleSubmit = (e)=> {
+      e.preventDefault();
+      setOtpVisible(false);
+      navigate('/Success');
+    
+      
+  }
    
   return (
     <Otp_container disabled={Otpvisible}>
       <div id="container">
-        <form id="otpform">
+        <form id="otpform" onSubmit={handleSubmit}>
           <h3>Mobile phone verification</h3>
           <div>
             <p class="text">Enter the code we just send on your mobile phone</p>
@@ -42,7 +49,7 @@ export const Otp = () => {
               oninput="this.value=this.value.replace(/[^0-9]/g,'');"
             />
           </div>
-          <input id="btn" type="submit" value="Proceed"  />
+          <input id="btn" type="submit" value="Proceed" onSubmit={handleSubmit}  />
           <div>
             <p class="text">Don't receive the code?</p>
             <p class="num_resend">Resend</p>

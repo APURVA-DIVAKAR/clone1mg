@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useContext} from 'react'
 import styles from './CardsPay.module.css'
 import { AuthContext } from "../Redux/Login_Auth";
 import { Otp_form } from "../LoginSignup/Otp_form";
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const CardsPay = () => {
   const[data, setData] = React.useState({})
   const navigate = useNavigate();
+  const { Otpvisible, setOtpVisible } = useContext(AuthContext);
   const handleChange = (e) => {
     const inputName = e.target.name;
     setData({
@@ -16,13 +17,13 @@ const CardsPay = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setData(data);
-    setOtp_show(true)
+    setOtpVisible(true)
     
   };
   const handle=()=>{
     navigate('/Sucess');
   }
-  const [Otp_show, setOtp_show] = React.useState(false);
+ 
   
   return (
     <div className={styles.container}>
@@ -55,14 +56,7 @@ const CardsPay = () => {
                <button type="submit" onSubmit={handleSubmit}>MAKE PAYMENT</button>
             </form>
         </div>
-        {Otp_show && (
-              <Otp_form
-                setting={{
-                  setOtp_show,
-                 
-                }}
-              />
-            ) }
+       
         <div className={styles.imge}>
             <p>We support domestic credit and debit cards of following brands</p>
             <div >
