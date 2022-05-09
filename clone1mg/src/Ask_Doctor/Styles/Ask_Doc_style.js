@@ -361,11 +361,11 @@ export const Doc = styled.div`
   }
 
   .css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0 !important;
   }
 
   .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid grey !important;
   }
 
   .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
