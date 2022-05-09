@@ -13,6 +13,7 @@ export const Single_slider_product = ({
   mrp,
   price,
   discount,
+  id,
 }) => {
   const { isvisible, setvisible } = useContext(AuthContext);
   const { token } = useSelector((state) => {
@@ -44,7 +45,7 @@ export const Single_slider_product = ({
   };
 
   return (
-    <Single_product>
+    <Single_product onClick={() => navigate(`/Products/Slider_products/${id}`)}>
       <div>
         <img src={image_url} alt="Product Image" />
       </div>

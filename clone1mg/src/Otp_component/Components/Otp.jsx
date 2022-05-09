@@ -18,33 +18,43 @@ export const Otp = () => {
         <form id="otpform" onSubmit={handleSubmit}>
           <h3>Mobile phone verification</h3>
           <div>
-            <p class="text">Enter the code we just send on your mobile phone</p>
-            <p class="num_resend">+91 ******833</p>
+            <p className="text">
+              Enter the code we just send on your mobile phone
+            </p>
+            <p className="num_resend">+91 ******833</p>
           </div>
           <div id="otpcontiner">
             <input
               type="text"
               id="otp1"
-              maxlength="1"
-              oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+              maxLength="1"
+              onInput={(e) =>
+                (e.target.value = e.targetvalue.replace(/[^0-9]/g, ""))
+              }
             />
             <input
               type="text"
               id="otp2"
-              maxlength="1"
-              oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+              maxLength="1"
+              onInput={(e) =>
+                (e.target.value = e.targetvalue.replace(/[^0-9]/g, ""))
+              }
             />
             <input
               type="text"
               id="otp3"
-              maxlength="1"
-              oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+              maxLength="1"
+              onInput={(e) =>
+                (e.target.value = e.targetvalue.replace(/[^0-9]/g, ""))
+              }
             />
             <input
               type="text"
               id="otp4"
-              maxlength="1"
-              oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+              maxLength="1"
+              onInput={(e) =>
+                (e.target.value = e.targetvalue.replace(/[^0-9]/g, ""))
+              }
             />
           </div>
           <input
@@ -54,8 +64,8 @@ export const Otp = () => {
             onSubmit={handleSubmit}
           />
           <div>
-            <p class="text">Don't receive the code?</p>
-            <p class="num_resend">Resend</p>
+            <p className="text">Don't receive the code?</p>
+            <p className="num_resend">Resend</p>
           </div>
         </form>
       </div>

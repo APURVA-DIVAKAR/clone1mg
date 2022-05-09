@@ -64,7 +64,7 @@ const Cart_product = ({
 
   return (
     <Cart_product_style>
-      <Link to="">
+      <Link to={`/Products/Cart/${id}`}>
         <div id="leftPurchaseDetail">
           <div>
             <div id="leftPurchaseName">{name}</div>

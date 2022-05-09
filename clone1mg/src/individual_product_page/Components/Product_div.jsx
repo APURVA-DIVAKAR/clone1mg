@@ -14,6 +14,7 @@ export const Product_div = ({
   mrp,
   price,
   discount,
+  off,
 }) => {
   const { isvisible, setvisible } = useContext(AuthContext);
   const [show, setShow] = React.useState(false);
@@ -96,9 +97,11 @@ export const Product_div = ({
                         value
                       />
                       <label htmlFor="30% off">
-                        <span className="real_price">₹349</span>
-                        <span className="cut_price">₹499</span>
-                        <span className="discount">30% off</span>
+                        <span className="real_price">₹{price}</span>
+                        <span className="cut_price">₹{mrp}</span>
+                        <span className="discount">
+                          {off ? off : discount} % off
+                        </span>
                       </label>
                     </div>
                     <div className="care_plan_price">
