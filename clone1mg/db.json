@@ -1,7 +1,7 @@
 {
   "Cart": [
     {
-      "qty": 4,
+      "qty": 1,
       "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638444070/nwhioxrxmwjkaxitryag.jpg",
       "name": "Tata 1mg BIS Approved FFP2 Masks",
       "desc": "box of 5 masks",
@@ -9,6 +9,56 @@
       "price": 220,
       "discount": 45,
       "id": 1
+    },
+    {
+      "qty": 4,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638792149/kqupivjrbrq0ctcywfcs.jpg",
+      "name": "Nicotex Sugar Free Mint Plus Chewing Gum",
+      "desc": "box of 25 chewing gum",
+      "mrp": 223,
+      "price": 190,
+      "discount": 15,
+      "id": 3
+    },
+    {
+      "qty": 1,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603457528/lsnxasjdu0xc2nfl2mcn.jpg",
+      "name": "Geo Fresh Organic Moringa 500mg Tablet",
+      "desc": "bottle of 90 tablets",
+      "mrp": 225,
+      "price": 218,
+      "discount": "3% off",
+      "id": 4
+    },
+    {
+      "qty": 1,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1626179581/hvblqyl499yyog0xeo5e.jpg",
+      "name": "CMG Nutritions CgMuneshield Capsule To Maintain Healthy Immune System",
+      "desc": "bottle of 60 capsules",
+      "mrp": 1201,
+      "price": 999,
+      "discount": "16% off",
+      "id": 5
+    },
+    {
+      "qty": 1,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603457528/lsnxasjdu0xc2nfl2mcn.jpg",
+      "name": "Geo Fresh Organic Moringa 500mg Tablet",
+      "desc": "bottle of 90 tablets",
+      "mrp": 225,
+      "price": 218,
+      "discount": "3% off",
+      "id": 6
+    },
+    {
+      "qty": 1,
+      "image_url": "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1626179581/hvblqyl499yyog0xeo5e.jpg",
+      "name": "CMG Nutritions CgMuneshield Capsule To Maintain Healthy Immune System",
+      "desc": "bottle of 60 capsules",
+      "mrp": 1201,
+      "price": 999,
+      "discount": 16,
+      "id": 7
     }
   ],
   "Featured": [

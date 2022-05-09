@@ -69,10 +69,13 @@ const Cart_product = ({
 
   return (
     <Cart_product_style>
-      <Link to="">
+      <div>
         <div id="leftPurchaseDetail">
           <div>
-            <div id="leftPurchaseName" onClick={handleClick}>
+            <div
+              id="leftPurchaseName"
+              onClick={() => navigate(`/Products/Cart/${id}`)}
+            >
               {name}
             </div>
             <div id="leftPurchasePrice">
@@ -125,7 +128,7 @@ const Cart_product = ({
             </div>
           </div>
         </div>
-      </Link>
+      </div>
     </Cart_product_style>
   );
 };

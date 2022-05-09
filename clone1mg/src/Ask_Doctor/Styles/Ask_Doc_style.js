@@ -47,8 +47,6 @@ export const Doc = styled.div`
     animation: apear 0.3s ease-in-out;
   }
 
-
-
   .addcontainer {
     width: 100%;
     height: 101.47;

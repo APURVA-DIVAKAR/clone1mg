@@ -45,11 +45,13 @@ export const Single_slider_product = ({
   };
 
   return (
-    <Single_product onClick={() => navigate(`/Products/Slider_products/${id}`)}>
+    <Single_product>
       <div>
         <img src={image_url} alt="Product Image" />
       </div>
-      <div>{name}</div>
+      <div onClick={() => navigate(`/Products/Slider_products/${id}`)}>
+        {name}
+      </div>
       <div>{desc}</div>
       <div>
         <div>
