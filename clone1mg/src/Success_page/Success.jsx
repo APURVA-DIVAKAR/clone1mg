@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import "./Sucess.css"
 import styles from "./Success.module.css";
 // import {Link} from "react-router-dom;"
@@ -17,7 +18,7 @@ const Success = () => {
         <br></br>
       </div>
       <div>
-        {/* <Link to="/">Continue Shopping</Link> */}
+        <Link to="/">Continue Shopping</Link>
         {/* <button onClick="btn()">Continue Shopping</button> */}
       </div>
 
