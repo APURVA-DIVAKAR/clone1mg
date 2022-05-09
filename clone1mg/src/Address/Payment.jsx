@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useSelector } from "react-redux";
 import CardsPay from "./CardsPay";
 import styles from "./payment.module.css";
 import PayOnDelivery from "./PayOnDelivery";
 import Wallet from "./Wallet";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../Redux/Login_Auth";
 
 const Payment = () => {
   const navigate = useNavigate();
   const [comp, setComp] = useState("Wallet");
+  const { Otpvisible, setOtpVisible } = useContext(AuthContext);
 
   const [Mtotal, setMtotal] = React.useState(0);
   const [Dtotal, setDtotal] = React.useState(0);
@@ -37,7 +39,7 @@ const Payment = () => {
     });
   }, [change, cartData]);
   const handleSubmit = () => {
-    navigate("/Sucess");
+    setOtpVisible(true);
   };
   const handleChange = () => {
     setComp("Wallet");
@@ -113,7 +115,7 @@ const Payment = () => {
               transaction of ₹1000. Valid only for first-time users ...
             </p>
           </div>
-          <div style={{marginTop: '30px'}}>
+          <div style={{ marginTop: "30px" }}>
             <div className={styles.cartSummary}>
               <span>Item Total(MRP)</span>
               <span>₹{Mtotal}</span>
