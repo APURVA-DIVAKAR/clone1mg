@@ -65,7 +65,7 @@ https://relaxed-mousse-6ea758.netlify.app/
 # Blog
 https://medium.com/@bushrajabeen/tata-1mg-6a32b78576ef
 
-# presentation vedio
+# Presentation Video
 https://drive.google.com/file/d/1CQ-3nHrm8ReZJRHvnQrIWai05q_kOkRx/view
 
 
