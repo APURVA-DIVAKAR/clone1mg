@@ -12,6 +12,10 @@ import {
   REVIEW,
 } from "./aciton_type";
 
+import data from "../db.json"
+console.log('data:', data)
+
+
 let initState = {
   isLoading: false,
   isError: false,

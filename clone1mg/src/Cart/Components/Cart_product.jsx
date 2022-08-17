@@ -33,7 +33,7 @@ const Cart_product = ({
       })
       .then((data) => {
         axios
-          .get("https://jsonplaceholder.typicode.com/posts")
+          .get("http://localhost:8080/Cart/posts")
           .then((data) => {
             // console.log("data:", data);
             get_data(dispatch);
