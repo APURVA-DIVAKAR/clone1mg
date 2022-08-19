@@ -14,7 +14,7 @@ export const Individual_Product_Page = () => {
 
   React.useEffect(() => {
     axios
-      .get(`http://localhost:8080/${type}/${id}`)
+      .get(`https://mock-test-8th-json-server.herokuapp.com/api/${type}/${id}`)
       .then((response) => {
         setProduct(response.data);
       })

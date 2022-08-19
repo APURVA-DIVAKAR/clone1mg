@@ -10,7 +10,9 @@ const AddAddress = () => {
   let navigate = useNavigate();
 
   const getAddress = async () => {
-    let res = await fetch(`http://localhost:8080/address`);
+    let res = await fetch(
+      `https://mock-test-8th-json-server.herokuapp.com/api/address`
+    );
     let data1 = await res.json();
     console.log(data1);
     setAddress(data1);

@@ -9,13 +9,15 @@ const Delivery = () => {
   const { id } = useContext(AddressContext);
   const navigate = useNavigate();
   const getAddress = async () => {
-    // let res = await fetch(`http://localhost:8080/address?id=${id}`);
+    // let res = await fetch(`https://mock-test-8th-json-server.herokuapp.com/api/address?id=${id}`);
     // let address1 = await res.json();
     //  console.log(address1)
-    axios.get(`http://localhost:8080/address/${id}`).then((res) => {
-      //  console.log(res.data)
-      setAddress(res.data);
-    });
+    axios
+      .get(`https://mock-test-8th-json-server.herokuapp.com/api/address/${id}`)
+      .then((res) => {
+        //  console.log(res.data)
+        setAddress(res.data);
+      });
   };
   //  console.log(address)
   useEffect(() => {

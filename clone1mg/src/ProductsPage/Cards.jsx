@@ -23,7 +23,7 @@ const Cards = ({ value }) => {
     }
 
     axios
-      .post(`http://localhost:8080/Cart`, {
+      .post(`https://mock-test-8th-json-server.herokuapp.com/api/Cart`, {
         qty: 1,
         image_url,
         name,

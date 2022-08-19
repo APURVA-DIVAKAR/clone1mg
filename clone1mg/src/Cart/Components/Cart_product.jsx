@@ -26,14 +26,17 @@ const Cart_product = ({
 
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:8080/Cart/${id}`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      .delete(
+        `https://mock-test-8th-json-server.herokuapp.com/api/Cart/${id}`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((data) => {
         axios
-          .get("http://localhost:8080/Cart/posts")
+          .get("https://mock-test-8th-json-server.herokuapp.com/api/Cart/posts")
           .then((data) => {
             // console.log("data:", data);
             get_data(dispatch);
@@ -54,11 +57,15 @@ const Cart_product = ({
       };
     }
     axios
-      .patch(`http://localhost:8080/Cart/${id}`, payload, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      .patch(
+        `https://mock-test-8th-json-server.herokuapp.com/api/Cart/${id}`,
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((data) => {
         console.log("data:", data.data);
         get_data(dispatch);
